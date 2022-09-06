@@ -197,10 +197,9 @@
 
         <div class="article-content markdown-body">
             <p>系统：ubuntu 18或者20</p>
-<h1 id="安装命令，只需运行一次"><a href="#安装命令，只需运行一次" class="headerlink" title="安装命令，只需运行一次"></a>安装命令，只需运行一次</h1><p>apt-get update -yapt-get install redir -y</p>
-<h1 id="结束命令，想停止时执行"><a href="#结束命令，想停止时执行" class="headerlink" title="结束命令，想停止时执行"></a>结束命令，想停止时执行</h1><p>killall redir</p>
-<h1 id="转发命令，服务器重启后需要重新执行"><a href="#转发命令，服务器重启后需要重新执行" class="headerlink" title="转发命令，服务器重启后需要重新执行"></a>转发命令，服务器重启后需要重新执行</h1><p>sudo redir :14444 172.65.226.101:14444sudo redir :5555 172.65.226.101:5555</p>
-<p>172.65.226.101（矿池ip） 转发后地址：（您的服务器ip）:14444,（您的服务器ip）:5555</p>
+<h1 id="安装命令，只需运行一次"><a href="#安装命令，只需运行一次" class="headerlink" title="安装命令，只需运行一次"></a>安装命令，只需运行一次</h1><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update -yapt-get install redir -y</span><br></pre></td></tr></table></figure>
+<h1 id="结束命令，想停止时执行"><a href="#结束命令，想停止时执行" class="headerlink" title="结束命令，想停止时执行"></a>结束命令，想停止时执行</h1><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">killall redir</span><br></pre></td></tr></table></figure>
+<h1 id="转发命令，服务器重启后需要重新执行"><a href="#转发命令，服务器重启后需要重新执行" class="headerlink" title="转发命令，服务器重启后需要重新执行"></a>转发命令，服务器重启后需要重新执行</h1><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo redir <span class="symbol">:</span><span class="number">14444</span> <span class="number">172.65</span>.<span class="number">226.101</span><span class="symbol">:</span>14444sudo redir <span class="symbol">:</span><span class="number">5555</span> <span class="number">172.65</span>.<span class="number">226.101</span><span class="symbol">:</span><span class="number">5555</span></span><br><span class="line"></span><br><span class="line"><span class="number">172.65</span>.<span class="number">226.101</span>（矿池ip） 转发后地址：（您的服务器ip）<span class="symbol">:</span><span class="number">14444</span>,（您的服务器ip）<span class="symbol">:</span><span class="number">5555</span></span><br></pre></td></tr></table></figure>
 <p>还有一种更简单的方法，只针对轻松矿工设置（针对NBMiner)：高级设置——附加参数——填入：-proxy 127.0.0.1:1080，不过这样做，没有我视频中云转发（TCP映射）安全。</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6UmgvQhxFYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>

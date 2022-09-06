@@ -9,7 +9,7 @@
     
     <title>
         
-            WordPress添加访问量统计代码 |
+            标签: 腾讯相关 |
         
         Moore Blog
     </title>
@@ -145,139 +145,42 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="article-content-container">
-
-        <div class="article-title">
-            <span class="title-hover-animation">WordPress添加访问量统计代码</span>
+    <div class="tag-container">
+        <div class="tag-name"><i class="fas fa-tag"></i>&nbsp;腾讯相关
         </div>
-
-        
-            <div class="article-header">
-                <div class="avatar">
-                    <img src="/images/logo.svg">
-                </div>
-                <div class="info">
-                    <div class="author">
-                        <span class="name">Moore</span>
-                        
-                            <span class="author-label">Lv2</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-07-29 19:38:18</span>
-        <span class="mobile">2022-07-29 19:38</span>
-    </span>
+        <div class="tag-post-list">
+            
+<div class="archive-list-container">
     
-    
-        <span class="article-tags article-meta-item">
-            <i class="fas fa-tags"></i>&nbsp;
-            <ul>
+        <section class="archive-item">
+            <div class="archive-item-header">
+                <span class="archive-year">2022</span>
+                <span class="archive-year-post-count">[1]</span>
+            </div>
+            <ul class="article-list">
                 
-                    <li>
-                        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">博客教程</a>&nbsp;
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/2022/08/27/%E6%9C%80%E6%96%B0%E8%A7%A32%E5%8F%98%E6%97%A0%E5%92%8C%E6%B0%B8%E4%B9%85%E6%96%B9%E6%B3%95/"
+                        >最新解2变无和永久方法</a>
+                        <span class="article-date">08-27</span>
                     </li>
                 
             </ul>
-        </span>
-    
-
-    
-    
-    
+        </section>
     
 </div>
 
-                    </div>
-                </div>
-            </div>
-        
-
-        <div class="article-content markdown-body">
-            <p>代码<br>1、将下面的代码放到当前主题的function.php文件中</p>
-<span id="more"></span>
-<p>&#x2F;**</p>
-<ul>
-<li><p>统计全站总访问量&#x2F;今日总访问量&#x2F;当前是第几个访客</p>
-</li>
-<li><p>@return [type] [description]</p>
-</li>
-</ul>
-<p>*&#x2F;</p>
-<p>function wb_site_count_user(){</p>
-<p>$addnum &#x3D; 1; &#x2F;&#x2F;初始化访问人数</p>
-<p>session_start();</p>
-<p>$date &#x3D; date(‘ymd’,time());</p>
-<p>if(!isset($_SESSION[‘wb_’.$date]) &amp;&amp; !$_SESSION[‘wb_’.$date]){</p>
-<p>$count &#x3D; get_option(‘site_count’);</p>
-<p>if(!$count || !is_array($count)){</p>
-<p>$newcount &#x3D; array(</p>
-<p>‘all’ &#x3D;&gt; 0,</p>
-<p>‘date’ &#x3D;&gt; $date,</p>
-<p>‘today’ &#x3D;&gt; $addnum</p>
-<p>);</p>
-<p>update_option( ‘site_count’, $newcount );</p>
-<p>}else{</p>
-<p>$newcount &#x3D; array(</p>
-<p>‘all’ &#x3D;&gt; ($count[‘all’]+$addnum),</p>
-<p>‘date’ &#x3D;&gt; $date,</p>
-<p>‘today’ &#x3D;&gt; ($count[‘date’] &#x3D;&#x3D; $date) ? ($count[‘today’]+$addnum) : $addnum</p>
-<p>);</p>
-<p>update_option( ‘site_count’, $newcount );</p>
-<p>}</p>
-<p>$_SESSION[‘wb_’.$date] &#x3D; $newcount[‘today’];</p>
-<p>}</p>
-<p>return;</p>
-<p>}</p>
-<p>add_action(‘init’, ‘wb_site_count_user’);</p>
-<p>&#x2F;&#x2F;输出访问统计</p>
-<p>function wb_echo_site_count(){</p>
-<p>session_start();</p>
-<p>$sitecount &#x3D; get_option(‘site_count’);</p>
-<p>$date &#x3D; date(‘ymd’,time());</p>
-<p>echo ‘<p>总访问量：<span style=”color:#7df1ff”>’.absint($sitecount[‘all’]).’</span> &amp;nbsp;&amp;nbsp; 今日访问量：<span style=”color:#7df1ff”>’.absint($sitecount[‘today’]).’</span> &amp;nbsp;&amp;nbsp; 您是今天第：<span style=”color:#7df1ff”>’.absint($_SESSION[‘wb_’.$date]).’</span> 位访问者</p>’;</p>
-<p>}</p>
-<p>2、将下面的代码放到当前主题的footer.php文件中<br><?php wb_echo_site_count(); ?></p>
-
         </div>
+    </div>
 
-        
+    <div class="tag-paginator">
+        <div class="paginator">
+    
 
-        
-            <ul class="post-tags-box">
-                
-                    <li class="tag-item">
-                        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">#博客教程</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+    
+</div>
 
-        
-            <div class="article-nav">
-                
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2022/07/30/d%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">git Hexo d报错解决方案</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-            </div>
-        
-
-        
     </div>
 </div>
 
@@ -310,19 +213,6 @@
         </div>
     </div>
 
-    
-        <div class="post-tools">
-            <div class="post-tools-container">
-    <ul class="tools-list">
-        <!-- TOC aside toggle -->
-        
-
-        <!-- go comment -->
-        
-    </ul>
-</div>
-
-        </div>
     
 
     <div class="right-bottom-side-tools">

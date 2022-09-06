@@ -196,29 +196,10 @@
         
 
         <div class="article-content markdown-body">
-            <p>import java.security.MessageDigest;<br>import java.text.SimpleDateFormat;<br>import java.util.ArrayList;<br>import java.util.Calendar;<br>import java.util.Date;<br>import javax.crypto.Cipher;<br>import javax.crypto.spec.IvParameterSpec;<br>import javax.crypto.spec.SecretKeySpec;<br>import java.nio.charset.Charset;<br>import java.util.Base64;</p>
-<p>public class HelloWorld {<br>    public static void main(String []args) throws Exception {</p>
-<pre><code>    String cipherText = &quot;在此输入密文，多条用空格分割&quot;;
-    
-    String key = &quot;ks9KUrbWJj46AftX&quot;; //heidong\leiting\mifeng KEY
-    //key = &quot;awdtif20190619ti&quot;; //xuanfen KEY
-    
-    String[] strArray=cipherText.split(&quot; &quot;);
-    for (String text : strArray) &#123;
-      System.out.println(decrypt(text,key));
-    &#125;
-&#125;
-public static String decrypt(String str, String str2) throws Exception &#123;
-    Cipher instance = Cipher.getInstance(&quot;AES/CBC/NoPadding&quot;);
-    byte[] bytes = str2.getBytes(Charset.forName(&quot;UTF-8&quot;));
-    SecretKeySpec secretKeySpec = new SecretKeySpec(bytes, &quot;AES&quot;);
-    byte[] bytes2 = str2.getBytes(Charset.forName(&quot;UTF-8&quot;));
-    instance.init(2, secretKeySpec, new IvParameterSpec(bytes2));
-    byte[] doFinal = instance.doFinal(Base64.getDecoder().decode(str));
-    return new String(doFinal, Charset.forName(&quot;UTF-8&quot;));
-&#125;
-</code></pre>
-<p>}</p>
+            <details><summary>打开代码</summary>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">import java.security.MessageDigest;</span><br><span class="line">import java.text.SimpleDateFormat;</span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.Calendar;</span><br><span class="line">import java.util.Date;</span><br><span class="line">import javax.crypto.Cipher;</span><br><span class="line">import javax.crypto.spec.IvParameterSpec;</span><br><span class="line">import javax.crypto.spec.SecretKeySpec;</span><br><span class="line">import java.nio.charset.Charset;</span><br><span class="line">import java.util.Base64;</span><br><span class="line"></span><br><span class="line">public <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    public static void main(String []args) throws Exception &#123;</span><br><span class="line">       </span><br><span class="line">        String cipherText = <span class="string">&quot;在此输入密文，多条用空格分割&quot;</span>;</span><br><span class="line">        </span><br><span class="line">        String key = <span class="string">&quot;ks9KUrbWJj46AftX&quot;</span>; <span class="regexp">//heidong</span>\leiting\mifeng <span class="variable constant_">KEY</span></span><br><span class="line">        /<span class="regexp">/key = &quot;awdtif20190619ti&quot;; /</span><span class="regexp">/xuanfen KEY</span></span><br><span class="line"><span class="regexp">        </span></span><br><span class="line"><span class="regexp">        String[] strArray=cipherText.split(&quot; &quot;);</span></span><br><span class="line"><span class="regexp">        for (String text : strArray) &#123;</span></span><br><span class="line"><span class="regexp">          System.out.println(decrypt(text,key));</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">	public static String decrypt(String str, String str2) throws Exception &#123;</span></span><br><span class="line"><span class="regexp">		Cipher instance = Cipher.getInstance(&quot;AES/</span><span class="variable constant_">CBC</span>/NoPadding<span class="string">&quot;);</span></span><br><span class="line"><span class="string">		byte[] bytes = str2.getBytes(Charset.forName(&quot;</span><span class="variable constant_">UTF</span>-<span class="number">8</span><span class="string">&quot;));</span></span><br><span class="line"><span class="string">		SecretKeySpec secretKeySpec = new SecretKeySpec(bytes, &quot;</span><span class="variable constant_">AES</span><span class="string">&quot;);</span></span><br><span class="line"><span class="string">		byte[] bytes2 = str2.getBytes(Charset.forName(&quot;</span><span class="variable constant_">UTF</span>-<span class="number">8</span><span class="string">&quot;));</span></span><br><span class="line"><span class="string">		instance.init(2, secretKeySpec, new IvParameterSpec(bytes2));</span></span><br><span class="line"><span class="string">		byte[] doFinal = instance.doFinal(Base64.getDecoder().decode(str));</span></span><br><span class="line"><span class="string">		return new String(doFinal, Charset.forName(&quot;</span><span class="variable constant_">UTF</span>-<span class="number">8</span><span class="string">&quot;));</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+
+
 <p>JAVA在线运行：<a class="link"   target="_blank" rel="noopener" href="https://www.tutorialspoint.com/compile_java_online.php" >https://www.tutorialspoint.com/compile_java_online.php<i class="fas fa-external-link-alt"></i></a></p>
 <p>雷霆：<a class="link"   target="_blank" rel="noopener" href="https://www.lt71126.xyz:20000/api/evmess" >https://www.lt71126.xyz:20000/api/evmess<i class="fas fa-external-link-alt"></i></a><br>黑洞：<a class="link"   target="_blank" rel="noopener" href="https://www.hd327658.xyz:20000/api/evmess" >https://www.hd327658.xyz:20000/api/evmess<i class="fas fa-external-link-alt"></i></a><br>蜜蜂：<a class="link"   target="_blank" rel="noopener" href="https://www.09898434.xyz/api/evmess?deviceid=49c95313d64fb7c5unknown&amp;apps=cd9186e318e291300db27867d958eae5" >https://www.09898434.xyz/api/evmess?deviceid=49c95313d64fb7c5unknown&amp;apps=cd9186e318e291300db27867d958eae5<i class="fas fa-external-link-alt"></i></a></p>
 <p>旋风：<a class="link"   target="_blank" rel="noopener" href="https://www.xfjyqirx.xyz:20000/api/evmess" >https://www.xfjyqirx.xyz:20000/api/evmess<i class="fas fa-external-link-alt"></i></a></p>
@@ -240,6 +221,21 @@ public static String decrypt(String str, String str2) throws Exception &#123;
 
         
             <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/08/27/%E6%9C%80%E6%96%B0%E8%A7%A32%E5%8F%98%E6%97%A0%E5%92%8C%E6%B0%B8%E4%B9%85%E6%96%B9%E6%B3%95/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">最新解2变无和永久方法</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
                 
                 
                     <div class="article-next">
