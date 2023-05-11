@@ -1,1 +1,0 @@
-var posts=["2023/05/11/2023051101/","2023/05/11/2023051102/","2023/05/10/你从未挑战过：你自己的思维方式吧/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
