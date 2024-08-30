@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/favicon.ico >
+    <title>
+        Kadriye&#39;s travel diary
+    </title>
+    <meta name="description" content= 这是我的知识库。为了避免遗忘、便于分享，我在这里收录知识。请随意浏览～ >
+    <meta name="keywords" content= Blog,Hexo,Theme,卢伟,luwei >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            Hexo主题zhaoo使用安装方法
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h4 id="一、使用方法"><a href="#一、使用方法" class="headerlink" title="一、使用方法"></a><strong>一、使用方法</strong></h4><ol>
+<li>安装 zhao 主题，项目地址：<a target="_blank" rel="noopener" href="https://github.com/zhaoo/hexo-theme-zhaoo">https://github.com/zhaoo/hexo-theme-zhaoo</a></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/izhaoo/hexo-theme-zhaoo.git themes/zhaoo</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<ol>
+<li><p>检查\blog-demo\themes里是否已有zhao文件夹</p>
+</li>
+<li><p>然后在 blog-demo文件下的_config.yml 中将主题改为：</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: zhaoo</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<h4 id="二、博客配置"><a href="#二、博客配置" class="headerlink" title="二、博客配置"></a>二、博客配置</h4><p>编辑 <code>Hexo</code> 根目录下的 <code>_config.yml</code> 文件，配置博客网站相关功能，对整个网站生效。</p>
+<p>建议将文章数量改为<strong>9</strong>篇：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">index_generator:</span><br><span class="line">path:&#x27;&#x27;</span><br><span class="line">per_page:9#文章数量改为9篇（3的倍数更和谐）</span><br><span class="line">order_by:-date</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>启用代码高亮效果：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">highlight:</span><br><span class="line">enable:true#启用代码高亮效果</span><br><span class="line">line_number:true</span><br><span class="line">auto_detect:true</span><br><span class="line">hljs:true</span><br><span class="line">tab_replace:</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>编辑 <code>zhaoo</code> 主题目录下的 <code>_config.yml</code> 文件，配置主题相关功能，只对主题生效。</p>
+<p>建议参考 <a target="_blank" rel="noopener" href="https://github.com/izhaoo/hexo-theme-zhaoo/blob/master/_config.yml">_config.yml</a> 和本文进行配置，具体配置内容见下文。</p>
+<h4 id="主题更新"><a href="#主题更新" class="headerlink" title="主题更新"></a><strong>主题更新</strong></h4><p>进入到 <code>zhaoo</code> 主题目录：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash"><span class="built_in">cd</span> themes/zhaoo</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>从 <code>GitHub</code> 获取更新：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git pull</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a><strong>全局配置</strong></h3><h4 id="头部导航-NavBar"><a href="#头部导航-NavBar" class="headerlink" title="头部导航 (NavBar)"></a><strong>头部导航 (NavBar)</strong></h4><p>配置项 <code>navbar</code> 用于设置 <strong>头部导航条</strong>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">navbar:</span><br><span class="line">enable:true</span><br><span class="line">back_home:true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p><code>enable</code> 用于控制头部导航条全局显示&#x2F;隐藏。</p>
+<p><code>back_home</code> 用于开启返回首页按钮；其余的功能按钮随各自配置开启，例如“二维码”、“黑夜模式”、“搜索”等。</p>
+<h4 id="导航菜单-Menu"><a href="#导航菜单-Menu" class="headerlink" title="导航菜单 (Menu)"></a><strong>导航菜单 (Menu)</strong></h4><p>配置项 <code>menu</code> 用于设置 <strong>导航菜单</strong>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Menu</span><br><span class="line">menu:</span><br><span class="line">home:/||首页</span><br><span class="line">galleries:/galleries||摄影</span><br><span class="line">archives:/archives||归档</span><br><span class="line">tags:/tags||标签</span><br><span class="line">categories:/categories||分类</span><br><span class="line">about:/about||关于</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>用 <strong>||</strong> 将内容分割为两部分，前面部分为页面 <code>URL</code>，后面部分为菜单中显示的名称。</p>
+<p>对于系统默认页面，如 <code>归档（/archives）</code>、<code>首页（/）</code> 等，直接添加菜单即可；对于独立页面，如 <code>标签（tags）</code>、<code>分类（categories）</code>，则需先创建页面后再添加菜单。</p>
+<h4 id="主题颜色"><a href="#主题颜色" class="headerlink" title="主题颜色"></a><strong>主题颜色</strong></h4><p>可以根据个人喜好，定制主题颜色。在配置项 <code>color</code> 中设置颜色。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># Color</span><br><span class="line">color:</span><br><span class="line">text:&#x27;#33333D&#x27;</span><br><span class="line">text-secondary:&#x27;#4e4e4e&#x27;</span><br><span class="line">text-third:&#x27;#999999&#x27;</span><br><span class="line">background:&#x27;#ffffff&#x27;</span><br><span class="line">background-secondary:&#x27;#f6f8fa&#x27;</span><br><span class="line">border:&#x27;#eeeeee&#x27;</span><br><span class="line">text-dark:&#x27;#dddddd&#x27;</span><br><span class="line">text-secondary-dark:&#x27;#9899ab&#x27;</span><br><span class="line">text-third-dark:&#x27;#7d8594&#x27;</span><br><span class="line">background-dark:&#x27;#1e2128&#x27;</span><br><span class="line">background-secondary-dark:&#x27;#1a1d22&#x27;</span><br><span class="line">border-dark:&#x27;#2b3038&#x27;</span><br><span class="line">link:&#x27;#FF3B00&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>可以使用 <code>十六进制</code>、<code>rgba</code>、<code>颜色名称</code> 方式，注意需要用引号包裹。</p>
+<p>目前有两套颜色模式，分别是 <strong>浅色模式（白天）</strong> 和 <strong>深色模式（黑夜）</strong>，请注意颜色搭配。<code>link</code> 为强调色，表现为 <code>hover</code>、<code>active</code> 等。</p>
+<p>分享几个配色网站：<a target="_blank" rel="noopener" href="https://colors.ichuantong.cn/">中国传统颜色</a>、<a target="_blank" rel="noopener" href="https://nipponcolors.com/">日本传统颜色</a></p>
+<h4 id="站点图标"><a href="#站点图标" class="headerlink" title="站点图标"></a><strong>站点图标</strong></h4><p>配置项 <code>favicon</code> 可设置站点图标，建议使用 <code>ico</code> 或 <code>png</code> 格式。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Favicon</span><br><span class="line">favicon:</span><br><span class="line">small:/images/icons/favicon-16x16.png</span><br><span class="line">medium:/images/icons/favicon-32x32.png</span><br><span class="line">apple_touch_icon:/images/icons/apple-touch-icon.png</span><br><span class="line">safari_pinned_tab:/images/icons/stun-logo.svg</span><br><span class="line">msapplication:/images/icons/favicon-144x144.png</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>有多种尺寸的图片需要配置，可以参考默认图标的尺寸用 <code>PS</code> 裁剪，或使用：<a target="_blank" rel="noopener" href="https://icon.wuruihong.com/">图标工厂</a></p>
+<h4 id="全局字体"><a href="#全局字体" class="headerlink" title="全局字体"></a><strong>全局字体</strong></h4><p>配置项 <code>font</code> 中可设置全局字体的 <strong>大小</strong> 和 <strong>风格系列</strong>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Font</span><br><span class="line">font:</span><br><span class="line">size:14px</span><br><span class="line">family:&#x27;Hiragino Sans GB&#x27;,&#x27;Hiragino Sans GB W3&#x27;,&#x27;Microsoft YaHei&#x27;,&#x27;WenQuanYi Micro Hei&#x27;,sans-serif</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>size</code>: 字体大小。</p>
+</li>
+<li><p><code>family</code>: 字体风格系列。</p>
+</li>
+</ul>
+<h4 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a><strong>背景图片</strong></h4><p>配置项 <code>background_image</code> 可设置背景图片，直接填写图片地址即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Background Image</span><br><span class="line">background_image:</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>tips: 建议不设置背景图片，默认的 <strong>纯白背景</strong> 最搭配，背景颜色也可在 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2">主题颜色</a> 中设置。</p>
+<h4 id="加载动画-Loading"><a href="#加载动画-Loading" class="headerlink" title="加载动画 (Loading)"></a><strong>加载动画 (Loading)</strong></h4><p>配置项 <code>loading</code> 可设置载入动画，会在 <em>页面跳转、懒加载</em> 时加载，目前仅支持图片形式。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Loading</span><br><span class="line">loading:/images/theme/loading.gif</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>建议使用 <code>gif</code> 动图，可在 <a target="_blank" rel="noopener" href="https://lottiefiles.com/">LottieFiles</a> 下载。</p>
+<p>tips: 未来将支持自定义 <code>css</code>、<code>svg</code> 等多种方式的载入动画，敬请期待。</p>
+<h4 id="欢迎页面"><a href="#欢迎页面" class="headerlink" title="欢迎页面"></a><strong>欢迎页面</strong></h4><p>配置项 <code>preview</code> 中的一些列配置可自定义欢迎页面。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># Preview</span><br><span class="line">preview:</span><br><span class="line">enable:true</span><br><span class="line">model:wave# wave cloud</span><br><span class="line">background:</span><br><span class="line">type:image# image video</span><br><span class="line">default_image:</span><br><span class="line">light:/images/theme/welcome-image.jpg</span><br><span class="line">dark:/images/theme/welcome-image.jpg</span><br><span class="line">video:</span><br><span class="line">api:# https://source.unsplash.com/random/1920x1080</span><br><span class="line">size:cover# css: background-size</span><br><span class="line">position:center# css: background-position</span><br><span class="line">motto:</span><br><span class="line">default:我在开了灯的床头下，想问问自己的心啊。</span><br><span class="line">api:https://v1.hitokoto.cn/?encode=text&amp;c=j</span><br><span class="line">color:&#x27;#ffffff&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><code>enable</code>: 用来 <em>开启</em> &#x2F; <em>关闭</em> 欢迎页面。</li>
+</ul>
+<h4 id="效果模式"><a href="#效果模式" class="headerlink" title="效果模式"></a><strong>效果模式</strong></h4><ul>
+<li><code>model</code>: 设置效果模式，有 <strong>波浪（wave）</strong> 和 <strong>云层（cloud）</strong> 两种模式可选择。</li>
+</ul>
+<h4 id="欢迎图片"><a href="#欢迎图片" class="headerlink" title="欢迎图片"></a><strong>欢迎图片</strong></h4><p>配置项 <code>background</code> 用来设置欢迎图片，其中：</p>
+<ul>
+<li><p><code>type</code>: 图片或视频。</p>
+</li>
+<li><p><code>default_image</code>: 配置静态图片，填写静态图片 <code>URL</code> 即可。开启 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F">深色模式</a> 后支持配置 深色&#x2F;浅色 两种模式下的背景图片。</p>
+</li>
+<li><p><code>video</code>: 配置动态视频，填写视频 <code>URL</code> 即可。</p>
+</li>
+<li><p><code>api</code>: 配置随机图片，可使用第三方 <code>API</code>，优先级 <em>随机图片（api）</em> &gt; <em>静态图片（default）</em>。推荐 <code>API</code>：<a target="_blank" rel="noopener" href="https://source.unsplash.com/random/1920x1080">Unsplash</a>、<a target="_blank" rel="noopener" href="https://api.vvhan.com/api/bing?type=sj">必应图片</a>。</p>
+</li>
+<li><p><code>size</code> 和 <code>position</code>: 设置图片的 <strong>尺寸</strong> 和 <strong>位置</strong>，参考 <code>CSS</code> 中的属性即可。</p>
+</li>
+</ul>
+<h4 id="格言"><a href="#格言" class="headerlink" title="格言"></a><strong>格言</strong></h4><p>配置项 <code>motto</code> 用来设置格言，其中：</p>
+<ul>
+<li><p><code>default</code>: 配置静态格言，填写格言文本即可。</p>
+</li>
+<li><p><code>api</code>: 配置随机格言，可使用第三方 <code>API</code>，优先级 <em>随机格言（api）</em> &gt; <em>静态格言（default）</em>。推荐 <code>API</code>：<a target="_blank" rel="noopener" href="https://hitokoto.cn/">一言</a>、<a target="_blank" rel="noopener" href="https://www.jinrishici.com/">今日诗词</a>。</p>
+</li>
+<li><p><code>color</code> 配置文字颜色。</p>
+</li>
+</ul>
+<h4 id="全局搜索"><a href="#全局搜索" class="headerlink" title="全局搜索"></a><strong>全局搜索</strong></h4><p>在zhaoo主题文件夹内打开_config.yml找到<strong>search 修改为</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Search</span><br><span class="line">search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<p>目前仅支持静态搜索能力（渲染时生成搜索索引文件），需要安装 <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-generator-searchdb">hexo-generator-searchdb</a> 插件提供支持。</p>
+<p>安装 <code>hexo-generator-searchdb</code> 插件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install hexo-generator-searchdb --save</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>开启插件，在 blog-demo文件夹内打开_config.yml 下新增：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">path:/search.xml# 索引生成路径（需要设置绝对路径，否则二级页面读不到）</span><br><span class="line">field:post# post page all</span><br><span class="line">format:html# 只支持 html 类型</span><br><span class="line">content:true# 是否包含正文内容</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<h4 id="版权信息"><a href="#版权信息" class="headerlink" title="版权信息"></a><strong>版权信息</strong></h4><p>配置项 <code>copyright</code> 用来设置页面底部显示的网站版权信息，填写 <strong>文本内容</strong> 或 <strong>HTML</strong> 即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Copyright</span><br><span class="line">copyright:&lt;p&gt;Poweredby&lt;atarget=&quot;_blank&quot;href=&quot;https://hexo.io&quot;&gt;Hexo&lt;/a&gt;|Theme-&lt;atarget=&quot;_blank&quot;href=&quot;https://github.com/izhaoo/hexo-theme-zhaoo&quot;&gt;zhaoo&lt;/a&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<h4 id="社交链接"><a href="#社交链接" class="headerlink" title="社交链接"></a><strong>社交链接</strong></h4><p>配置项 <code>social</code> 用来配置社交链接，在页面底部以 <code>Icon</code> 图标的形式展示，点击即可链接第三方平台。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Social</span><br><span class="line">social:</span><br><span class="line">qq:tencent://message/?Menu=yes&amp;uin=894519210||iconQQ||&#x27;#12B7F5&#x27;</span><br><span class="line">wechat:javascript:;||iconwechat-fill||&#x27;#09BB07&#x27;</span><br><span class="line">instagram:https://www.instagram.com/izhaoo/||iconinstagram||&#x27;#DA2E76&#x27;</span><br><span class="line">github:https://github.com/izhaoo||icongithub-fill||&#x27;#24292E&#x27;</span><br><span class="line">email:mailto:izhaoo@163.com||iconmail</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>配置内容分为三部分，以 <code>||</code> 划分。第一部分是 <em>社交链接</em> ，第二部分是 <em>图标样式（IconFont）</em> ，第三部分是 <em>选中颜色（hover）</em>。</p>
+<h4 id="右下角按钮-Fab"><a href="#右下角按钮-Fab" class="headerlink" title="右下角按钮 (Fab)"></a><strong>右下角按钮 (Fab)</strong></h4><p>配置项 <code>fab</code> 用于配置右下角的按钮。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Fab (Float Action Button)</span><br><span class="line">fab:</span><br><span class="line">enable:true</span><br><span class="line">always_show:false</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: 设置 <em>开启</em> &#x2F; <em>关闭</em> 按钮。</p>
+</li>
+<li><p><code>always_show</code>: 设置 <em>一直显示</em> &#x2F; <em>过渡隐藏</em> 按钮。</p>
+</li>
+</ul>
+<h4 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a><strong>二维码</strong></h4><p>配置项 <code>qrcode</code> 用来设置 <strong>二维码</strong>，开启后点击 <strong>导航栏</strong> 左侧的图标即可显示。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># QR Code</span><br><span class="line">qrcode:</span><br><span class="line">enable:true</span><br><span class="line">type:image# url image</span><br><span class="line">image:https://pic.izhaoo.com/weapp-code.jpg</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: 设置 <em>开启</em> &#x2F; <em>关闭</em> 二维码功能。</p>
+</li>
+<li><p><code>type</code>: 设置二维码模式，有两种模式可选。<code>url</code> 显示当前文章链接生成的二维码；<code>image</code> 显示固定的二维码图片（如小程序码等）。</p>
+</li>
+<li><p><code>image</code>: 选择 <code>image</code> 模式时需要指定图片链接。</p>
+</li>
+</ul>
+<h4 id="深色模式"><a href="#深色模式" class="headerlink" title="深色模式"></a><strong>深色模式</strong></h4><p>配置项 <code>color_mode</code> 用来配置 <strong>深色模式</strong>。开启后主题会根据设备系统自动切换颜色模式，用户也可以点击 <strong>导航栏</strong> 左侧的图标手动切换颜色模式，系统会暂存用户选择状态。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Color Mode</span><br><span class="line">color_mode:</span><br><span class="line">enable:true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 深色模式。</li>
+</ul>
+<p><em>深色模式</em> &#x2F; <em>浅色模式</em> 的颜色可以参考 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2">主题颜色</a> 设置。</p>
+<h4 id="哀悼模式"><a href="#哀悼模式" class="headerlink" title="哀悼模式"></a><strong>哀悼模式</strong></h4><p>在举国默哀的日子，我们可以将博客灰化，通过配置项 <code>gray</code> 设置。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Gray (Mourning Mode)</span><br><span class="line">gray:</span><br><span class="line">enable:true#开启哀悼模式</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 哀悼模式。</li>
+</ul>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Feaf0097a-803b-4f19-a205-55490069240e%2F20201016102727.jpg?table=block&id=0aec93da-2a64-4345-a177-ef3a3b590e72&t=0aec93da-2a64-4345-a177-ef3a3b590e72&width=1233&cache=v2" alt="notion image"></p>
+<h3 id="文章配置"><a href="#文章配置" class="headerlink" title="文章配置"></a><strong>文章配置</strong></h3><h4 id="文章封面"><a href="#文章封面" class="headerlink" title="文章封面"></a><strong>文章封面</strong></h4><h4 id="单独封面"><a href="#单独封面" class="headerlink" title="单独封面"></a><strong>单独封面</strong></h4><p>可以为每篇文章设置单独的文章封面图片，在文章 <code>Front-matter</code> 中添加 <code>image</code> 字段设置图片。</p>
+<p>若使用图床，直接添加图片文件的 <strong>完整URL</strong> 即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题文档</span><br><span class="line"><span class="section">image: https://pic.izhaoo.com/20200421200902.jpg  #设置图床图片</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<p>若将图片储存在本地，现将图片文件复制到主题 <code>~/zhaoo/source/images</code> 下，再添加 <strong>相对URL</strong> 即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题使用文档</span><br><span class="line"><span class="section">image: /images/20200421200902.jpg  #设置本地图片</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<h4 id="默认封面"><a href="#默认封面" class="headerlink" title="默认封面"></a><strong>默认封面</strong></h4><p>配置项 <code>post_image</code> 设置配置文章默认封面，就不用为每篇文章单独设置封面了：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Post Image</span><br><span class="line">post_image:</span><br><span class="line">random:galleries# local galleries</span><br><span class="line">default:/images/theme/post-image.jpg</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>random</code>: 设置随机封面，有 <strong>galleries（相册图库）</strong> 和 <strong>local（本地图库）</strong> 两种模式。开启 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E7%9B%B8%E5%86%8C">相册</a> 功能后会自动调取相册中的图片；本地图库需要新建 <code>/_data/local_images.json</code> 文件，填写图片 <code>URL</code> 列表即可。</p>
+</li>
+<li><p><code>default</code>: 未设置随机封面时启用 <strong>默认封面</strong>，填写图片 <code>URL</code> 即可。</p>
+</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// local_images.json</span></span><br><span class="line"><span class="punctuation">[</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/2014031601.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/2017071602.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/2017071603.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/2017072104.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/2017072705.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20200421201200.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20200305030152.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20191211065241.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20200228081718.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20191211065844.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20200718151924.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20200718152003.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20200718152045.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20200718152122.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;https://pic.izhaoo.com/20200718151427.jpg&quot;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<p>JSON</p>
+<p>Copy</p>
+<hr>
+<h4 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a><strong>关键词</strong></h4><p>在文章 <code>Front-matter</code> 中添加 <code>keywords</code> 字段设置关键词：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title: zhaoo - 主题使用文档</span><br><span class="line">keywords: hexo-theme-zhaoo, hexo, 主题, 使用文档, document</span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<p>配置项 <code>keywords</code> 为网站设置全局关键词，每个页面都会渲染，文章中无需重复添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keywords:hexo-theme-zhaoo,hexo</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<h4 id="文章尺寸"><a href="#文章尺寸" class="headerlink" title="文章尺寸"></a><strong>文章尺寸</strong></h4><p>配置项 <code>post_page_size</code> 用于设置文章内容主体部分的相关尺寸。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Page Size</span><br><span class="line">post_page_size:</span><br><span class="line">width:800px</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><code>width</code>: 设置内容宽度。</li>
+</ul>
+<p>tips: 受外部元素的限制，<em>实际尺寸</em> 由计算后得出，不能保证与 <em>设定尺寸</em> 完全相等，只能保证接近该尺寸。</p>
+<h4 id="图片标注"><a href="#图片标注" class="headerlink" title="图片标注"></a><strong>图片标注</strong></h4><p>配置项 <code>caption</code> 用于设置 <strong>图片标注</strong>，开启后会在文章图片下方生成标注。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Caption</span><br><span class="line">caption:</span><br><span class="line">enable:true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 图片标注。</li>
+</ul>
+<h4 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a><strong>文章目录</strong></h4><p>配置项 <code>toc</code> 用于设置 <strong>文章目录</strong>，开启后会在文章内容右侧生成目录，点击目录可平滑到对应的标题处。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># TOC</span><br><span class="line">toc:</span><br><span class="line">enable:true</span><br><span class="line">min_depth:1</span><br><span class="line">max_depth:3</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 文章目录。</p>
+</li>
+<li><p><code>min_depth</code>:</p>
+</li>
+<li><p><code>max_depth</code>:</p>
+</li>
+</ul>
+<p>全局开启 <strong>文章目录</strong> 后，可以在文章 <code>Front-matter</code> 中添加 <code>toc</code> 字段单独控制该文章是否展示文章目录。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题文档</span><br><span class="line"><span class="section">toc: false # 关闭文章目录</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<h4 id="打赏二维码"><a href="#打赏二维码" class="headerlink" title="打赏二维码"></a><strong>打赏二维码</strong></h4><p>配置项 <code>donate</code> 用于设置 <strong>打赏二维码</strong>，开启后可在文章下方展示二维码，扫一扫请博主喝杯咖啡吧~</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Donate</span><br><span class="line">donate:</span><br><span class="line">enable:true</span><br><span class="line">alipay:https://pic.izhaoo.com/alipay.jpg</span><br><span class="line">wechat:https://pic.izhaoo.com/wechat.jpg</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 打赏二维码。</p>
+</li>
+<li><p><code>alipay</code>: 支付宝收款二维码，填写图片 <code>URL</code>。</p>
+</li>
+<li><p><code>wechat</code>: 微信收款二维码，填写图片 <code>URL</code>。</p>
+</li>
+</ul>
+<h4 id="文章版权"><a href="#文章版权" class="headerlink" title="文章版权"></a><strong>文章版权</strong></h4><p>配置项 <code>post_copyright</code> 用于设置 <strong>文章版权</strong>，开启后可在文章下方展示版权信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Copyright</span><br><span class="line">post_copyright:</span><br><span class="line">enable:true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 文章版权信息。</li>
+</ul>
+<p>全局开启 <strong>文章版权</strong> 后，可以在文章 <code>Front-matter</code> 中添加 <code>copyright</code> 字段单独控制该文章是否展示文章版权。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题文档</span><br><span class="line"><span class="section">copyright: false # 关闭文章版权</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<h4 id="文章搬运"><a href="#文章搬运" class="headerlink" title="文章搬运"></a><strong>文章搬运</strong></h4><p>配置项 <code>carrier</code> 用于开启 <strong>文章搬运</strong> 功能，方便博主们全文“借鉴”文章，效果如下：</p>
+<p>全局开启 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83">文章版权</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Carrier</span><br><span class="line">carrier:</span><br><span class="line">enable:true</span><br><span class="line">type:markdown# markdown html text</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 文章搬运。</p>
+</li>
+<li><p><code>type</code>: 搬运模式，可选择一键复制 <code>markdown</code>、<code>html</code>、<code>text</code> 格式的文章。</p>
+</li>
+</ul>
+<h4 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a><strong>文章置顶</strong></h4><p>找到 <code>/node_modules/hexo-generator-index/lib/generator.js</code> 文件，替换成如下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> pagination =<span class="built_in">require</span>(<span class="string">&#x27;hexo-pagination&#x27;</span>);</span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> =<span class="keyword">function</span> (<span class="params">locals</span>)&#123;</span><br><span class="line"><span class="keyword">var</span> config =<span class="variable language_">this</span>.<span class="property">config</span>;</span><br><span class="line"><span class="keyword">var</span> posts = locals.<span class="property">posts</span>;</span><br><span class="line">  posts.<span class="property">data</span> = posts.<span class="property">data</span>.<span class="title function_">sort</span>(<span class="keyword">function</span> (<span class="params">a, b</span>)&#123;</span><br><span class="line"><span class="keyword">if</span> (a.<span class="property">top</span> &amp;&amp; b.<span class="property">top</span>) &#123;</span><br><span class="line"><span class="keyword">if</span> (a.<span class="property">top</span> == b.<span class="property">top</span>)<span class="keyword">return</span> b.<span class="property">date</span> - a.<span class="property">date</span>;</span><br><span class="line">elsereturn b.<span class="property">top</span> - a.<span class="property">top</span>;</span><br><span class="line">    &#125;<span class="title function_">elseif</span> (a.<span class="property">top</span> &amp;&amp; !b.<span class="property">top</span>) &#123;</span><br><span class="line"><span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;<span class="title function_">elseif</span> (!a.<span class="property">top</span> &amp;&amp; b.<span class="property">top</span>) &#123;</span><br><span class="line">return1;</span><br><span class="line">    &#125;elsereturn b.<span class="property">date</span> - a.<span class="property">date</span>;</span><br><span class="line">  &#125;);</span><br><span class="line"><span class="keyword">var</span> paginationDir = config.<span class="property">pagination_dir</span> ||<span class="string">&#x27;page&#x27;</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="title function_">pagination</span>(<span class="string">&#x27;&#x27;</span>, posts, &#123;</span><br><span class="line"><span class="attr">perPage</span>: config.<span class="property">index_generator</span>.<span class="property">per_page</span>,</span><br><span class="line"><span class="attr">layout</span>: [<span class="string">&#x27;index&#x27;</span>,<span class="string">&#x27;archive&#x27;</span>],</span><br><span class="line"><span class="attr">format</span>: paginationDir +<span class="string">&#x27;/%d/&#x27;</span>,</span><br><span class="line"><span class="attr">data</span>: &#123;</span><br><span class="line"><span class="attr">__index</span>:<span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<hr>
+<p>在文章的 <code>Front-matter</code> 中添加 <code>top</code> 字段，指定数值。数值越大，显示越靠前。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题使用文档</span><br><span class="line"><span class="section">top: 10  #添加该字段</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<h4 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a><strong>数学公式</strong></h4><h4 id="MathJax"><a href="#MathJax" class="headerlink" title="MathJax"></a><strong>MathJax</strong></h4><blockquote>
+<p>hexo-filter-mathjax-ssr</p>
+</blockquote>
+<p>以 <code>svg</code> 的形式渲染数学公式，兼容性较好，推荐使用。</p>
+<p>安装 <code>MathJax</code> 插件依赖：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install hexo-filter-mathjax-ssr --save</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>开启插件，在 <strong>博客配置</strong> 下新增：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">inlineQuote: [&#x27;&#x27;]</span><br><span class="line">blockQuote: [&#x27;MATHJAX-SSR-0&#x27;]</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<h4 id="KaTex"><a href="#KaTex" class="headerlink" title="KaTex"></a><strong>KaTex</strong></h4><blockquote>
+<p>hexo-katex</p>
+</blockquote>
+<p>以 <code>HTML</code> 标签的形式渲染数学公式，渲染速度较快，语法较简单，但是兼容性不是很好。</p>
+<p>安装渲染引擎 <code>hexo-renderer-pandoc</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install hexo-renderer-pandoc --save</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>安装 <code>KaTex</code> 插件依赖：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install hexo-katex --save</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>开启插件，在 <strong>博客配置</strong> 下新增：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pandoc:</span><br><span class="line">mathEngine:katex</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<h3 id="页面配置"><a href="#页面配置" class="headerlink" title="页面配置"></a><strong>页面配置</strong></h3><h4 id="相册页面"><a href="#相册页面" class="headerlink" title="相册页面"></a><strong>相册页面</strong></h4><blockquote>
+<p>【瀑布流风格相册】由 AmiKara 友情贡献~</p>
+</blockquote>
+<p>执行以下命令创建相册页面，会在 <code>source</code> 目录生成 <code>galleries/index.md</code> 文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo new page galleries#创建相册页面</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>打开 <code>source/galleries/index.md</code> 文件，设置 <code>Front-matter</code> ，开启相册页面：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 相册</span><br><span class="line"><span class="section">layout: &quot;galleries&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<p>参考 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置相册页面的导航：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">galleries:/galleries||相册</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>配置项 <code>galleries</code> 用于开启相册功能：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">galleries:</span><br><span class="line">enable:true</span><br><span class="line">title:相册</span><br><span class="line">subtitle:Galleries</span><br><span class="line">type:waterfull# waterful | grid</span><br><span class="line">columns:3</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 相册功能。</p>
+</li>
+<li><p><code>title</code>: 相册分类页面标题。</p>
+</li>
+<li><p><code>subtitle</code> 相册分类页面副标题。</p>
+</li>
+<li><p><code>type</code>: 相册显示风格，有 <em>瀑布流</em> 和 <em>正方形</em> 两种形式。</p>
+</li>
+<li><p><code>columns</code>: 相册列数。</p>
+</li>
+</ul>
+<p>在 blog-demo\themes\zhaoo_example\source_data 目录下新建 <code>galleries.json</code> 文件，创建相册分类目录及图片内容：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span><span class="string">&quot;colorful&quot;</span><span class="punctuation">,</span><span class="comment">//相册名称</span></span><br><span class="line"><span class="attr">&quot;cover&quot;</span><span class="punctuation">:</span><span class="string">&quot;/images/theme/post-image.jpg&quot;</span><span class="punctuation">,</span><span class="comment">//相册封面</span></span><br><span class="line"><span class="attr">&quot;description&quot;</span><span class="punctuation">:</span><span class="string">&quot;君未看花时，花与君同寂；君来看花日，花色一时明。&quot;</span><span class="punctuation">,</span><span class="comment">//相册介绍</span></span><br><span class="line"><span class="attr">&quot;photos&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="comment">//图片内容</span></span><br><span class="line"><span class="string">&quot;/images/theme/post-image.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;/images/theme/post-image.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;/images/theme/post-image.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;/images/theme/post-image.jpg&quot;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span> <span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span><span class="string">&quot;记事&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;cover&quot;</span><span class="punctuation">:</span><span class="string">&quot;/images/theme/post-image.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;description&quot;</span><span class="punctuation">:</span><span class="string">&quot;翻开随身携带的记事本，写着许多事都是关于你。&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;photos&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line"><span class="string">&quot;/images/theme/post-image.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;/images/theme/post-image.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;/images/theme/post-image.jpg&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;/images/theme/post-image.jpg&quot;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<p>JSON</p>
+<p>Copy</p>
+<hr>
+<p>在 <code>/source/galleries/</code> 目录下 <code>新建文件夹</code> ，命名需要和 <code>json</code> 中的 <code>name</code> 字段对应，例如：<em>colorful</em>、<em>记事</em>。 在文件夹下新建 <code>index.md</code> 文件，内容如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 记事  #名称也需要对应</span><br><span class="line"><span class="section">layout: &quot;gallery&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<p>步骤可能有点难以理解，最后放几张截图，比较直观：</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F88889fea-57fe-4f08-9236-7d82ecb741bd%2Fimage.png?table=block&id=1028ded5-6472-4736-816b-6025c708fcba&t=1028ded5-6472-4736-816b-6025c708fcba&width=1463&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fcbf07e4c-f7c5-4156-8ab2-a60ef8e78d6d%2Fimage.png?table=block&id=1b9d646c-d34f-4fcc-a30a-b3a78a2fedf7&t=1b9d646c-d34f-4fcc-a30a-b3a78a2fedf7&width=262&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fdfe139f5-fdd6-4cc7-8243-8f4ffabb2a03%2Fimage.png?table=block&id=fff97404-ae3b-80a8-a44f-f855c29f0970&t=fff97404-ae3b-80a8-a44f-f855c29f0970&width=480&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fd852cefd-4470-46e7-b0f3-ee6263f80fb4%2Fimage.png?table=block&id=3272a536-6209-4853-bcd5-8e8cad6b3441&t=3272a536-6209-4853-bcd5-8e8cad6b3441&width=480&cache=v2" alt="notion image"></p>
+<p>也可以参考 <code>/_example/source</code> 中的相关栗子。</p>
+<h4 id="归档页面"><a href="#归档页面" class="headerlink" title="归档页面"></a><strong>归档页面</strong></h4><p>参考 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置归档页面的导航，系统会按文章创建时间自动归档。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">archives:/archives||归档</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<h4 id="标签页面"><a href="#标签页面" class="headerlink" title="标签页面"></a><strong>标签页面</strong></h4><p>执行以下命令创建标签页面，会在 <code>source</code> 目录生成 <code>tags/index.md</code> 文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo new page tags#创建标签页面</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>打开 <code>source/tags/index.md</code> 文件，设置 <code>Front-matter</code> ，开启标签页面：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line"><span class="section">layout: &quot;tags&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<p>参考 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置标签页面的导航：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">tags:/tags||标签</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>创建文章时，在文章的 <code>Front-matter</code> 中使用 <code>tags</code> 字段添加标签即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题使用文档</span><br><span class="line"><span class="section">tags: [Hexo, 主题]  #设置标签</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<h4 id="分类页面"><a href="#分类页面" class="headerlink" title="分类页面"></a><strong>分类页面</strong></h4><p>同标签页面，更改一些关键词即可。</p>
+<p>执行以下命令创建分类页面，会在 <code>source</code> 目录生成 <code>categories/index.md</code> 文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo new page categories#创建分类页面</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>打开 <code>source/categories/index.md</code> 文件，设置 <code>Front-matter</code> ，开启分类页面：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line"><span class="section">layout: &quot;categories&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<p>参考 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置分类页面的导航：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">categories:/categories||分类</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>创建文章时，在文章的 <code>Front-matter</code> 中使用 <code>categories</code> 字段添加标签即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题使用文档</span><br><span class="line">categories:  #设置分类</span><br><span class="line"><span class="bullet">-</span> 项目</span><br><span class="line"><span class="section">- 博客</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<h4 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面"></a><strong>关于页面</strong></h4><p>执行以下命令创建关于页面，会在 <code>source</code> 目录生成 <code>about/index.md</code> 文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo new page about#创建关于页面</span></span><br></pre></td></tr></table></figure>
+
+<p>Shell</p>
+<p>Copy</p>
+<hr>
+<p>打开 <code>source/about/index.md</code> 文件，设置 <code>Front-matter</code> ，开启关于页面：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">type: &quot;about&quot;</span><br><span class="line"><span class="section">layout: &quot;about&quot;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown</p>
+<p>Copy</p>
+<hr>
+<p>参考 <a target="_blank" rel="noopener" href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置关于页面的导航：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">about:/about||关于</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>在 <code>source/about/index.md</code> 中编写关于内容，如同写文章一样。</p>
+<p>tips: 建议在 <strong>关于页面</strong> 关闭 <em>文章目录</em> 和 <em>文章版权</em> 功能，在 <code>Front-matter</code> 中添加 <code>toc</code> 和 <code>copyright</code> 字段都设置为 <code>false</code> 即可。</p>
+<h3 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a><strong>插件配置</strong></h3><h4 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a><strong>评论系统</strong></h4><p>配置项 <code>comments</code> 用于配置评论系统，目前支持 <strong>Gitalk</strong>、<strong>Valine</strong>、<strong>畅言</strong> 三种评论系统。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Comment</span><br><span class="line">comments:</span><br><span class="line">enable:true</span><br><span class="line">type:valine</span><br><span class="line">button:true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 评论功能。</p>
+</li>
+<li><p><code>type</code>: 开启哪种评论系统，需要配置对应的评论系统。（参考下文）</p>
+</li>
+<li><p><code>button</code>: <em>显示</em> &#x2F; <em>隐藏</em> 评论按钮，隐藏按钮后将直接展示评论。</p>
+</li>
+</ul>
+<h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a><strong>Valine</strong></h4><p><code>Valine</code> 是基于 <a target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud</a> 实现的评论系统，小清新风格。</p>
+<p>首先在 <a target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud</a> 注册一个账号，并创建一个应用（开发版）。</p>
+<p>进入应用管理界面，点击【存储】-&gt;【创建Class】，名称为 <strong>Comment</strong>，访问权限为 <strong>所有用户</strong>，写入权限为 <strong>限制写入</strong>。</p>
+<p>在【设置】-&gt;【应用Keys】中复制 <code>appId</code> 和 <code>appKey</code>。</p>
+<p>配置项 <code>valine</code> 用于设置 <code>Valine</code> 评论系统。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Valine</span><br><span class="line">valine:</span><br><span class="line">appId:</span><br><span class="line">appKey:</span><br><span class="line">placeholder:雁过留痕</span><br><span class="line">avatar:mp</span><br><span class="line">pageSize:10</span><br><span class="line">lang:zh-CN</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> <code>Valine</code>。</p>
+</li>
+<li><p><code>appId</code>: 填入刚才得到的 <code>appId</code>。</p>
+</li>
+<li><p><code>appKey</code>: 填入刚才得到的 <code>appKey</code>。</p>
+</li>
+<li><p><code>placeholder</code>: 未输入评论时的占位文字。</p>
+</li>
+<li><p><code>mp</code>: 默认头像，参考 <a target="_blank" rel="noopener" href="https://valine.js.org/avatar.html">Valine头像设置</a>。</p>
+</li>
+<li><p><code>pageSize</code>: 每页评论数量。</p>
+</li>
+<li><p><code>lang</code>: 系统语言。</p>
+</li>
+</ul>
+<h4 id="图片灯箱-FancyBox"><a href="#图片灯箱-FancyBox" class="headerlink" title="图片灯箱 (FancyBox)"></a><strong>图片灯箱 (FancyBox)</strong></h4><p>配置项 <code>FancyBox</code> 用于设置图片灯箱效果，开启后点击文章中的图片会以幻灯片的形式播放。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fancybox:true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<h4 id="无刷新加载-PJAX"><a href="#无刷新加载-PJAX" class="headerlink" title="无刷新加载 (PJAX)"></a><strong>无刷新加载 (PJAX)</strong></h4><p>配置项 <code>pjax</code> 用于设置无刷新加载，开启后让你的博客嗖嗖嗖~</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pjax:true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>tips: 该功能暂时不稳定，会引起一些特效、功能的异常，暂时不建议开启。</p>
+<h4 id="代码高亮-HighLight"><a href="#代码高亮-HighLight" class="headerlink" title="代码高亮 (HighLight)"></a><strong>代码高亮 (HighLight)</strong></h4><p>在 <strong>博客配置</strong> 中开启代码高亮效果：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">highlight:</span><br><span class="line">enable:true#启用代码高亮效果</span><br><span class="line">line_number:true</span><br><span class="line">auto_detect:true</span><br><span class="line">hljs:true</span><br><span class="line">tab_replace:</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<p>配置项 <code>highlight</code> 用于设置代码高亮效果。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># HighLight</span><br><span class="line">highlight:</span><br><span class="line">enable:true</span><br><span class="line">style:# https://highlightjs.org/static/demo/</span><br><span class="line">light:Xcode</span><br><span class="line">dark:SolarizedDark</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 代码高亮。</p>
+</li>
+<li><p><code>style -&gt; light</code>: <em>浅色模式</em> 时的高亮样式。</p>
+</li>
+<li><p><code>style -&gt; dark</code>: <em>深色模式</em> 时的高亮样式。</p>
+</li>
+</ul>
+<p>可以到 <a target="_blank" rel="noopener" href="https://highlightjs.org/static/demo/">官网</a> 预览高亮效果，填写样式名称即可。</p>
+<h4 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a><strong>SEO</strong></h4><p>配置项 <code>seo</code> 用于设置 SEO（网站关键词优化）功能。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># SEO</span><br><span class="line">seo:</span><br><span class="line">baidu_auto_push:true</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><code>baidu_auto_push</code>: 开启 <a target="_blank" rel="noopener" href="https://ziyuan.baidu.com/linksubmit/index">百度站长平台</a> 链接自动推送功能。</li>
+</ul>
+<h4 id="网页统计"><a href="#网页统计" class="headerlink" title="网页统计"></a><strong>网页统计</strong></h4><p>配置项 <code>analytics</code> 用于设置网站统计。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Analytics</span><br><span class="line">analytics:</span><br><span class="line">baidu:# id</span><br><span class="line">google:# id</span><br><span class="line">tencent:# id</span><br><span class="line">cnzz:# id</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>baidu</code>: <a target="_blank" rel="noopener" href="https://tongji.baidu.com/web/welcome/login">百度统计</a></p>
+</li>
+<li><p><code>google</code>: <a target="_blank" rel="noopener" href="https://analytics.google.com/analytics/web">谷歌统计</a></p>
+</li>
+<li><p><code>tencent</code>: <a target="_blank" rel="noopener" href="https://ta.qq.com/#/">腾讯分析</a></p>
+</li>
+<li><p><code>cnzz</code>: <a target="_blank" rel="noopener" href="https://www.umeng.com/web">友盟统计</a></p>
+</li>
+</ul>
+<p>在对应的数据统计官网注册网站应用，复制对应的 <code>id</code> 填写即可。</p>
+<h3 id="脚本配置"><a href="#脚本配置" class="headerlink" title="脚本配置"></a><strong>脚本配置</strong></h3><h4 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a><strong>CDN</strong></h4><p>对于外部静态文件（CSS 或 JS），可以使用第三方 <code>CDN</code> 库进行优化加速。</p>
+<p>配置项 <code>vendors</code> 用于设置静态库引入位置，直接输入 <code>URL</code> 即可。您可以保持默认配置（BootCDN）,留空则从本地引入。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">vendors:</span><br><span class="line">jquery_js:https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js</span><br><span class="line">fancybox_js:https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js</span><br><span class="line">pjax_js:https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js</span><br><span class="line">lazyload_js:https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js</span><br><span class="line">fancybox_css:https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css</span><br><span class="line">highlight_css:https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css</span><br><span class="line">iconfont_css://at.alicdn.com/t/font_1445822_58xq2j9v1id.css</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<h4 id="脚本埋点"><a href="#脚本埋点" class="headerlink" title="脚本埋点"></a><strong>脚本埋点</strong></h4><p>有时候我们需要埋入一些第三方脚本，例如 <code>百度统计</code>、<code>百度SEO</code> 等，主题在 <strong>头部</strong> 和 <strong>尾部</strong> 分别开放了埋点入口，通过配置项 <code>custom</code> 进行配置。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Custom</span><br><span class="line">custom:</span><br><span class="line">head:</span><br><span class="line">foot:</span><br><span class="line">css:</span><br><span class="line">js:</span><br></pre></td></tr></table></figure>
+
+<p>Plain text</p>
+<p>Copy</p>
+<hr>
+<ul>
+<li><p><code>head</code>: 引入头部的代码。</p>
+</li>
+<li><p><code>foot</code>: 引入尾部的代码。</p>
+</li>
+<li><p><code>css</code>: 外部引入的 <code>CSS</code> 链接。</p>
+</li>
+<li><p><code>js</code>: 外部引入的 <code>JS</code> 链接。</p>
+</li>
+</ul>
+
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: Kadriye | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">Page Views: <span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">Unique Visitors: <span id="busuanzi_value_site_uv"></span></span>
+    
+    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
+        <input type="checkbox" name="switch" id="update_style">
+        <span class="el-switch-style"></span>
+    </label>
+
+    <!--         <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script> -->
+</p>
+</div>
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="IEywqtcTRNXZJ6mFNCfz7HAF-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="TdLtghA5yQJPV8EAgPLFosLm">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+color: #698fca;
+}
+.v .vlist .vcard .vhead .vsys {
+color: #3a3e4a;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+color: #638fd5;
+}
+.v .vlist .vcard .vhead .vnick {
+color: #6ba1ff;
+}
+.v a {
+color: #8696b1;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+color: #669bfc;
+}
+</style>
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+</body>
+</html>
