@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/favicon.ico >
+    <title>
+        Kadriye&#39;s travel diary
+    </title>
+    <meta name="description" content= 这是我的知识库。为了避免遗忘、便于分享，我在这里收录知识。请随意浏览～ >
+    <meta name="keywords" content= Blog,Hexo,Theme,卢伟,luwei >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            Hexo主题Coder主题使用安装方法
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h2 id="Coder使用和配置很简单："><a href="#Coder使用和配置很简单：" class="headerlink" title="Coder使用和配置很简单："></a>Coder使用和配置很简单：</h2><h3 id="Coder主题地址：https-github-com-Xunzhuo-Coder-tree-master"><a href="#Coder主题地址：https-github-com-Xunzhuo-Coder-tree-master" class="headerlink" title="Coder主题地址：https://github.com/Xunzhuo/Coder/tree/master"></a>Coder主题地址：<a target="_blank" rel="noopener" href="https://github.com/Xunzhuo/Coder/tree/master">https://github.com/Xunzhuo/Coder/tree/master</a></h3><h3 id="1-下载Coder"><a href="#1-下载Coder" class="headerlink" title="1. 下载Coder"></a>1. 下载Coder</h3><ul>
+<li><strong>最新版</strong>：进入 &#x2F;Hexo目录&#x2F;themes：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:Xunzhuo/hexo-theme-coder.git coder</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><strong>稳定版</strong>：在<a target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder/releases/tag/2.0">Released</a>下载 ZIP 解压在 &#x2F;themes 文件夹下</li>
+</ul>
+<h3 id="2-安装搜索插件"><a href="#2-安装搜索插件" class="headerlink" title="2.安装搜索插件"></a>2.安装搜索插件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-修改Hexo目录下的-config-yml"><a href="#3-修改Hexo目录下的-config-yml" class="headerlink" title="3. 修改Hexo目录下的_config.yml"></a>3. 修改Hexo目录下的_config.yml</h3><p>将以下代码复制替换</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">title: Kadriye&#x27;s travel diary</span><br><span class="line">subtitle: &#x27;&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords: null</span><br><span class="line">author: John Doe</span><br><span class="line">language: en</span><br><span class="line">timezone: &#x27;&#x27;</span><br><span class="line">url: http://example.com</span><br><span class="line">permalink: &#x27;:year/:month/:day/:title/&#x27;</span><br><span class="line">permalink_defaults: null</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: true</span><br><span class="line">  trailing_html: true</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: &#x27;:lang&#x27;</span><br><span class="line">skip_render: null</span><br><span class="line">new_post_name: &#x27;:title.md&#x27;</span><br><span class="line">default_layout: post</span><br><span class="line">titlecase: false</span><br><span class="line">external_link:</span><br><span class="line">  enable: true</span><br><span class="line">  field: site</span><br><span class="line">  exclude: &#x27;&#x27;</span><br><span class="line">filename_case: 0</span><br><span class="line">render_drafts: false</span><br><span class="line">post_asset_folder: false</span><br><span class="line">relative_link: false</span><br><span class="line">future: true</span><br><span class="line">syntax_highlighter: highlight.js</span><br><span class="line">highlight:</span><br><span class="line">  line_number: true</span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">  wrap: true</span><br><span class="line">  hljs: false</span><br><span class="line">prismjs:</span><br><span class="line">  preprocess: true</span><br><span class="line">  line_number: true</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">index_generator:</span><br><span class="line">  path: &#x27;&#x27;</span><br><span class="line">  per_page: 10</span><br><span class="line">  order_by: &#x27;-date&#x27;</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map: null</span><br><span class="line">tag_map: null</span><br><span class="line">meta_generator: true</span><br><span class="line">date_format: YYYY-MM-DD</span><br><span class="line">time_format: HH:mm:ss</span><br><span class="line">updated_option: mtime</span><br><span class="line">per_page: 10</span><br><span class="line">pagination_dir: page</span><br><span class="line">include: null</span><br><span class="line">exclude: null</span><br><span class="line">ignore: null</span><br><span class="line">theme: coder</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:G1314047/G1314047.github.io.git</span><br><span class="line">  branch: main</span><br><span class="line"></span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-语言配置"><a href="#4-语言配置" class="headerlink" title="4. 语言配置"></a>4. 语言配置</h3><p>请在hexo文件下的”_config.yml”修改 <strong>language</strong> 为 <strong>en</strong> 或者 <strong>zh-Hans</strong>， 目前只支持这两种语言</p>
+<h3 id="5-修改主题配置"><a href="#5-修改主题配置" class="headerlink" title="5. 修改主题配置"></a>5. 修改主题配置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"># 当前版本 | Theme Version</span><br><span class="line">Hexo: &quot;2.1&quot;</span><br><span class="line"></span><br><span class="line">#语言 | Language</span><br><span class="line"># en | zh-Hans</span><br><span class="line">#请在hexo文件下的&quot;_config.yml&quot;修改language</span><br><span class="line">language: en</span><br><span class="line"></span><br><span class="line"># 网站标题 | Title</span><br><span class="line">logo_title: Kadriye&#x27;s blog</span><br><span class="line"></span><br><span class="line"># 初始化风格 | Default Style &quot;black/light&quot;</span><br><span class="line">style: black</span><br><span class="line">#style: light</span><br><span class="line"></span><br><span class="line">#SEO优化</span><br><span class="line"></span><br><span class="line">## 网站描述</span><br><span class="line">description: 这是我的知识库。为了避免遗忘、便于分享，我在这里收录知识。请随意浏览～</span><br><span class="line"></span><br><span class="line">## 网站关键词：用英文逗号分割</span><br><span class="line">keywords: Blog,Hexo,Theme,卢伟,luwei</span><br><span class="line"></span><br><span class="line"># 首页URL | Your URL</span><br><span class="line">link: https://hexo.1314047.xyz</span><br><span class="line"></span><br><span class="line">#标语 | Your Slogan</span><br><span class="line">words: 这是我的知识库。为了避免遗忘、便于分享，我在这里收录知识。请随意浏览～ 👋</span><br><span class="line"></span><br><span class="line"># 你的昵称 | Your Name</span><br><span class="line">author: Kadriye</span><br><span class="line"></span><br><span class="line"># 中心图标选择男女或者自定义 | Gender</span><br><span class="line">gender: /img/male.png #/img/female.png</span><br><span class="line"></span><br><span class="line"># 站点小图标地址 | Small Icon of Your Site</span><br><span class="line">favicon: /img/favicon.ico</span><br><span class="line"></span><br><span class="line"># 菜单栏配置 | Nav Bar Settings</span><br><span class="line">menu:</span><br><span class="line">  关于我: /about</span><br><span class="line">  导航站: https://pan.1314047.xyz</span><br><span class="line">  朋友圈: https://pyq.1314047.xyz</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 站内关键词搜索 | Local Search</span><br><span class="line">search:</span><br><span class="line"> enable: true</span><br><span class="line"> path: search.xml</span><br><span class="line"> field: post</span><br><span class="line"> # onload: true</span><br><span class="line"></span><br><span class="line"># 评论系统 | Comments</span><br><span class="line">## 做了域名限制，请改成自己的 KEY</span><br><span class="line">## 若关闭valine 设置enable为false∂</span><br><span class="line">valine:</span><br><span class="line">  enable: true</span><br><span class="line">  appId: IEywqtcTRNXZJ6mFNCfz7HAF-gzGzoHsz </span><br><span class="line">  appKey: TdLtghA5yQJPV8EAgPLFosLm </span><br><span class="line"></span><br><span class="line"># visitors count</span><br><span class="line">counter:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br><span class="line">highlight:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="5-404-页面配置："><a href="#5-404-页面配置：" class="headerlink" title="5. 404 页面配置："></a>5. 404 页面配置：</h3><h4 id="在hexo跟目录的Source文件夹下创建一个404-md，并写入如下内容"><a href="#在hexo跟目录的Source文件夹下创建一个404-md，并写入如下内容" class="headerlink" title="在hexo跟目录的Source文件夹下创建一个404.md，并写入如下内容:"></a>在hexo跟目录的Source文件夹下创建一个404.md，并写入如下内容:</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 404</span><br><span class="line">type: &quot;404&quot;</span><br><span class="line">layout: &quot;404&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>然后你就可以愉快的开始使用啦！😊</p>
+</blockquote>
+
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: Kadriye | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">Page Views: <span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">Unique Visitors: <span id="busuanzi_value_site_uv"></span></span>
+    
+    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
+        <input type="checkbox" name="switch" id="update_style">
+        <span class="el-switch-style"></span>
+    </label>
+
+    <!--         <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script> -->
+</p>
+</div>
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="IEywqtcTRNXZJ6mFNCfz7HAF-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="TdLtghA5yQJPV8EAgPLFosLm">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+color: #698fca;
+}
+.v .vlist .vcard .vhead .vsys {
+color: #3a3e4a;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+color: #638fd5;
+}
+.v .vlist .vcard .vhead .vnick {
+color: #6ba1ff;
+}
+.v a {
+color: #8696b1;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+color: #669bfc;
+}
+</style>
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+</body>
+</html>
