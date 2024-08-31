@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>玩客云海纳思系统alist升级 | Kadriye&#39;s 备忘录</title>
+  <meta name="author" content="John Doe">
+  
+  <meta name="description" content="删除旧版本1rm -rf /opt/alist/*
+
+进入文件夹1cd /opt/alist
+
+下载最新版wget **https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz**
+注：">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="玩客云海纳思系统alist升级"/>
+  <meta property="og:site_name" content="Kadriye&#39;s 备忘录"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="Kadriye&#39;s 备忘录" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	<div class="content">
+	  <div class="page-header">		
+  <h1><a class="brand" href="/">Kadriye&#39;s 备忘录</a><span class="split"></span><span class="title">玩客云海纳思系统alist升级</span><span class="date" id="title-date"><i class="fa fa-clock-o"></i> 2024-08-23</span></h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  
+
+  
+	<div class="col-md-12">
+	  
+
+	  <!-- content -->
+	  <h3 id="删除旧版本"><a href="#删除旧版本" class="headerlink" title="删除旧版本"></a><strong>删除旧版本</strong></h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf /opt/alist<span class="comment">/*</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="进入文件夹"><a href="#进入文件夹" class="headerlink" title="进入文件夹"></a><strong>进入文件夹</strong></h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/alist</span><br></pre></td></tr></table></figure>
+
+<h3 id="下载最新版"><a href="#下载最新版" class="headerlink" title="下载最新版"></a><strong>下载最新版</strong></h3><p>wget <a target="_blank" rel="noopener" href="https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz">**</a><a target="_blank" rel="noopener" href="https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz">https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz</a>**</p>
+<p><strong>注</strong>：链接如果失效，请到：<a target="_blank" rel="noopener" href="https://github.com/alist-org/alist/releases">https://github.com/alist-org/alist/releases</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">手动下载 alist-linux-arm-7.tar.gz 然后用ftp工具上传到cd /opt/alist</span><br></pre></td></tr></table></figure>
+
+<h3 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a><strong>解压缩</strong></h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf alist-linux-arm-<span class="number">7.</span>tar.<span class="property">gz</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="赋予运行权限"><a href="#赋予运行权限" class="headerlink" title="赋予运行权限"></a><strong>赋予运行权限</strong></h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x alist</span><br></pre></td></tr></table></figure>
+
+<h3 id="启动新版"><a href="#启动新版" class="headerlink" title="启动新版"></a><strong>启动新版</strong></h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart alist</span><br></pre></td></tr></table></figure>
+
+<h3 id="随机生成初始密码"><a href="#随机生成初始密码" class="headerlink" title="随机生成初始密码"></a><strong>随机生成初始密码</strong></h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./alist admin random</span><br></pre></td></tr></table></figure>
+
+<p>要记住随机密码，后续到alist后台更改密码</p>
+<h3 id="修复主页的图标超链接白屏的问题"><a href="#修复主页的图标超链接白屏的问题" class="headerlink" title="修复主页的图标超链接白屏的问题"></a><strong>修复主页的图标超链接白屏的问题</strong></h3><p>方法一： 将&#x2F;opt&#x2F;alist&#x2F;data&#x2F;config.json编辑这个文件，把”site_url”: “”改为”site_url”: “&#x2F;alist”</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;site_url&quot;</span>: <span class="string">&quot;/alist&quot;</span>，</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tu.iove.eu.org/file/1a068190ca05a06fb89ae.jpg"></p>
+<p>方法二：在&#x2F;var&#x2F;www&#x2F;html&#x2F;icons_wan&#x2F;和（或）&#x2F;var&#x2F;www&#x2F;html&#x2F;icons_lan&#x2F;下找到alsit图标的网页文件alist.html，把里面的href改成”http:&#x2F;&#x2F;<?php echo $lanip ?>:5244”，然后在海纳斯主页上按Ctrl+F5强制刷新就行了。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;li&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://&lt;?php echo $lanip ?&gt;:5244&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;shake&quot;</span> <span class="attr">src</span>=<span class="string">&quot;img/png/alist.png&quot;</span> /&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>Alist云盘<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tu.iove.eu.org/file/8ee5a3bf3945507116814.jpg"></p>
+<h3 id="到这里算升级完成了"><a href="#到这里算升级完成了" class="headerlink" title="到这里算升级完成了"></a><strong>到这里算升级完成了</strong></h3><p><strong><a target="_blank" rel="noopener" href="http://x.x.x.x:5244/">http://X.X.X.X:5244</a></strong>（alist的访问地址）</p>
+<h3 id="alist美化"><a href="#alist美化" class="headerlink" title="alist美化"></a>alist美化</h3><p>主颜色：#000000</p>
+<p>Logo和头像：<a target="_blank" rel="noopener" href="https://files.superbed.cn/proxy/7468686c6f2633337a7570796f326f696c796e7e7978327f72336f68736e793375717d7b796f33782e332824332a2a7f2824297f2e78257f2f2c2b7e2b79257e2b782e2824326c727b">https://files.superbed.cn/proxy/7468686c6f2633337a7570796f326f696c796e7e7978327f72336f68736e793375717d7b796f33782e332824332a2a7f2824297f2e78257f2f2c2b7e2b79257e2b782e2824326c727b</a></p>
+	  
+
+	  <div>
+  		<center>
+		  <div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+		
+			
+			
+			
+		
+			
+		
+	
+		
+			
+		
+	
+	
+	
+		<li class="prev"><a href="/2024/08/23/%E6%B5%B7%E7%BA%B3%E6%80%9D%E6%8C%82%E5%9C%A8%E5%A4%96%E7%BD%AE%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>prev</a></li>
+	
+	<li><a href="/"><i class="fa fa-archive"></i>Home</a></li>
+	
+		<li class="next"><a href="/2024/07/03/%E7%A7%8D%E8%8D%89%E7%9B%B8%E6%9C%BA/" class="alignright next">next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+	
+</ul>
+</div>
+
+		</center>
+	  </div>
+	  
+	</div> <!-- col-md-9/col-md-12 -->
+	
+  </div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; 2024 John Doe
+  
+      with help from <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-wixo/">Wixo</a>.    
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>

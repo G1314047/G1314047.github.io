@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/08/30/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hexo主题zhaoo使用安装方法</title>
     <url>/2024/08/25/Hexo%E4%B8%BB%E9%A2%98zhaoo%E4%BD%BF%E7%94%A8%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h4 id="一、使用方法"><a href="#一、使用方法" class="headerlink" title="一、使用方法"></a><strong>一、使用方法</strong></h4><ol>
@@ -666,27 +648,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>ceshi</title>
-    <url>/2024/08/23/ceshi/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>che</title>
-    <url>/2024/08/23/che/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>富士山</title>
-    <url>/2024/08/23/%E5%AF%8C%E5%A3%AB%E5%B1%B1/</url>
-    <content><![CDATA[<p>测试sadfasd<br>dfddscsd<br>sdew</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>测试</title>
-    <url>/2024/08/29/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Hexo主题Coder主题使用安装方法</title>
     <url>/2024/08/30/Hexo%E4%B8%BB%E9%A2%98Coder%E4%BD%BF%E7%94%A8%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h2 id="Coder使用和配置很简单："><a href="#Coder使用和配置很简单：" class="headerlink" title="Coder使用和配置很简单："></a>Coder使用和配置很简单：</h2><h3 id="Coder主题地址：https-github-com-Xunzhuo-Coder-tree-master"><a href="#Coder主题地址：https-github-com-Xunzhuo-Coder-tree-master" class="headerlink" title="Coder主题地址：https://github.com/Xunzhuo/Coder/tree/master"></a>Coder主题地址：<a href="https://github.com/Xunzhuo/Coder/tree/master">https://github.com/Xunzhuo/Coder/tree/master</a></h3><h3 id="1-下载Coder"><a href="#1-下载Coder" class="headerlink" title="1. 下载Coder"></a>1. 下载Coder</h3><ul>
@@ -763,8 +724,512 @@
 <li><p>修改\blog-demo\themes\burgerking文件夹里的_config.yml</p>
 <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">## highlight 主题选择</span></span><br><span class="line"><span class="symbol">highlight:</span></span><br><span class="line">  <span class="symbol">theme:</span> vs2015</span><br><span class="line"><span class="comment">## pv pu</span></span><br><span class="line"><span class="symbol">busuanzi:</span></span><br><span class="line">  <span class="symbol">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
 </ol>
-<p><img  src="/images/20240825/1.PNG"  ><span class="image-caption">alt text</span></p>
-<h4 id="三、配置-Gitalk"><a href="#三、配置-Gitalk" class="headerlink" title="三、配置 Gitalk"></a>三、配置 Gitalk</h4><p>修改\blog-demo文件里的_config.yml (复制代码到最下面就行了)<br> <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">/<span class="regexp">/ Gitalk settings, check at: https:/</span><span class="regexp">/github.com/gitalk</span><span class="regexp">/gitalk#usage</span></span><br><span class="line"><span class="regexp">Gitalk:</span></span><br><span class="line"><span class="regexp">  enable: true</span></span><br><span class="line"><span class="regexp">  clientID: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  clientSecret: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  repo: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  owner: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  admin: [&quot;xx&quot;]</span></span><br></pre></td></tr></table></figure><br> <img  src="/images/20240825/2.png"  ><span class="image-caption">alt text</span></p>
+<p><img src="/images/20240825/1.PNG" alt="alt text"></p>
+<h4 id="三、配置-Gitalk"><a href="#三、配置-Gitalk" class="headerlink" title="三、配置 Gitalk"></a>三、配置 Gitalk</h4><p>修改\blog-demo文件里的_config.yml (复制代码到最下面就行了)<br> <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">/<span class="regexp">/ Gitalk settings, check at: https:/</span><span class="regexp">/github.com/gitalk</span><span class="regexp">/gitalk#usage</span></span><br><span class="line"><span class="regexp">Gitalk:</span></span><br><span class="line"><span class="regexp">  enable: true</span></span><br><span class="line"><span class="regexp">  clientID: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  clientSecret: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  repo: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  owner: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  admin: [&quot;xx&quot;]</span></span><br></pre></td></tr></table></figure><br> <img src="/images/20240825/2.png" alt="alt text"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>💻Computer Software</title>
+    <url>/2024/08/31/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="电脑系统"><a href="#电脑系统" class="headerlink" title="电脑系统"></a>电脑系统</h2><h4 id="黑鲨装机大师"><a href="#黑鲨装机大师" class="headerlink" title="黑鲨装机大师"></a>黑鲨装机大师</h4><p>一键重装系统，有广告，可在系统重装完成之后使用GEEK卸载掉</p>
+<p><strong>下载地址</strong>：<a href="https://www.heisha.net/">黑鲨装机大师</a></p>
+<hr>
+<h4 id="MSDN系统库"><a href="#MSDN系统库" class="headerlink" title="MSDN系统库"></a>MSDN系统库</h4><p>MSDN系统库－致力于原版windows生态服务</p>
+<p><strong>下载地址</strong>：<a href="https://www.xitongku.com/index.html">MSDN系统库</a></p>
+<hr>
+<h4 id="MSDN山己几子木"><a href="#MSDN山己几子木" class="headerlink" title="MSDN山己几子木"></a>MSDN山己几子木</h4><p>本站提供 Windows 11、Windows 10、Windows 8.1、Windows 8、Windows 7、Windows XP 的 <em>MSDN</em> 镜像资源展示 </p>
+<p><strong>下载地址</strong>：<a href="https://msdn.sjjzm.com/">MSDN山己几子木</a></p>
+<hr>
+<h2 id="电脑软件"><a href="#电脑软件" class="headerlink" title="电脑软件"></a>电脑软件</h2><h4 id="Geek-Uninstaller"><a href="#Geek-Uninstaller" class="headerlink" title="Geek Uninstaller"></a>Geek Uninstaller</h4><p>Geek Uninstaller 是一个简单但强大的实用卸载程序</p>
+<p><strong>下载地址：</strong><a href="https://geekuninstaller.com/">Geek Uninstaller</a></p>
+<hr>
+<h4 id="科学工具"><a href="#科学工具" class="headerlink" title="科学工具"></a>科学工具</h4><p>这个就不多介绍了</p>
+<p><strong>下载地址：</strong><a href="https://wiki.1314047.xyz/article/example-7#df445a1aaedf4e258d23dfc4b464e8bf">科学工具</a></p>
+<hr>
+<h4 id="Listary"><a href="#Listary" class="headerlink" title="Listary"></a>Listary</h4><p>适用于 Windows 的革命性文件搜索工具。Listary 可让您查找文件并启动应用程序 速度极快，适合普通用户和高级用户</p>
+<p><strong>下载地址：</strong><a href="https://www.listary.com/">Listary</a></p>
+<hr>
+<h4 id="Bandizip"><a href="#Bandizip" class="headerlink" title="Bandizip"></a>Bandizip</h4><p>Bandizip 是一个强大的多功能压缩文件管理工具，可提供很快的解压缩速度和其他各种实用功能。</p>
+<p><strong>下载地址：</strong><a href="https://www.bandisoft.com/bandizip/">Bandizip</a></p>
+<hr>
+<h4 id="Gpedit-msc-2-0"><a href="#Gpedit-msc-2-0" class="headerlink" title="Gpedit-msc-2.0"></a>Gpedit-msc-2.0</h4><p>本机群组原则编辑器，支持Win7、Win8、Win8.1、Win10</p>
+<p><strong>下载地址：</strong><a href="https://github.com/GDaily/gpedit-msc">Gpedit-msc-2.0</a></p>
+<hr>
+<h4 id="ContextMenuManager"><a href="#ContextMenuManager" class="headerlink" title="ContextMenuManager"></a>ContextMenuManager</h4><p>纯粹的Windows右键菜单管理程序</p>
+<p><strong>下载地址：</strong><strong><a href="https://github.com/BluePointLilac/ContextMenuManager">ContextMenuManager</a></strong></p>
+<hr>
+<h4 id="Xtreme-Download-Manager"><a href="#Xtreme-Download-Manager" class="headerlink" title="Xtreme Download Manager"></a>Xtreme Download Manager</h4><p> XDM 是一款功能强大的工具，可将下载速度提高 500%，保存热门视频流网站的视频，恢复中断&#x2F;死机的下载，安排和转换下载。</p>
+<p><strong>下载地址：</strong><a href="https://github.com/subhra74/xdm?tab=readme-ov-file">Xtreme Download Manager</a></p>
+]]></content>
+      <tags>
+        <tag>应用软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo在Github部署静态博客</title>
+    <url>/2024/08/30/Hexo%E5%9C%A8Github%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="1-事前准备"><a href="#1-事前准备" class="headerlink" title="1.事前准备"></a>1.事前准备</h3><ul>
+<li><p>域名（非必须，你也可以使用免费域名，或者<code>GitHub.io</code>或<code>Pages.dev</code>分配的域名也可以）</p>
+</li>
+<li><p><a href="https://github.com/">GitHub</a>（必须，你需要注册一个GitHub帐号）</p>
+</li>
+<li><p><a href="https://dash.cloudflare.com/">Cloudflare</a>（非必须，你需要注册一个Cloudflare帐号，这样你就可以将博客部署在CF的CDN里加速，但是你也可以直接使用<code>GitHub.io</code>分配的域名）</p>
+</li>
+<li><p>[科学软件](<a href="https://blog.1314047.xyz/serial">https://blog.1314047.xyz/serial</a> number 006) （非必须，使用科学软件部署下载命令的时候更快）</p>
+</li>
+</ul>
+<h3 id="2-软件支持"><a href="#2-软件支持" class="headerlink" title="2.软件支持"></a>2.软件支持</h3><ul>
+<li><p><a href="https://blog.090227.xyz/p/HexoBlogNo1/#2-1-%E5%AE%89%E8%A3%85-Node">Node</a>（必须）</p>
+</li>
+<li><p><a href="https://blog.090227.xyz/p/HexoBlogNo1/#2-2-%E5%AE%89%E8%A3%85-Git">Git</a>（必须）</p>
+</li>
+<li><p><a href="https://code.visualstudio.com/">VSCode</a>（非必须，这是一款轻量型的代码编辑器，可以帮助你养成一个很好的编程习惯）</p>
+</li>
+</ul>
+<h4 id="2-1-安装-Node"><a href="#2-1-安装-Node" class="headerlink" title="2.1.安装 Node"></a>2.1.安装 Node</h4><ul>
+<li><p>打开Node官网，下载和自己系统相配的Node的安装程序，否则会出现安装问题。下载地址：<a href="https://nodejs.org/en">https://nodejs.org/en</a></p>
+</li>
+<li><p>下载后安装，安装的目录可以使用默认目录<code>C:/Program Files/nodejs/</code></p>
+</li>
+<li><p>安装完成后，检查是否安装成功。在键盘按下win + R键，输入CMD，然后回车，打开CMD窗口，执行<code>node -v</code>命令，看到版本信息，则说明安装成功。</p>
+</li>
+</ul>
+<h4 id="2-2-安装-Git"><a href="#2-2-安装-Git" class="headerlink" title="2.2.安装 Git"></a>2.2.安装 Git</h4><ul>
+<li>进入官网下载适合你当前系统的 Git：<strong><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></strong></li>
+</ul>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F0f1c3f9b-67fd-40a8-aed5-91d7aa2f4d34%2F14b9fdf14c49320e531fb.jpg?table=block&id=dae3f975-4304-4a9a-be52-371c5e3c72e4&t=dae3f975-4304-4a9a-be52-371c5e3c72e4&width=708&cache=v2" alt="notion image"></p>
+<ul>
+<li><p>下载后傻瓜式安装Git即可，安装的目录最好使用默认目录<code>C:/Program Files/Git</code></p>
+</li>
+<li><p>点击电脑左下角开始即可看见<code>Git CMD</code>、<code>Git Bash</code>、<code>Git GUI</code>。</p>
+</li>
+<li><ul>
+<li><code>Git CMD</code> 是windows 命令行的指令风格</li>
+<li><code>Git Bash</code> 是linux系统的指令风格（建议使用）</li>
+<li><code>Git GUI</code>是图形化界面（新手学习不建议使用）</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-配置-Git-密钥并连接至-Github"><a href="#3-配置-Git-密钥并连接至-Github" class="headerlink" title="3.配置 Git 密钥并连接至 Github"></a>3.配置 Git 密钥并连接至 Github</h3><p>常用 Git 命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">git config -l  <span class="comment">//查看所有配置</span></span><br><span class="line">git config --system --list <span class="comment">//查看系统配置</span></span><br><span class="line">git config --<span class="variable language_">global</span> --list <span class="comment">//查看用户（全局）配置</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<h4 id="3-1-配置用户名和邮箱"><a href="#3-1-配置用户名和邮箱" class="headerlink" title="3.1. 配置用户名和邮箱"></a>3.1. 配置用户名和邮箱</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">git config --<span class="variable language_">global</span> user.<span class="property">name</span> <span class="string">&quot;你的用户名&quot;</span></span><br><span class="line">git config --<span class="variable language_">global</span> user.<span class="property">email</span> <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>通过<code>git config -l</code> 检查是否配置成功。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F562fc767-920b-4a33-a266-7859938998e8%2F14b9fdf14c49320e531fb.jpg?table=block&id=00b1547e-de5a-4f0e-86c1-bbc400f40fb6&t=00b1547e-de5a-4f0e-86c1-bbc400f40fb6&width=776&cache=v2" alt="notion image"></p>
+<h4 id="3-2-配置公钥连接Github"><a href="#3-2-配置公钥连接Github" class="headerlink" title="3.2. 配置公钥连接Github"></a>3.2. 配置公钥连接Github</h4><ul>
+<li>执行以下命令生成ssh公钥，此公钥用于你的计算机连接Github</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>提示<code>Enter file in which to save the key</code>直接<strong>一路回车</strong>即可，新手小白不推荐设置密钥</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Ff04c3f64-4c62-4c18-be80-ec1455249c42%2F14b9fdf14c49320e531fb.jpg?table=block&id=b8cccbfc-3b73-42cc-9669-bc862df670b2&t=b8cccbfc-3b73-42cc-9669-bc862df670b2&width=774&cache=v2" alt="notion image"></p>
+<p>之后打开C盘下用户文件夹下的.ssh的文件夹，会看到以下文件</p>
+<ul>
+<li><p><code>id_rsa</code>私钥</p>
+</li>
+<li><p><code>id_rsa.pub</code>公钥</p>
+</li>
+</ul>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F249ce0a6-ca2e-4b96-96d9-e696dd522eca%2F14b9fdf14c49320e531fb.jpg?table=block&id=e4496af4-e236-4844-9c99-42319e646d24&t=e4496af4-e236-4844-9c99-42319e646d24&width=708&cache=v2" alt="notion image"></p>
+<p>用记事本打开上述图片中的公钥<code>id_rsa.pub</code>，复制里面的内容，然后开始在github中配置ssh密钥。 将 SSH KEY 配置到 GitHub进入github，点击右上角头像 选择settings，进入设置页后选择SSH and GPG keys，名字随便起，公钥填到Key那一栏。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F584244e9-c6c6-4078-845a-5b302e73f739%2F872px-Android_robot.svg.png?table=block&id=ba59f558-7e0b-4c6a-b942-d15677cc0aad&t=ba59f558-7e0b-4c6a-b942-d15677cc0aad" alt="notion image"></p>
+<ul>
+<li>测试连接，输入以下命令</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.<span class="property">com</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>第一次连接会提示<code>Are you sure you want to continue connecting (yes/no/[fingerprint])?</code>，输入<code>yes</code>即可 出现连接到账户的信息，说明已经大功告成，至此完成了环境准备工作。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F53cb14fd-6d7f-479e-8738-972b2277b7cd%2F872px-Android_robot.svg.png?table=block&id=215e50e0-7461-499b-b1c5-225af714f788&t=215e50e0-7461-499b-b1c5-225af714f788" alt="notion image"></p>
+<h4 id="3-3-创建GitHub-io仓库"><a href="#3-3-创建GitHub-io仓库" class="headerlink" title="3.3. 创建GitHub.io仓库"></a>3.3. 创建GitHub.io仓库</h4><ul>
+<li><p>点击右上角的<code>+</code>按钮，选择<strong>New repository</strong>，创建一个<code>&lt;用户名&gt;.github.io</code>的仓库。</p>
+</li>
+<li><p>仓库名字的格式必须为：<code>&lt;用户名&gt;.github.io</code> (注意：前缀必须为用户名，此为预览博客需要，后期可修改仓库名)</p>
+</li>
+<li><p>可见性必须选择 <code>Public</code> 方便第一次部署检查问题，点击 <strong>Creat repository</strong> 进行创建即可</p>
+</li>
+</ul>
+<h3 id="4-初始化-Hexo-博客"><a href="#4-初始化-Hexo-博客" class="headerlink" title="4.初始化 Hexo 博客"></a>4.初始化 Hexo 博客</h3><ul>
+<li><p>创建一个文件夹来保存博客源码（我这里选的路径为<code>D:/Hexo-Blog</code>），在文件夹内右键鼠标，选择<code>Open Git Bash here</code></p>
+</li>
+<li><p>在Git BASH输入如下命令安装 Hexo</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli &amp;&amp; hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<ul>
+<li><p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
+</li>
+<li><p>初始化 Hexo 项目安装相关依赖。</p>
+</li>
+<li><p>初始化项目后，<code>blog-demo</code>有如下结构：</p>
+</li>
+</ul>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F07d552ae-18eb-4521-a9ab-2d42d6398982%2F872px-Android_robot.svg.png?table=block&id=30bb4bdf-0e93-4872-b953-08d3c59900fc&t=30bb4bdf-0e93-4872-b953-08d3c59900fc" alt="notion image"></p>
+<ul>
+<li><p>输入<code>hexo cl &amp;&amp; hexo s</code>启动项目</p>
+</li>
+<li><p>打开浏览器，输入地址：<strong><a href="http://localhost:4000/">http://localhost:4000/</a></strong> ，看到下面的效果，说明你的博客已经构建成功了。</p>
+</li>
+</ul>
+<h3 id="5-将静态博客挂载到-GitHub-Pages"><a href="#5-将静态博客挂载到-GitHub-Pages" class="headerlink" title="5.将静态博客挂载到 GitHub Pages"></a>5.将静态博客挂载到 GitHub Pages</h3><ul>
+<li>安装 hexo-deployer-git</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<ul>
+<li>修改 _config.yml 文件</li>
+</ul>
+<p>在blog-demo目录下的_config.yml，就是整个Hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考官方的**<a href="https://hexo.io/zh-cn/docs/configuration">配置描述</a>**。 </p>
+<p>修改最后一行的配置，将repository修改为你自己的github项目地址即可，还有分支要改为main代表主分支（注意缩进）。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy</span>:</span><br><span class="line">  <span class="attr">type</span>: git</span><br><span class="line">  <span class="attr">repository</span>: git@github.<span class="property">com</span>:cmliussss2024/cmliussss2024.<span class="property">github</span>.<span class="property">io</span>.<span class="property">git</span></span><br><span class="line">  <span class="attr">branch</span>: main</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<ul>
+<li>修改好配置后，运行如下命令，将代码部署到 GitHub（Hexo三连）。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy  </span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>注：</p>
+<ul>
+<li><p>hexo clean：删除之前生成的文件，可以用<code>hexo cl</code>缩写。</p>
+</li>
+<li><p>hexo generate：生成静态文章，可以用<code>hexo g</code>缩写</p>
+</li>
+<li><p>hexo deploy：部署文章，可以用<code>hexo d</code>缩写</p>
+</li>
+</ul>
+<p>如果出现<strong>Deploy done</strong>，则说明部署成功了。</p>
+<p>稍等两分钟，打开浏览器访问：**<a href="https://cmliussss2024.github.io/">https:&#x2F;&#x2F;你的github名.github.io</a>**，这时候我们就可以看到博客内容了。</p>
+<h3 id="6-将静态博客挂载到-Cloudflare-Pages"><a href="#6-将静态博客挂载到-Cloudflare-Pages" class="headerlink" title="6.将静态博客挂载到 Cloudflare Pages"></a>6.将静态博客挂载到 Cloudflare Pages</h3><ul>
+<li>在Workers 和 Pages中选择Pages的连接到 Git</li>
+</ul>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F458ed03a-a311-4c28-88ba-75e2a8236679%2F14b9fdf14c49320e531fb.jpg?table=block&id=3981980b-2f11-4915-b3bf-10bed4c9b27e&t=3981980b-2f11-4915-b3bf-10bed4c9b27e&width=1898&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F0ea21ed5-5678-4627-8e77-36c2940eaaa4%2F14b9fdf14c49320e531fb.jpg?table=block&id=394f0091-0ddc-432c-adba-06aba46d587f&t=394f0091-0ddc-432c-adba-06aba46d587f&width=708&cache=v2" alt="notion image"></p>
+<ul>
+<li><p>然后登录你Blog仓库对应的GitHub帐号选择对应的github项目</p>
+</li>
+<li><p>点击保存并部署后等待部署完成即可。</p>
+</li>
+<li><p>提示<code>成功！您的项目已部署到以下区域：全球</code>后，浏览器访问：这时候我们就可以看到博客内容了。</p>
+</li>
+<li><p><em>这时你也就可以将你的</em>*<code>&lt;用户名&gt;.github.io</code><strong>的仓库设置为</strong><code>Private</code>*<em>私库了</em></p>
+</li>
+<li><p>如果你有自己的域名，你可以在这里绑定你自己的自定义域，即可</p>
+</li>
+</ul>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F66b11f70-31d0-4a49-b218-77b8d74e1d68%2F14b9fdf14c49320e531fb.jpg?table=block&id=fff97404-ae3b-8035-982c-fe57361af08a&t=fff97404-ae3b-8035-982c-fe57361af08a&width=1537&cache=v2" alt="notion image"></p>
+<h2 id="7-如何使用"><a href="#7-如何使用" class="headerlink" title="7.如何使用"></a>7.如何使用</h2><ul>
+<li>新建一篇博文</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> 这是一篇新的博文</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<ul>
+<li><p>然后用文本编辑器去编辑<code>_posts/这是一篇新的博文.md</code>里的内容即可，注意要使用Markdown格式书写。</p>
+</li>
+<li><p>详细使用方法可以查阅 <strong><a href="https://hexo.io/zh-cn/docs/writing">https://hexo.io/zh-cn/docs/writing</a></strong></p>
+</li>
+<li><p>编辑完文章保存后可以使用如下命令，生成本地页面 <a href="http://localhost:4000/">http://localhost:4000/</a> ，进行预览</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<ul>
+<li>确认无误后使用以下命令，将本地文章推送至GitHub仓库即可</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<h3 id="8-VSCODE-终端首次执行报错"><a href="#8-VSCODE-终端首次执行报错" class="headerlink" title="8.VSCODE 终端首次执行报错"></a>8.VSCODE 终端首次执行报错</h3><ul>
+<li>使用管理员身份打开 powershell ,(开始-右键-Windows powershell (管理员）)输入以下命令</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Set</span>-<span class="title class_">ExecutionPolicy</span> <span class="title class_">RemoteSigned</span></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>S805 玩客云 海纳思刷机教程</title>
+    <url>/2024/08/29/S805%20%E7%8E%A9%E5%AE%A2%E4%BA%91%20%E6%B5%B7%E7%BA%B3%E6%80%9D%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h2><ul>
+<li><p>准备一个玩客云设备</p>
+</li>
+<li><p>准备一个U盘（建议8GB或以上）</p>
+</li>
+<li><p>下载海纳思系统镜像文件</p>
+<p><a href="https://www.123pan.com/s/KqkrVv-6hxMA">U-BOOT底包：S805-uboot-hinas.img</a></p>
+<p><a href="https://www.123pan.com/s/KqkrVv-yhxMA">U盘镜像固件：Ubuntu_hinas_s805_armhf_5.15.79.img</a></p>
+</li>
+<li><p>下载刷机工具（如balenaEtcher）</p>
+<p><a href="https://www.123pan.com/s/KqkrVv-5hxMA">U盘格式化工具：USB.Format</a></p>
+<p><a href="https://www.123pan.com/s/KqkrVv-zhxMA">晶晨烧录工具：USB_Burning_Tool</a></p>
+<p><a href="https://github.com/balena-io/etcher/releases">USB镜像烧写工具：balenaEtcher</a></p>
+</li>
+</ul>
+<h2 id="2-制作启动盘"><a href="#2-制作启动盘" class="headerlink" title="2. 制作启动盘"></a>2. 制作启动盘</h2><ul>
+<li>将U盘插入电脑</li>
+<li>打开balenaEtcher</li>
+<li>选择海纳思系统镜像文件</li>
+<li>选择U盘作为目标设备</li>
+<li>点击”Flash!”开始制作启动盘</li>
+</ul>
+<h2 id="3-刷机过程"><a href="#3-刷机过程" class="headerlink" title="3. 刷机过程"></a>3. 刷机过程</h2><ul>
+<li>将制作好的U盘插入玩客云的USB接口</li>
+<li>给玩客云断电，然后重新接通电源</li>
+<li>玩客云会自动从U盘启动并开始安装海纳思系统</li>
+<li>等待安装过程完成，这可能需要几分钟</li>
+</ul>
+<h2 id="4-系统配置"><a href="#4-系统配置" class="headerlink" title="4. 系统配置"></a>4. 系统配置</h2><ul>
+<li>安装完成后，拔出U盘</li>
+<li>重启玩客云</li>
+<li>通过网页界面登录海纳思系统</li>
+<li>按照提示进行初始设置，如设置密码、网络配置等</li>
+</ul>
+<h2 id="5-注意事项"><a href="#5-注意事项" class="headerlink" title="5. 注意事项"></a>5. 注意事项</h2><ul>
+<li>刷机过程中请勿断电，以免造成设备损坏</li>
+<li>刷机会清除原有系统和数据，请提前备份重要文件</li>
+<li>如遇到问题，可以参考海纳思官方论坛或社区寻求帮助</li>
+</ul>
+<p>完成以上步骤后，您的玩客云就已经成功安装了海纳思系统。您可以开始享受海纳思系统带来的新功能和体验了。</p>
+<p>原文：<a href="https://wiki.1314047.xyz/article/serial%20number%20004#86583581b08f49ffb7b67851ba994307">https://wiki.1314047.xyz/article/serial%20number%20004#86583581b08f49ffb7b67851ba994307</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>玩客云海纳思系统alist升级</title>
+    <url>/2024/08/23/%E7%8E%A9%E5%AE%A2%E4%BA%91%E6%B5%B7%E7%BA%B3%E6%80%9D%E7%B3%BB%E7%BB%9Falist%E5%8D%87%E7%BA%A7/</url>
+    <content><![CDATA[<h3 id="删除旧版本"><a href="#删除旧版本" class="headerlink" title="删除旧版本"></a><strong>删除旧版本</strong></h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">rm -rf /opt/alist<span class="comment">/*</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="进入文件夹"><a href="#进入文件夹" class="headerlink" title="进入文件夹"></a><strong>进入文件夹</strong></h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">cd /opt/alist</span><br></pre></td></tr></table></figure>
+
+<h3 id="下载最新版"><a href="#下载最新版" class="headerlink" title="下载最新版"></a><strong>下载最新版</strong></h3><p>wget <a href="https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz">**</a><a href="https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz">https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz</a>**</p>
+<p><strong>注</strong>：链接如果失效，请到：<a href="https://github.com/alist-org/alist/releases">https://github.com/alist-org/alist/releases</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">手动下载 alist-linux-arm-7.tar.gz 然后用ftp工具上传到cd /opt/alist</span><br></pre></td></tr></table></figure>
+
+<h3 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a><strong>解压缩</strong></h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">tar zxvf alist-linux-arm-<span class="number">7.</span>tar.<span class="property">gz</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="赋予运行权限"><a href="#赋予运行权限" class="headerlink" title="赋予运行权限"></a><strong>赋予运行权限</strong></h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">chmod +x alist</span><br></pre></td></tr></table></figure>
+
+<h3 id="启动新版"><a href="#启动新版" class="headerlink" title="启动新版"></a><strong>启动新版</strong></h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">systemctl restart alist</span><br></pre></td></tr></table></figure>
+
+<h3 id="随机生成初始密码"><a href="#随机生成初始密码" class="headerlink" title="随机生成初始密码"></a><strong>随机生成初始密码</strong></h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">./alist admin random</span><br></pre></td></tr></table></figure>
+
+<p>要记住随机密码，后续到alist后台更改密码</p>
+<h3 id="修复主页的图标超链接白屏的问题"><a href="#修复主页的图标超链接白屏的问题" class="headerlink" title="修复主页的图标超链接白屏的问题"></a><strong>修复主页的图标超链接白屏的问题</strong></h3><p>方法一： 将&#x2F;opt&#x2F;alist&#x2F;data&#x2F;config.json编辑这个文件，把”site_url”: “”改为”site_url”: “&#x2F;alist”</p>
+<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;site_url&quot;</span>: <span class="string">&quot;/alist&quot;</span>，</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tu.iove.eu.org/file/1a068190ca05a06fb89ae.jpg"></p>
+<p>方法二：在&#x2F;var&#x2F;www&#x2F;html&#x2F;icons_wan&#x2F;和（或）&#x2F;var&#x2F;www&#x2F;html&#x2F;icons_lan&#x2F;下找到alsit图标的网页文件alist.html，把里面的href改成”http:&#x2F;&#x2F;<?php echo $lanip ?>:5244”，然后在海纳斯主页上按Ctrl+F5强制刷新就行了。</p>
+<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&lt;li&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://&lt;?php echo $lanip ?&gt;:5244&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;shake&quot;</span> <span class="attr">src</span>=<span class="string">&quot;img/png/alist.png&quot;</span> /&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>Alist云盘<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tu.iove.eu.org/file/8ee5a3bf3945507116814.jpg"></p>
+<h3 id="到这里算升级完成了"><a href="#到这里算升级完成了" class="headerlink" title="到这里算升级完成了"></a><strong>到这里算升级完成了</strong></h3><p><strong><a href="http://x.x.x.x:5244/">http://X.X.X.X:5244</a></strong>（alist的访问地址）</p>
+<h3 id="alist美化"><a href="#alist美化" class="headerlink" title="alist美化"></a>alist美化</h3><p>主颜色：#000000</p>
+<p>Logo和头像：<a href="https://files.superbed.cn/proxy/7468686c6f2633337a7570796f326f696c796e7e7978327f72336f68736e793375717d7b796f33782e332824332a2a7f2824297f2e78257f2f2c2b7e2b79257e2b782e2824326c727b">https://files.superbed.cn/proxy/7468686c6f2633337a7570796f326f696c796e7e7978327f72336f68736e793375717d7b796f33782e332824332a2a7f2824297f2e78257f2f2c2b7e2b79257e2b782e2824326c727b</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>玩客云onecloud刷Shellclash</title>
+    <url>/2024/08/23/%E7%8E%A9%E5%AE%A2%E4%BA%91onecloud%E5%88%B7Shellclash/</url>
+    <content><![CDATA[<h4 id="准备工具："><a href="#准备工具：" class="headerlink" title="准备工具："></a>准备工具：</h4><ul>
+<li><p>WIN10电脑一台</p>
+</li>
+<li><p>双公头USB线一根</p>
+</li>
+<li><p>玩客云</p>
+</li>
+<li><p>U盘</p>
+</li>
+<li><p>螺丝刀、吹风机</p>
+</li>
+<li><p>刷机包(文章最下方)</p>
+</li>
+</ul>
+<h4 id="1、给玩客云刷入固件底包"><a href="#1、给玩客云刷入固件底包" class="headerlink" title="1、给玩客云刷入固件底包"></a><strong>1、给玩客云刷入固件底包</strong></h4><p><img src="https://github.com/K1314047/picx-images-hosting/blob/master/20230917/QQ%E6%88%AA%E5%9B%BE20230917090827.1yt8zoorhxkw.png?raw=true&t=1ca31993-9ee3-46b0-b2f0-bc976a251b75" alt="notion image"></p>
+<p>1.1、检查刷机软件是V2.1.3版本</p>
+<p>1.2、导入烧录包<strong>s805_flash_snail_2.img</strong></p>
+<p>1.3、确认导入正确</p>
+<p>1.4、点击开始就可以先放一边不用管了</p>
+<p>1.5、短接玩客云 </p>
+<p>之前刷过机的可以跳过此步骤，直接通电按重启就行了</p>
+<p>如果玩客云之前刷过其他系统的，也就是非官方的网新云系统，是不用拆机短接，直接按住重置键插入电源就可以了，第一次刷机就看下面的图</p>
+<p>老版短接点：</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F6bc99536-dcde-4f34-9a52-114c2318ef21%2Fx2.png.pagespeed.ic.Xb5Nc2POuD.webp?table=block&id=e7d8bfc5-e288-4b50-a50e-bb863ad3c3ba&t=e7d8bfc5-e288-4b50-a50e-bb863ad3c3ba&width=675&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F0318a854-8740-49be-a5dc-ab4a4f103d43%2Fx3.png.pagespeed.ic.o6pXnzXsKi.webp?table=block&id=3a6187f7-d1c9-49ae-8113-d164c7de7c2a&t=3a6187f7-d1c9-49ae-8113-d164c7de7c2a&width=708&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fa2a2e8d4-af7f-4a63-95f9-b3602c8dcf0a%2Fx3-3.jpg.pagespeed.ic.ouywVY4Zkd.webp?table=block&id=fff97404-ae3b-809c-9d8e-c3f8d76d5391&t=fff97404-ae3b-809c-9d8e-c3f8d76d5391&width=600&cache=v2" alt="notion image"></p>
+<p>新版短接点</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Ffdf0962d-56f4-46cb-823d-97f934f2482f%2Fx2.png.pagespeed.ic.Xb5Nc2POuD.webp?table=block&id=963ad5b0-39f3-4f96-8fe8-9dc0cb69a905&t=963ad5b0-39f3-4f96-8fe8-9dc0cb69a905&width=708&cache=v2" alt="notion image"></p>
+<p>1.6、拆机后、usb插入玩客云<strong>「靠近HDMI的接口」</strong>、另一头接入电脑usb、短接焊点、通电</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F7db7c881-6428-44ba-9017-519b62aa4e79%2Fx2.png.pagespeed.ic.Xb5Nc2POuD.webp?table=block&id=05345cd9-409b-4955-9dc2-e805fb65fcec&t=05345cd9-409b-4955-9dc2-e805fb65fcec&width=687&cache=v2" alt="notion image"></p>
+<p>正常情况，会出现上图的一个线程，开始写入。如果有错误，换一个usb接口，多试几次。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F36f3adb6-e3da-4a66-88c7-af8a8abd32fc%2F1.png?table=block&id=07d1ff33-894a-4aef-84ff-4a6f534b6fba&t=07d1ff33-894a-4aef-84ff-4a6f534b6fba&width=1018&cache=v2" alt="notion image"></p>
+<p>这个固件很小，很快就会写完，一般几秒钟，提示烧录成功后，先点”停止“，然后关闭，拔掉电源、拔掉USB。</p>
+<hr>
+<h4 id="2、制作U盘openwrt系统"><a href="#2、制作U盘openwrt系统" class="headerlink" title="2、制作U盘openwrt系统"></a>2、制作U盘openwrt系统</h4><p>2.1、U盘写入<strong>openwrt-18.06.8-s805-k310-onecloud-ws1608-by-snail_20201007_143027.img</strong>固件</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fcabf12a0-f473-45f8-971c-cbddfe84a0e6%2F1.png?table=block&id=fd3285a6-8090-4dfc-b265-86d4f0a29426&t=fd3285a6-8090-4dfc-b265-86d4f0a29426&width=1126&cache=v2" alt="notion image"></p>
+<p>2.2、将<strong>openwrt-18.06.8-s805-k310-onecloud-ws1608-by-snail_20201007_143027.img拖入</strong>Flash from file</p>
+<p>2.3、选择U盘（会清空资料，提前将U盘资料备份）</p>
+<p>2.4、开始（什么都别动，中途会有提示，什么都别管，完成写入后，系统会提示格式化U盘，点取消或者叉掉就可以了，不然就白写了）</p>
+<p>2.5、等待几分钟，写入速度和U盘传输速度有关，一般是几分钟，提示成功后，关闭软件，拔出U盘。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F91d4360b-1452-4b99-b91f-58871233c4b9%2F1.png?table=block&id=cccfee68-2be5-49e6-8549-ca5de31ad25a&t=cccfee68-2be5-49e6-8549-ca5de31ad25a&width=1023&cache=v2" alt="notion image"></p>
+<p>2.6、把U盘插入玩客云<strong>靠近网口的USB</strong>，然后通电，指示灯会蓝色→绿色→蓝紫闪烁→蓝色，证明刷机成功，过程好几分钟，多等下。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F10058dde-4679-4aee-85b0-44634aec0477%2F1.png?table=block&id=2c02c770-2fa4-4fa0-9300-16c0d0b5778e&t=2c02c770-2fa4-4fa0-9300-16c0d0b5778e&width=964&cache=v2" alt="notion image"></p>
+<hr>
+<h4 id="3、将U盘openwrt系统写入玩客云EMMC"><a href="#3、将U盘openwrt系统写入玩客云EMMC" class="headerlink" title="3、将U盘openwrt系统写入玩客云EMMC"></a>3、将U盘openwrt系统写入玩客云EMMC</h4><p>3.1、进入你自己的路由器后台查找玩客云的ip地址 打开软件包里的：PuTTY</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F3089fc90-7c04-465e-8165-ac774202a540%2F1.png?table=block&id=51d5289d-b318-4f9f-a66c-52ffc302733e&t=51d5289d-b318-4f9f-a66c-52ffc302733e&width=451&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fb58e0380-4811-4564-b4c3-ef89d1bd69dc%2F1.png?table=block&id=16a3d2bd-2247-4602-96d1-c4f20288a8b5&t=16a3d2bd-2247-4602-96d1-c4f20288a8b5&width=675&cache=v2" alt="notion image"></p>
+<p>3.2、输入用户名：root 默认密码：snail</p>
+<p>3.3、第一条代码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">sh /root/format-emmc-partition.<span class="property">sh</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F51a1f7cc-6325-42dc-841a-dc07657f766f%2F1.png?table=block&id=4621c71a-7510-4fc4-a4c1-e733e5453a4a&t=4621c71a-7510-4fc4-a4c1-e733e5453a4a&width=1006&cache=v2" alt="notion image"></p>
+<p>3.4、输入这条代码后 按任意键开始</p>
+<p>3.5、第二条代码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">sh /root/install-openwrt-to-emmc.<span class="property">sh</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F6fb3b8dc-8e82-4480-8756-7e6622ab418e%2F2.png?table=block&id=336dfb3a-28b7-4756-b87d-2229302b1345&t=336dfb3a-28b7-4756-b87d-2229302b1345&width=1011&cache=v2" alt="notion image"></p>
+<p>3.6、看到这个install finished 就写入成功，可以拔U盘重启了</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fa9cbe398-295c-4893-9dcf-9860b420aaea%2F1.png?table=block&id=fe46d394-b874-48a1-8c4f-867d27d1fd50&t=fe46d394-b874-48a1-8c4f-867d27d1fd50&width=1013&cache=v2" alt="notion image"></p>
+<hr>
+<h4 id="4、安装shellclash"><a href="#4、安装shellclash" class="headerlink" title="4、安装shellclash"></a>4、安装shellclash</h4><p>Shellclash发布地址：<a href="https://github.com/juewuy/ShellClash">https://github.com/juewuy/ShellClash</a></p>
+<p>Shellclash中文说明：<a href="https://github.com/juewuy/ShellClash/blob/master/README_CN.md">https://github.com/juewuy/ShellClash/blob/master/README_CN.md</a></p>
+<p>4.1、一键安装代码（中文说明里有几种安装代码，自己去找适合自己的，下面这条是我自己使用的）</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">#作者私人源</span><br><span class="line"><span class="keyword">export</span> url=<span class="string">&#x27;https://gh.jwsc.eu.org/master&#x27;</span> &amp;&amp; sh -c <span class="string">&quot;$(curl -kfsSl $url/install.sh)&quot;</span> &amp;&amp; source /etc/profile &amp;&gt; <span class="regexp">/dev/</span><span class="literal">null</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>4.2、安装完之后输入：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">clash</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p><strong>4.3、生成配置文件可</strong>导入自建vmess链接</p>
+<p>也可以添加机场的Clash订阅链接（里面都是中文提示，自己根据需求选择）</p>
+<hr>
+<h4 id="5、软件包下载"><a href="#5、软件包下载" class="headerlink" title="5、软件包下载"></a><strong>5、软件包下载</strong></h4><p><a href="https://www.123pan.com/s/KqkrVv-0doMA.html">123盘</a>：<a href="https://www.123pan.com/s/KqkrVv-0doMA.html">https://www.123pan.com/s/KqkrVv-0doMA.html</a></p>
+<p><a href="https://drive.google.com/file/d/12ZvIT7racbLdbsDKLtQftCrVVv4vwZNM/view?usp=drive_link">GoogleDrive</a>：<a href="https://drive.google.com/file/d/12ZvIT7racbLdbsDKLtQftCrVVv4vwZNM/view?usp=drive_link">https://drive.google.com/file/d/12ZvIT7racbLdbsDKLtQftCrVVv4vwZNM/view?usp=drive_link</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>海纳思挂在外置移动硬盘</title>
+    <url>/2024/08/23/%E6%B5%B7%E7%BA%B3%E6%80%9D%E6%8C%82%E5%9C%A8%E5%A4%96%E7%BD%AE%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98/</url>
+    <content><![CDATA[<iframe class="notion-asset-object-fit" src="https://onedrive.live.com/embed?resid=EC2A52193BFFD35D%2180125&amp;authkey=!AGAom8CSzQ5CGf4" title="iframe embed" frameborder="0" allowfullscreen="" loading="lazy" scrolling="auto" style="box-sizing: border-box; border: none; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; display: block; vertical-align: middle; margin-block: 0px; outline: 0px; position: absolute; inset: 0px; width: 1104px; height: 757px; border-radius: 1px; background: rgb(247, 246, 245);"></iframe>
+
+<h4 id="挂载外置硬盘"><a href="#挂载外置硬盘" class="headerlink" title="挂载外置硬盘"></a>挂载外置硬盘</h4><p>1、第一次挂载硬盘需要格式化，输入下面命令一键格式并挂载，执行命令之前一定要把你硬盘的资料备份一下</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">format-disk.<span class="property">sh</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>2、然后输入以下命令查看是否挂载成功</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ll /mnt/sda1</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>3、显示以下内容，说明挂载成功</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F3a5f753b-4901-49d5-b370-ad3f649e795a%2Fimage.png?table=block&id=ba17c035-f5d2-4cbd-91ac-94b32ed7a476&t=ba17c035-f5d2-4cbd-91ac-94b32ed7a476&width=432&cache=v2" alt="notion image"></p>
+<p>4、然后调整存储位置到外置硬盘</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd /mnt/sda1  #进入挂载硬盘</span><br><span class="line"></span><br><span class="line">mkdir -p /mnt/sda1/files            #新建files文件夹</span><br><span class="line">mkdir -p /mnt/sda1/downloads        #新建downloads文件夹</span><br><span class="line">mkdir -p /mnt/sda1/home             #新建home文件夹</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>5、然后输入以下命令赋权限</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">chmod -R <span class="number">777</span> downloads</span><br><span class="line">chmod -R <span class="number">777</span> files</span><br><span class="line">chmod -R <span class="number">777</span> home</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<h4 id="SMBA共享外置硬盘"><a href="#SMBA共享外置硬盘" class="headerlink" title="SMBA共享外置硬盘"></a>SMBA共享外置硬盘</h4><p>1、输入以下命令进行编辑</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">vi /etc/samba/smb.<span class="property">conf</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>2、进入之后按下insert键，然后将光标移到</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F03cacd6b-06f3-4d72-90c2-8c5f3ad89c3c%2Fimage.png?table=block&id=a061d62b-bdc2-435a-8b8d-7c9b2fc3713b&t=a061d62b-bdc2-435a-8b8d-7c9b2fc3713b&width=241&cache=v2" alt="notion image"></p>
+<p>3、先复制两个一样的代码然后再修改成下面的代码</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[downloads]</span><br><span class="line">  path = <span class="regexp">/mnt/</span>sda1/downloads</span><br><span class="line">  read only = no</span><br><span class="line">  guest ok =yes</span><br><span class="line">  create mask =<span class="number">0777</span></span><br><span class="line">  directory mask = <span class="number">0777</span></span><br><span class="line">  browseable = yes</span><br><span class="line">[files]</span><br><span class="line">  path = <span class="regexp">/mnt/</span>sda1/files</span><br><span class="line">  read only = no</span><br><span class="line">  guest ok =yes</span><br><span class="line">  create mask =<span class="number">0777</span></span><br><span class="line">  directory mask = <span class="number">0777</span></span><br><span class="line">  browseable = yes</span><br><span class="line">[home]</span><br><span class="line">  path = <span class="regexp">/mnt/</span>sda1/home</span><br><span class="line">  read only = no</span><br><span class="line">  guest ok =yes</span><br><span class="line">  create mask =<span class="number">0777</span></span><br><span class="line">  directory mask = <span class="number">0777</span></span><br><span class="line">  browseable = yes</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p> 4、修改完成上面的代码之后按esc（取消） 再输入：wq（退出）</p>
+<p> 5、退出之后输入重启smb命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">systemctl restart smbd   </span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>6、完成重启之后就可以在此电脑-网络位置添加外置硬盘了</p>
+<p>输入：\海纳思ip\downloads</p>
+<p>​            \海纳思ip\files</p>
+<p>​             \海纳思ip\home</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fc8eb54c2-dd3e-4afa-a54b-05447a94cf5a%2Fimage.png?table=block&id=56a2f900-7eac-4cd8-8bae-9889cd20b6d9&t=56a2f900-7eac-4cd8-8bae-9889cd20b6d9&width=810&cache=v2" alt="notion image"></p>
+<h4 id="BT下载配置文件-下载地址修改"><a href="#BT下载配置文件-下载地址修改" class="headerlink" title="BT下载配置文件 下载地址修改"></a><strong>BT下载配置文件 下载地址修改</strong></h4><p>1、停止bt下载命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">/etc/init.<span class="property">d</span>/transmission-daemon stop</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>2、输入以下命令进行编辑</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">vi /etc/transmission-daemon/settings.<span class="property">json</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>3、进入之后按下insert键，然后将光标移到下图然后修改成&#x2F;mnt&#x2F;sda1&#x2F;downloads</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F6e23e520-492f-4cea-904a-9c1d6e6e2ac8%2Fimage.png?table=block&id=67d1f863-6e3e-4ab8-808c-bfc3835b9cd4&t=67d1f863-6e3e-4ab8-808c-bfc3835b9cd4&width=559&cache=v2" alt="notion image"></p>
+<p>4、修改完成上面的代码之后按esc（取消） 再输入：wq（退出）</p>
+<p>5、退出之后输入开启bt下载命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">/etc/init.<span class="property">d</span>/transmission-daemon start</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>开启之后回到海纳思首页点开BT下载，在最下方显示可用空间为你外置硬盘的容量就说明挂载成功了</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F30774d4a-337d-41f3-b9e4-8ce4c930d75f%2Fimage.png?table=block&id=cd88a0af-f1cf-4c17-adcf-4830593b68da&t=cd88a0af-f1cf-4c17-adcf-4830593b68da&width=609&cache=v2" alt="notion image"></p>
+<h4 id="直连下载配置文件下载地址修改"><a href="#直连下载配置文件下载地址修改" class="headerlink" title="直连下载配置文件下载地址修改"></a>直连下载配置文件下载地址修改</h4><p>1、输入以下命令进行编辑</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">vi /usr/local/aria2/aria2.<span class="property">conf</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>2、进入之后按下insert键，然后将光标移到下图然后修改成&#x2F;mnt&#x2F;sda1&#x2F;downloads</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fb047548b-1c3f-4e59-aec0-66ea4fcee724%2Fimage.png?table=block&id=a28bf0f0-3f10-4e3f-989f-f547784b591d&t=a28bf0f0-3f10-4e3f-989f-f547784b591d&width=666&cache=v2" alt="notion image"></p>
+<p>3、修改完成上面的代码之后按esc（取消） 再输入：wq（退出）</p>
+<p>4、退出之后输入重启smb命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">systemctl restart aria2c.<span class="property">service</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>重启之后回到海纳思首页点开直连下载打开aria2设置-基本设置，查看下载路是否已更改到你的硬盘位置，显示硬盘位置说明就已经挂载成功了</p>
+<h3 id="本地网盘硬盘位置更改"><a href="#本地网盘硬盘位置更改" class="headerlink" title="本地网盘硬盘位置更改"></a>本地网盘硬盘位置更改</h3><p>进入本地网盘现在位置：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd /<span class="keyword">var</span>/www/html/files/</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>输入删除默认路劲命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rm home</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>建立软连接到硬盘</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ln -s /mnt/sda1/home</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
 ]]></content>
   </entry>
 </search>
