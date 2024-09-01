@@ -727,6 +727,9 @@
 <p><img src="/images/20240825/1.PNG" alt="alt text"></p>
 <h4 id="三、配置-Gitalk"><a href="#三、配置-Gitalk" class="headerlink" title="三、配置 Gitalk"></a>三、配置 Gitalk</h4><p>修改\blog-demo文件里的_config.yml (复制代码到最下面就行了)<br> <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">/<span class="regexp">/ Gitalk settings, check at: https:/</span><span class="regexp">/github.com/gitalk</span><span class="regexp">/gitalk#usage</span></span><br><span class="line"><span class="regexp">Gitalk:</span></span><br><span class="line"><span class="regexp">  enable: true</span></span><br><span class="line"><span class="regexp">  clientID: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  clientSecret: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  repo: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  owner: &quot;&quot;</span></span><br><span class="line"><span class="regexp">  admin: [&quot;xx&quot;]</span></span><br></pre></td></tr></table></figure><br> <img src="/images/20240825/2.png" alt="alt text"></p>
 ]]></content>
+      <tags>
+        <tag>hexo主题</tag>
+      </tags>
   </entry>
   <entry>
     <title>💻Computer Software</title>
@@ -1021,8 +1024,7 @@
 
 <h3 id="下载最新版"><a href="#下载最新版" class="headerlink" title="下载最新版"></a><strong>下载最新版</strong></h3><p>wget <a href="https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz">**</a><a href="https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz">https://github.com/alist-org/alist/releases/download/v3.26.0/alist-linux-arm-7.tar.gz</a>**</p>
 <p><strong>注</strong>：链接如果失效，请到：<a href="https://github.com/alist-org/alist/releases">https://github.com/alist-org/alist/releases</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">手动下载 alist-linux-arm-7.tar.gz 然后用ftp工具上传到cd /opt/alist</span><br></pre></td></tr></table></figure>
-
+<p>手动下载 alist-linux-arm-7.tar.gz 然后用ftp工具上传到cd &#x2F;opt&#x2F;alist</p>
 <h3 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a><strong>解压缩</strong></h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">tar zxvf alist-linux-arm-<span class="number">7.</span>tar.<span class="property">gz</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="赋予运行权限"><a href="#赋予运行权限" class="headerlink" title="赋予运行权限"></a><strong>赋予运行权限</strong></h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">chmod +x alist</span><br></pre></td></tr></table></figure>
@@ -1231,5 +1233,18 @@
 <p>JavaScript</p>
 <p>Copy</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Snavigation 简单的导航起始页开源html模板源码</title>
+    <url>/2024/08/25/Snavigation%20%E7%AE%80%E5%8D%95%E7%9A%84%E5%AF%BC%E8%88%AA%E8%B5%B7%E5%A7%8B%E9%A1%B5%E5%BC%80%E6%BA%90html%E6%A8%A1%E6%9D%BF%E6%BA%90%E7%A0%81/</url>
+    <content><![CDATA[<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fe3188319-9d52-4475-8621-f23352ed3379%2Fimage.png?table=block&id=f704680e-7a5b-40ee-9a2b-02219e571c54&t=f704680e-7a5b-40ee-9a2b-02219e571c54&width=800&cache=v2" alt="notion image"></p>
+<p>简单的导航起始页开源源码(导航页面设计代码)，支持自定义搜索引擎，自定义快捷方式，自定义壁纸以及数据备件，全开源下载就能用。</p>
+<p>【重构中】Snavigation 一个简约的起始页 | 支持自定义搜索引擎，自定义快捷方式，自定义壁纸以及数据备份</p>
+<p>项目地址：<a href="https://github.com/imsyy/Snavigation">https://github.com/imsyy/Snavigation</a></p>
+<p>123盘：<a href="https://www.123pan.com/s/KqkrVv-BHxMA.html">https://www.123pan.com/s/KqkrVv-BHxMA.html</a></p>
+]]></content>
+      <tags>
+        <tag>网站源码</tag>
+      </tags>
   </entry>
 </search>
