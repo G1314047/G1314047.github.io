@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="John Doe" />
+  <meta name="description" content="" />
+  
+  
+  <title>
+    
+      玩客云onecloud刷Shellclash 
+      
+      
+    
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,400italic,600|Roboto+Mono" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+
+
+  
+
+  
+    
+<link rel="stylesheet" href="/css/post.css">
+
+  
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <a href="/">LEEDOM</a>
+</div>
+
+
+      <p class="links">
+  
+    <a title="archives" target="" href="/archives/">
+      <i class="iconfont icon-bookmark"></i>
+    </a>
+  
+    <a title="github" target="_blank" href="https://github.com/leedom92/hexo-theme-leedom">
+      <i class="iconfont icon-github"></i>
+    </a>
+  
+    <a title="email" target="" href="">
+      <i class="iconfont icon-envelope"></i>
+    </a>
+  
+    <a title="facebook" target="" href="">
+      <i class="iconfont icon-facebooksquare"></i>
+    </a>
+  
+    <a title="twitter" target="" href="">
+      <i class="iconfont icon-twitter"></i>
+    </a>
+  
+    <a title="wechat" target="" href="">
+      <i class="iconfont icon-wechat"></i>
+    </a>
+  
+    <a title="weibo" target="" href="">
+      <i class="iconfont icon-weibo"></i>
+    </a>
+  
+    <a title="rss" target="_blank" href="/atom.xml">
+      <i class="iconfont icon-rss"></i>
+    </a>
+  
+</p>
+
+
+      <div class="main">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+
+<div class="post">
+  <h3 class="date">
+    Aug 23, 2021
+  </h3>
+  <h1>
+    玩客云onecloud刷Shellclash
+  </h1>
+  <div class="content markdown-body">
+    <h4 id="准备工具："><a href="#准备工具：" class="headerlink" title="准备工具："></a>准备工具：</h4><ul>
+<li><p>WIN10电脑一台</p>
+</li>
+<li><p>双公头USB线一根</p>
+</li>
+<li><p>玩客云</p>
+</li>
+<li><p>U盘</p>
+</li>
+<li><p>螺丝刀、吹风机</p>
+</li>
+<li><p>刷机包(文章最下方)</p>
+</li>
+</ul>
+<h4 id="1、给玩客云刷入固件底包"><a href="#1、给玩客云刷入固件底包" class="headerlink" title="1、给玩客云刷入固件底包"></a><strong>1、给玩客云刷入固件底包</strong></h4><p><img src="https://github.com/K1314047/picx-images-hosting/blob/master/20230917/QQ%E6%88%AA%E5%9B%BE20230917090827.1yt8zoorhxkw.png?raw=true&t=1ca31993-9ee3-46b0-b2f0-bc976a251b75" alt="notion image"></p>
+<p>1.1、检查刷机软件是V2.1.3版本</p>
+<p>1.2、导入烧录包<strong>s805_flash_snail_2.img</strong></p>
+<p>1.3、确认导入正确</p>
+<p>1.4、点击开始就可以先放一边不用管了</p>
+<p>1.5、短接玩客云 </p>
+<p>之前刷过机的可以跳过此步骤，直接通电按重启就行了</p>
+<p>如果玩客云之前刷过其他系统的，也就是非官方的网新云系统，是不用拆机短接，直接按住重置键插入电源就可以了，第一次刷机就看下面的图</p>
+<p>老版短接点：</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F6bc99536-dcde-4f34-9a52-114c2318ef21%2Fx2.png.pagespeed.ic.Xb5Nc2POuD.webp?table=block&id=e7d8bfc5-e288-4b50-a50e-bb863ad3c3ba&t=e7d8bfc5-e288-4b50-a50e-bb863ad3c3ba&width=675&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F0318a854-8740-49be-a5dc-ab4a4f103d43%2Fx3.png.pagespeed.ic.o6pXnzXsKi.webp?table=block&id=3a6187f7-d1c9-49ae-8113-d164c7de7c2a&t=3a6187f7-d1c9-49ae-8113-d164c7de7c2a&width=708&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fa2a2e8d4-af7f-4a63-95f9-b3602c8dcf0a%2Fx3-3.jpg.pagespeed.ic.ouywVY4Zkd.webp?table=block&id=fff97404-ae3b-809c-9d8e-c3f8d76d5391&t=fff97404-ae3b-809c-9d8e-c3f8d76d5391&width=600&cache=v2" alt="notion image"></p>
+<p>新版短接点</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Ffdf0962d-56f4-46cb-823d-97f934f2482f%2Fx2.png.pagespeed.ic.Xb5Nc2POuD.webp?table=block&id=963ad5b0-39f3-4f96-8fe8-9dc0cb69a905&t=963ad5b0-39f3-4f96-8fe8-9dc0cb69a905&width=708&cache=v2" alt="notion image"></p>
+<p>1.6、拆机后、usb插入玩客云<strong>「靠近HDMI的接口」</strong>、另一头接入电脑usb、短接焊点、通电</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F7db7c881-6428-44ba-9017-519b62aa4e79%2Fx2.png.pagespeed.ic.Xb5Nc2POuD.webp?table=block&id=05345cd9-409b-4955-9dc2-e805fb65fcec&t=05345cd9-409b-4955-9dc2-e805fb65fcec&width=687&cache=v2" alt="notion image"></p>
+<p>正常情况，会出现上图的一个线程，开始写入。如果有错误，换一个usb接口，多试几次。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F36f3adb6-e3da-4a66-88c7-af8a8abd32fc%2F1.png?table=block&id=07d1ff33-894a-4aef-84ff-4a6f534b6fba&t=07d1ff33-894a-4aef-84ff-4a6f534b6fba&width=1018&cache=v2" alt="notion image"></p>
+<p>这个固件很小，很快就会写完，一般几秒钟，提示烧录成功后，先点”停止“，然后关闭，拔掉电源、拔掉USB。</p>
+<hr>
+<h4 id="2、制作U盘openwrt系统"><a href="#2、制作U盘openwrt系统" class="headerlink" title="2、制作U盘openwrt系统"></a>2、制作U盘openwrt系统</h4><p>2.1、U盘写入<strong>openwrt-18.06.8-s805-k310-onecloud-ws1608-by-snail_20201007_143027.img</strong>固件</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fcabf12a0-f473-45f8-971c-cbddfe84a0e6%2F1.png?table=block&id=fd3285a6-8090-4dfc-b265-86d4f0a29426&t=fd3285a6-8090-4dfc-b265-86d4f0a29426&width=1126&cache=v2" alt="notion image"></p>
+<p>2.2、将<strong>openwrt-18.06.8-s805-k310-onecloud-ws1608-by-snail_20201007_143027.img拖入</strong>Flash from file</p>
+<p>2.3、选择U盘（会清空资料，提前将U盘资料备份）</p>
+<p>2.4、开始（什么都别动，中途会有提示，什么都别管，完成写入后，系统会提示格式化U盘，点取消或者叉掉就可以了，不然就白写了）</p>
+<p>2.5、等待几分钟，写入速度和U盘传输速度有关，一般是几分钟，提示成功后，关闭软件，拔出U盘。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F91d4360b-1452-4b99-b91f-58871233c4b9%2F1.png?table=block&id=cccfee68-2be5-49e6-8549-ca5de31ad25a&t=cccfee68-2be5-49e6-8549-ca5de31ad25a&width=1023&cache=v2" alt="notion image"></p>
+<p>2.6、把U盘插入玩客云<strong>靠近网口的USB</strong>，然后通电，指示灯会蓝色→绿色→蓝紫闪烁→蓝色，证明刷机成功，过程好几分钟，多等下。</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F10058dde-4679-4aee-85b0-44634aec0477%2F1.png?table=block&id=2c02c770-2fa4-4fa0-9300-16c0d0b5778e&t=2c02c770-2fa4-4fa0-9300-16c0d0b5778e&width=964&cache=v2" alt="notion image"></p>
+<hr>
+<h4 id="3、将U盘openwrt系统写入玩客云EMMC"><a href="#3、将U盘openwrt系统写入玩客云EMMC" class="headerlink" title="3、将U盘openwrt系统写入玩客云EMMC"></a>3、将U盘openwrt系统写入玩客云EMMC</h4><p>3.1、进入你自己的路由器后台查找玩客云的ip地址 打开软件包里的：PuTTY</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F3089fc90-7c04-465e-8165-ac774202a540%2F1.png?table=block&id=51d5289d-b318-4f9f-a66c-52ffc302733e&t=51d5289d-b318-4f9f-a66c-52ffc302733e&width=451&cache=v2" alt="notion image"></p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fb58e0380-4811-4564-b4c3-ef89d1bd69dc%2F1.png?table=block&id=16a3d2bd-2247-4602-96d1-c4f20288a8b5&t=16a3d2bd-2247-4602-96d1-c4f20288a8b5&width=675&cache=v2" alt="notion image"></p>
+<p>3.2、输入用户名：root 默认密码：snail</p>
+<p>3.3、第一条代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh /root/format-emmc-partition.<span class="property">sh</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F51a1f7cc-6325-42dc-841a-dc07657f766f%2F1.png?table=block&id=4621c71a-7510-4fc4-a4c1-e733e5453a4a&t=4621c71a-7510-4fc4-a4c1-e733e5453a4a&width=1006&cache=v2" alt="notion image"></p>
+<p>3.4、输入这条代码后 按任意键开始</p>
+<p>3.5、第二条代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh /root/install-openwrt-to-emmc.<span class="property">sh</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F6fb3b8dc-8e82-4480-8756-7e6622ab418e%2F2.png?table=block&id=336dfb3a-28b7-4756-b87d-2229302b1345&t=336dfb3a-28b7-4756-b87d-2229302b1345&width=1011&cache=v2" alt="notion image"></p>
+<p>3.6、看到这个install finished 就写入成功，可以拔U盘重启了</p>
+<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fa9cbe398-295c-4893-9dcf-9860b420aaea%2F1.png?table=block&id=fe46d394-b874-48a1-8c4f-867d27d1fd50&t=fe46d394-b874-48a1-8c4f-867d27d1fd50&width=1013&cache=v2" alt="notion image"></p>
+<hr>
+<h4 id="4、安装shellclash"><a href="#4、安装shellclash" class="headerlink" title="4、安装shellclash"></a>4、安装shellclash</h4><p>Shellclash发布地址：<a target="_blank" rel="noopener" href="https://github.com/juewuy/ShellClash">https://github.com/juewuy/ShellClash</a></p>
+<p>Shellclash中文说明：<a target="_blank" rel="noopener" href="https://github.com/juewuy/ShellClash/blob/master/README_CN.md">https://github.com/juewuy/ShellClash/blob/master/README_CN.md</a></p>
+<p>4.1、一键安装代码（中文说明里有几种安装代码，自己去找适合自己的，下面这条是我自己使用的）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#作者私人源</span><br><span class="line"><span class="keyword">export</span> url=<span class="string">&#x27;https://gh.jwsc.eu.org/master&#x27;</span> &amp;&amp; sh -c <span class="string">&quot;$(curl -kfsSl $url/install.sh)&quot;</span> &amp;&amp; source /etc/profile &amp;&gt; <span class="regexp">/dev/</span><span class="literal">null</span></span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p>4.2、安装完之后输入：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clash</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript</p>
+<p>Copy</p>
+<p><strong>4.3、生成配置文件可</strong>导入自建vmess链接</p>
+<p>也可以添加机场的Clash订阅链接（里面都是中文提示，自己根据需求选择）</p>
+<hr>
+<h4 id="5、软件包下载"><a href="#5、软件包下载" class="headerlink" title="5、软件包下载"></a><strong>5、软件包下载</strong></h4><p><a target="_blank" rel="noopener" href="https://www.123pan.com/s/KqkrVv-0doMA.html">123盘</a>：<a target="_blank" rel="noopener" href="https://www.123pan.com/s/KqkrVv-0doMA.html">https://www.123pan.com/s/KqkrVv-0doMA.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/12ZvIT7racbLdbsDKLtQftCrVVv4vwZNM/view?usp=drive_link">GoogleDrive</a>：<a target="_blank" rel="noopener" href="https://drive.google.com/file/d/12ZvIT7racbLdbsDKLtQftCrVVv4vwZNM/view?usp=drive_link">https://drive.google.com/file/d/12ZvIT7racbLdbsDKLtQftCrVVv4vwZNM/view?usp=drive_link</a></p>
+
+  </div>
+  
+    
+      <a id="older" class="blog-nav" href="/2020/09/09/%E6%9C%80%E5%B0%B4%E5%B0%AC%E8%83%BD%E6%9C%89%E5%A4%9A%E5%B0%B4%E5%B0%AC%20%EF%BC%9F/">OLDER&nbsp;&gt;</a>
+      
+        
+          <a id="newer" class="blog-nav" href="/2024/03/08/%E6%B5%B7%E7%BA%B3%E6%96%AF%E5%88%A9%E7%94%A8ZeroTier%E6%B7%BB%E5%8A%A0%E5%85%8D%E8%B4%B9%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%9C%8D%E5%8A%A1/">&lt;&nbsp;NEWER</a>
+          
+            
+</div>
+        <div class="footer">
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/leedom92/hexo-theme-leedom">Copyright © Leedom 2021</a>
+        
+    </div>
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/leedom92/hexo-theme-leedom">Theme by Leedom | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+      
+  <div class="search-icon" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-box">
+        <div class="search-title">
+          <!-- <span class="search-icon-input">
+            <a href="javascript: void(0)">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </span> -->
+          
+            <input type="text" class="search-input" id="search-input" placeholder="搜索">
+          
+          <span class="search-close-icon" id="search-close-icon">
+            <a href="javascript: void(0)">
+              <i class="iconfont icon-close"></i>
+            </a>
+          </span>
+        </div>
+        <div class="search-result" id="search-result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    // inputArea.onclick = function() {
+    //   getSearchFile()
+    //   this.onclick = null
+    // }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        inputArea.focus()
+        getSearchFile()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'><span></ul>";
+      // $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'><h2>" + orig_data_title + "</h2></a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<h3 class=\"search-result-abstract\">" + match_content + "...</h3>"
+                }
+                str += "<hr></li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/leedom92/hexo-theme-leedom#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+    </div>
+  </body>
+</html>
