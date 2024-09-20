@@ -1,94 +1,82 @@
-(function($){
-    var toTop = ($('#sidebar').height() - $(window).height()) + 60;
-    // Caption
-    $('.article-entry').each(function(i) {
-        $(this).find('img').each(function() {
-            if (this.alt && !(!!$.prototype.justifiedGallery && $(this).parent('.justified-gallery').length)) {
-                $(this).after('<span class="caption">' + this.alt + '</span>');
-            }
+/* global KEEP */
 
-            // 对于已经包含在链接内的图片不适用lightGallery
-            if ($(this).parent().prop("tagName") !== 'A') {
-                $(this).wrap('<a href="' + this.src + '" title="' + this.alt + '" class="gallery-item"></a>');
-            }
-        });
-    });
-    if (lightGallery) {
-        var options = {
-            selector: '.gallery-item',
-        };
-        $('.article-entry').each(function(i, entry) {
-            lightGallery(entry, options);
-        });
-        lightGallery($('.article-gallery')[0], options);
+window.addEventListener('DOMContentLoaded', () => {
+  const { version, local_search, lazyload } = KEEP.theme_config
+
+  KEEP.themeInfo = {
+    theme: `Keep v${version}`,
+    author: 'XPoet',
+    repository: 'https://github.com/XPoet/hexo-theme-keep',
+    localStorageKey: 'KEEP-THEME-STATUS',
+    encryptKey: 'KEEP-ENCRYPT',
+    styleStatus: {
+      isDark: false,
+      fontSizeLevel: 0,
+      isShowToc: true
+    },
+    defaultDatetimeFormat: 'YYYY-MM-DD HH:mm:ss'
+  }
+
+  // print theme base info
+  KEEP.printThemeInfo = () => {
+    console.log(
+      `\n %c ${KEEP.themeInfo.theme} %c ${KEEP.themeInfo.repository} \n`,
+      `color: #fadfa3; background: #333; padding: 6px 0;`,
+      `padding: 6px 0;`
+    )
+  }
+  KEEP.printThemeInfo()
+
+  // set version number of footer
+  KEEP.setFooterVersion = () => {
+    const vd = document.querySelector('.footer .keep-version')
+    vd && (vd.innerHTML = KEEP.themeInfo.theme)
+  }
+
+  // set styleStatus to localStorage
+  KEEP.setStyleStatus = () => {
+    localStorage.setItem(KEEP.themeInfo.localStorageKey, JSON.stringify(KEEP.themeInfo.styleStatus))
+  }
+
+  // get styleStatus from localStorage
+  KEEP.getStyleStatus = () => {
+    let temp = localStorage.getItem(KEEP.themeInfo.localStorageKey)
+    if (temp) {
+      temp = JSON.parse(temp)
+      for (let key in KEEP.themeInfo.styleStatus) {
+        KEEP.themeInfo.styleStatus[key] = temp[key]
+      }
+      return temp
+    } else {
+      return null
     }
-    if (!!$.prototype.justifiedGallery) {  // if justifiedGallery method is defined
-        var options = {
-            rowHeight: 140,
-            margins: 4,
-            lastRow: 'justify'
-        };
-        $('.justified-gallery').justifiedGallery(options);
+  }
+
+  // init prototype function
+  KEEP.initPrototype = () => {
+    HTMLElement.prototype.wrap = function (wrapper) {
+      this.parentNode.insertBefore(wrapper, this)
+      this.parentNode.removeChild(this)
+      wrapper.appendChild(this)
+    }
+  }
+  KEEP.initPrototype()
+
+  KEEP.initExecute = () => {
+    KEEP.initUtils()
+    KEEP.initHeaderShrink()
+    KEEP.initModeToggle()
+    KEEP.initBack2Top()
+    KEEP.initCodeBlock()
+    KEEP.setFooterVersion()
+
+    if (lazyload?.enable === true) {
+      KEEP.initLazyLoad()
     }
 
-    // Profile card
-    $(document).on('click', function () {
-        $('#profile').removeClass('card');
-    }).on('click', '#profile-anchor', function (e) {
-        e.stopPropagation();
-        $('#profile').toggleClass('card');
-    }).on('click', '.profile-inner', function (e) {
-        e.stopPropagation();
-    });
-
-    // To Top
-    if ($('#sidebar').length) {
-        $(document).on('scroll', function () {
-            if ($(document).width() >= 800) {
-                if(($(this).scrollTop() > toTop) && ($(this).scrollTop() > 0)) {
-                    $('#toTop').fadeIn();
-                    $('#toTop').css('left', $('#sidebar').offset().left);
-                } else {
-                    $('#toTop').fadeOut();
-                }
-            } else {
-                $('#toTop').fadeOut();
-            }
-        }).on('click', '#toTop', function () {
-            $('body, html').animate({ scrollTop: 0 }, 600);
-        });
+    if (local_search?.enable === true) {
+      KEEP.initLocalSearch()
     }
-    
-    // Task lists in markdown
-    $('.article-entry ul > li').each(function() {
-        var taskList = {
-            field: this.textContent.substring(0, 2),
-            check: function(str) {
-                var re = new RegExp(str);
-                return this.field.match(re);
-            }
-        }
-        var string = [/\[ \]/, [/\[x\]/, "checked"]];
-        var checked = taskList.check(string[1][0]);
-        var unchecked = taskList.check(string[0]);
-        var $current = $(this);
-        function update(str, check) {
-            var click = ["disabled", ""];
-            $current.html($current.html().replace(
-              str, "<input type='checkbox' " + check + " " + click[1] + " >")
-            )
-        }
-        if (checked || unchecked) {
-            this.classList.add("task-list");
-            if (checked) {
-                update(string[1][0], string[1][1]);
-                this.classList.add("check");
-            } else {
-                update(string[0], "");
-            }
-        }
-    })
-    $(document).on('click', 'input[type="checkbox"]', function (event) {
-        event.preventDefault();
-    });
-})(jQuery);
+  }
+  KEEP.initExecute()
+})

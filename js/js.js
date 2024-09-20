@@ -6,7 +6,7 @@ new Valine({
     el: '#vcomments',
     appId: valine_appid,
     appKey: valine_appKey,
-    placeholder: '有什么想说的吗？',
+    placeholder: '请输入内容...',
     avatar: "wavatar"
 })
 
@@ -27,9 +27,9 @@ function getCookie(key) {
 
 function updateStyle() {
     if (getCookie("style") == "white") {
-        $("#footer").attr("style", "color: #969696;");
-        $(".flink").attr("style", "color: #969696;");
-        $(".ba").attr("style", "color: #969696;");
+        $("#footer").attr("style", "color: #51525d;");
+        $(".flink").attr("style", "color: #51525d;");
+        $(".ba").attr("style", "color: #51525d;");
         $("#bodyx").attr("class", "bg_while");
         $("#update_style").attr('checked', false);
     } else {
