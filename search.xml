@@ -3,8 +3,8 @@
   <entry>
     <title>Hexo主题zhaoo使用安装方法</title>
     <url>/2024/08/25/Hexo%E4%B8%BB%E9%A2%98zhaoo%E4%BD%BF%E7%94%A8%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h4 id="一、使用方法"><a href="#一、使用方法" class="headerlink" title="一、使用方法"></a><strong>一、使用方法</strong></h4><ol>
-<li>安装 zhao 主题，项目地址：<a href="https://github.com/zhaoo/hexo-theme-zhaoo">https://github.com/zhaoo/hexo-theme-zhaoo</a></li>
+    <content><![CDATA[<h2 id="一、使用方法"><a href="#一、使用方法" class="headerlink" title="一、使用方法"></a><strong>一、使用方法</strong></h2><ol>
+<li>安装 zhao 主题，项目地址：<a class="link"   href="https://github.com/zhaoo/hexo-theme-zhaoo" >https://github.com/zhaoo/hexo-theme-zhaoo<i class="fas fa-external-link-alt"></i></a></li>
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/izhaoo/hexo-theme-zhaoo.git themes/zhaoo</span><br></pre></td></tr></table></figure>
 
@@ -20,7 +20,7 @@
 
 <p>Plain text</p>
 <p>Copy</p>
-<h4 id="二、博客配置"><a href="#二、博客配置" class="headerlink" title="二、博客配置"></a>二、博客配置</h4><p>编辑 <code>Hexo</code> 根目录下的 <code>_config.yml</code> 文件，配置博客网站相关功能，对整个网站生效。</p>
+<h2 id="二、博客配置"><a href="#二、博客配置" class="headerlink" title="二、博客配置"></a>二、博客配置</h2><p>编辑 <code>Hexo</code> 根目录下的 <code>_config.yml</code> 文件，配置博客网站相关功能，对整个网站生效。</p>
 <p>建议将文章数量改为<strong>9</strong>篇：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">index_generator:</span><br><span class="line">path:&#x27;&#x27;</span><br><span class="line">per_page:9#文章数量改为9篇（3的倍数更和谐）</span><br><span class="line">order_by:-date</span><br></pre></td></tr></table></figure>
 
@@ -34,8 +34,8 @@
 <p>Copy</p>
 <hr>
 <p>编辑 <code>zhaoo</code> 主题目录下的 <code>_config.yml</code> 文件，配置主题相关功能，只对主题生效。</p>
-<p>建议参考 <a href="https://github.com/izhaoo/hexo-theme-zhaoo/blob/master/_config.yml">_config.yml</a> 和本文进行配置，具体配置内容见下文。</p>
-<h4 id="主题更新"><a href="#主题更新" class="headerlink" title="主题更新"></a><strong>主题更新</strong></h4><p>进入到 <code>zhaoo</code> 主题目录：</p>
+<p>建议参考 <a class="link"   href="https://github.com/izhaoo/hexo-theme-zhaoo/blob/master/_config.yml" >_config.yml<i class="fas fa-external-link-alt"></i></a> 和本文进行配置，具体配置内容见下文。</p>
+<h3 id="主题更新"><a href="#主题更新" class="headerlink" title="主题更新"></a><strong>主题更新</strong></h3><p>进入到 <code>zhaoo</code> 主题目录：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash"><span class="built_in">cd</span> themes/zhaoo</span></span><br></pre></td></tr></table></figure>
 
 <p>Shell</p>
@@ -71,14 +71,14 @@
 <hr>
 <p>可以使用 <code>十六进制</code>、<code>rgba</code>、<code>颜色名称</code> 方式，注意需要用引号包裹。</p>
 <p>目前有两套颜色模式，分别是 <strong>浅色模式（白天）</strong> 和 <strong>深色模式（黑夜）</strong>，请注意颜色搭配。<code>link</code> 为强调色，表现为 <code>hover</code>、<code>active</code> 等。</p>
-<p>分享几个配色网站：<a href="https://colors.ichuantong.cn/">中国传统颜色</a>、<a href="https://nipponcolors.com/">日本传统颜色</a></p>
+<p>分享几个配色网站：<a class="link"   href="https://colors.ichuantong.cn/" >中国传统颜色<i class="fas fa-external-link-alt"></i></a>、<a class="link"   href="https://nipponcolors.com/" >日本传统颜色<i class="fas fa-external-link-alt"></i></a></p>
 <h4 id="站点图标"><a href="#站点图标" class="headerlink" title="站点图标"></a><strong>站点图标</strong></h4><p>配置项 <code>favicon</code> 可设置站点图标，建议使用 <code>ico</code> 或 <code>png</code> 格式。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Favicon</span><br><span class="line">favicon:</span><br><span class="line">small:/images/icons/favicon-16x16.png</span><br><span class="line">medium:/images/icons/favicon-32x32.png</span><br><span class="line">apple_touch_icon:/images/icons/apple-touch-icon.png</span><br><span class="line">safari_pinned_tab:/images/icons/stun-logo.svg</span><br><span class="line">msapplication:/images/icons/favicon-144x144.png</span><br></pre></td></tr></table></figure>
 
 <p>Plain text</p>
 <p>Copy</p>
 <hr>
-<p>有多种尺寸的图片需要配置，可以参考默认图标的尺寸用 <code>PS</code> 裁剪，或使用：<a href="https://icon.wuruihong.com/">图标工厂</a></p>
+<p>有多种尺寸的图片需要配置，可以参考默认图标的尺寸用 <code>PS</code> 裁剪，或使用：<a class="link"   href="https://icon.wuruihong.com/" >图标工厂<i class="fas fa-external-link-alt"></i></a></p>
 <h4 id="全局字体"><a href="#全局字体" class="headerlink" title="全局字体"></a><strong>全局字体</strong></h4><p>配置项 <code>font</code> 中可设置全局字体的 <strong>大小</strong> 和 <strong>风格系列</strong>。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Font</span><br><span class="line">font:</span><br><span class="line">size:14px</span><br><span class="line">family:&#x27;Hiragino Sans GB&#x27;,&#x27;Hiragino Sans GB W3&#x27;,&#x27;Microsoft YaHei&#x27;,&#x27;WenQuanYi Micro Hei&#x27;,sans-serif</span><br></pre></td></tr></table></figure>
 
@@ -97,14 +97,14 @@
 <p>Plain text</p>
 <p>Copy</p>
 <hr>
-<p>tips: 建议不设置背景图片，默认的 <strong>纯白背景</strong> 最搭配，背景颜色也可在 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2">主题颜色</a> 中设置。</p>
+<p>tips: 建议不设置背景图片，默认的 <strong>纯白背景</strong> 最搭配，背景颜色也可在 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2" >主题颜色<i class="fas fa-external-link-alt"></i></a> 中设置。</p>
 <h4 id="加载动画-Loading"><a href="#加载动画-Loading" class="headerlink" title="加载动画 (Loading)"></a><strong>加载动画 (Loading)</strong></h4><p>配置项 <code>loading</code> 可设置载入动画，会在 <em>页面跳转、懒加载</em> 时加载，目前仅支持图片形式。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Loading</span><br><span class="line">loading:/images/theme/loading.gif</span><br></pre></td></tr></table></figure>
 
 <p>Plain text</p>
 <p>Copy</p>
 <hr>
-<p>建议使用 <code>gif</code> 动图，可在 <a href="https://lottiefiles.com/">LottieFiles</a> 下载。</p>
+<p>建议使用 <code>gif</code> 动图，可在 <a class="link"   href="https://lottiefiles.com/" >LottieFiles<i class="fas fa-external-link-alt"></i></a> 下载。</p>
 <p>tips: 未来将支持自定义 <code>css</code>、<code>svg</code> 等多种方式的载入动画，敬请期待。</p>
 <h4 id="欢迎页面"><a href="#欢迎页面" class="headerlink" title="欢迎页面"></a><strong>欢迎页面</strong></h4><p>配置项 <code>preview</code> 中的一些列配置可自定义欢迎页面。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Preview</span><br><span class="line">preview:</span><br><span class="line">enable:true</span><br><span class="line">model:wave# wave cloud</span><br><span class="line">background:</span><br><span class="line">type:image# image video</span><br><span class="line">default_image:</span><br><span class="line">light:/images/theme/welcome-image.jpg</span><br><span class="line">dark:/images/theme/welcome-image.jpg</span><br><span class="line">video:</span><br><span class="line">api:# https://source.unsplash.com/random/1920x1080</span><br><span class="line">size:cover# css: background-size</span><br><span class="line">position:center# css: background-position</span><br><span class="line">motto:</span><br><span class="line">default:我在开了灯的床头下，想问问自己的心啊。</span><br><span class="line">api:https://v1.hitokoto.cn/?encode=text&amp;c=j</span><br><span class="line">color:&#x27;#ffffff&#x27;</span><br></pre></td></tr></table></figure>
@@ -122,11 +122,11 @@
 <ul>
 <li><p><code>type</code>: 图片或视频。</p>
 </li>
-<li><p><code>default_image</code>: 配置静态图片，填写静态图片 <code>URL</code> 即可。开启 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F">深色模式</a> 后支持配置 深色&#x2F;浅色 两种模式下的背景图片。</p>
+<li><p><code>default_image</code>: 配置静态图片，填写静态图片 <code>URL</code> 即可。开启 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F" >深色模式<i class="fas fa-external-link-alt"></i></a> 后支持配置 深色&#x2F;浅色 两种模式下的背景图片。</p>
 </li>
 <li><p><code>video</code>: 配置动态视频，填写视频 <code>URL</code> 即可。</p>
 </li>
-<li><p><code>api</code>: 配置随机图片，可使用第三方 <code>API</code>，优先级 <em>随机图片（api）</em> &gt; <em>静态图片（default）</em>。推荐 <code>API</code>：<a href="https://source.unsplash.com/random/1920x1080">Unsplash</a>、<a href="https://api.vvhan.com/api/bing?type=sj">必应图片</a>。</p>
+<li><p><code>api</code>: 配置随机图片，可使用第三方 <code>API</code>，优先级 <em>随机图片（api）</em> &gt; <em>静态图片（default）</em>。推荐 <code>API</code>：<a class="link"   href="https://source.unsplash.com/random/1920x1080" >Unsplash<i class="fas fa-external-link-alt"></i></a>、<a class="link"   href="https://api.vvhan.com/api/bing?type=sj" >必应图片<i class="fas fa-external-link-alt"></i></a>。</p>
 </li>
 <li><p><code>size</code> 和 <code>position</code>: 设置图片的 <strong>尺寸</strong> 和 <strong>位置</strong>，参考 <code>CSS</code> 中的属性即可。</p>
 </li>
@@ -135,7 +135,7 @@
 <ul>
 <li><p><code>default</code>: 配置静态格言，填写格言文本即可。</p>
 </li>
-<li><p><code>api</code>: 配置随机格言，可使用第三方 <code>API</code>，优先级 <em>随机格言（api）</em> &gt; <em>静态格言（default）</em>。推荐 <code>API</code>：<a href="https://hitokoto.cn/">一言</a>、<a href="https://www.jinrishici.com/">今日诗词</a>。</p>
+<li><p><code>api</code>: 配置随机格言，可使用第三方 <code>API</code>，优先级 <em>随机格言（api）</em> &gt; <em>静态格言（default）</em>。推荐 <code>API</code>：<a class="link"   href="https://hitokoto.cn/" >一言<i class="fas fa-external-link-alt"></i></a>、<a class="link"   href="https://www.jinrishici.com/" >今日诗词<i class="fas fa-external-link-alt"></i></a>。</p>
 </li>
 <li><p><code>color</code> 配置文字颜色。</p>
 </li>
@@ -145,7 +145,7 @@
 
 <p>Plain text</p>
 <p>Copy</p>
-<p>目前仅支持静态搜索能力（渲染时生成搜索索引文件），需要安装 <a href="https://github.com/theme-next/hexo-generator-searchdb">hexo-generator-searchdb</a> 插件提供支持。</p>
+<p>目前仅支持静态搜索能力（渲染时生成搜索索引文件），需要安装 <a class="link"   href="https://github.com/theme-next/hexo-generator-searchdb" >hexo-generator-searchdb<i class="fas fa-external-link-alt"></i></a> 插件提供支持。</p>
 <p>安装 <code>hexo-generator-searchdb</code> 插件：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install hexo-generator-searchdb --save</span></span><br></pre></td></tr></table></figure>
 
@@ -206,7 +206,7 @@
 <ul>
 <li><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 深色模式。</li>
 </ul>
-<p><em>深色模式</em> &#x2F; <em>浅色模式</em> 的颜色可以参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2">主题颜色</a> 设置。</p>
+<p><em>深色模式</em> &#x2F; <em>浅色模式</em> 的颜色可以参考 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2" >主题颜色<i class="fas fa-external-link-alt"></i></a> 设置。</p>
 <h4 id="哀悼模式"><a href="#哀悼模式" class="headerlink" title="哀悼模式"></a><strong>哀悼模式</strong></h4><p>在举国默哀的日子，我们可以将博客灰化，通过配置项 <code>gray</code> 设置。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Gray (Mourning Mode)</span><br><span class="line">gray:</span><br><span class="line">enable:true#开启哀悼模式</span><br></pre></td></tr></table></figure>
 
@@ -216,7 +216,7 @@
 <ul>
 <li><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 哀悼模式。</li>
 </ul>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Feaf0097a-803b-4f19-a205-55490069240e%2F20201016102727.jpg?table=block&id=0aec93da-2a64-4345-a177-ef3a3b590e72&t=0aec93da-2a64-4345-a177-ef3a3b590e72&width=1233&cache=v2" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Feaf0097a-803b-4f19-a205-55490069240e%2F20201016102727.jpg?table=block&id=0aec93da-2a64-4345-a177-ef3a3b590e72&t=0aec93da-2a64-4345-a177-ef3a3b590e72&width=1233&cache=v2"  alt="notion image"></p>
 <h3 id="文章配置"><a href="#文章配置" class="headerlink" title="文章配置"></a><strong>文章配置</strong></h3><h4 id="文章封面"><a href="#文章封面" class="headerlink" title="文章封面"></a><strong>文章封面</strong></h4><h4 id="单独封面"><a href="#单独封面" class="headerlink" title="单独封面"></a><strong>单独封面</strong></h4><p>可以为每篇文章设置单独的文章封面图片，在文章 <code>Front-matter</code> 中添加 <code>image</code> 字段设置图片。</p>
 <p>若使用图床，直接添加图片文件的 <strong>完整URL</strong> 即可：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题文档</span><br><span class="line"><span class="section">image: https://pic.izhaoo.com/20200421200902.jpg  #设置图床图片</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
@@ -237,7 +237,7 @@
 <p>Copy</p>
 <hr>
 <ul>
-<li><p><code>random</code>: 设置随机封面，有 <strong>galleries（相册图库）</strong> 和 <strong>local（本地图库）</strong> 两种模式。开启 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E7%9B%B8%E5%86%8C">相册</a> 功能后会自动调取相册中的图片；本地图库需要新建 <code>/_data/local_images.json</code> 文件，填写图片 <code>URL</code> 列表即可。</p>
+<li><p><code>random</code>: 设置随机封面，有 <strong>galleries（相册图库）</strong> 和 <strong>local（本地图库）</strong> 两种模式。开启 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E7%9B%B8%E5%86%8C" >相册<i class="fas fa-external-link-alt"></i></a> 功能后会自动调取相册中的图片；本地图库需要新建 <code>/_data/local_images.json</code> 文件，填写图片 <code>URL</code> 列表即可。</p>
 </li>
 <li><p><code>default</code>: 未设置随机封面时启用 <strong>默认封面</strong>，填写图片 <code>URL</code> 即可。</p>
 </li>
@@ -328,7 +328,7 @@
 <p>Copy</p>
 <hr>
 <h4 id="文章搬运"><a href="#文章搬运" class="headerlink" title="文章搬运"></a><strong>文章搬运</strong></h4><p>配置项 <code>carrier</code> 用于开启 <strong>文章搬运</strong> 功能，方便博主们全文“借鉴”文章，效果如下：</p>
-<p>全局开启 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83">文章版权</a></p>
+<p>全局开启 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83" >文章版权<i class="fas fa-external-link-alt"></i></a></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Carrier</span><br><span class="line">carrier:</span><br><span class="line">enable:true</span><br><span class="line">type:markdown# markdown html text</span><br></pre></td></tr></table></figure>
 
 <p>Plain text</p>
@@ -405,7 +405,7 @@
 <p>Markdown</p>
 <p>Copy</p>
 <hr>
-<p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置相册页面的导航：</p>
+<p>参考 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95" >导航菜单<i class="fas fa-external-link-alt"></i></a> 设置相册页面的导航：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">galleries:/galleries||相册</span><br></pre></td></tr></table></figure>
 
 <p>Plain text</p>
@@ -442,12 +442,12 @@
 <p>Copy</p>
 <hr>
 <p>步骤可能有点难以理解，最后放几张截图，比较直观：</p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F88889fea-57fe-4f08-9236-7d82ecb741bd%2Fimage.png?table=block&id=1028ded5-6472-4736-816b-6025c708fcba&t=1028ded5-6472-4736-816b-6025c708fcba&width=1463&cache=v2" alt="notion image"></p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fcbf07e4c-f7c5-4156-8ab2-a60ef8e78d6d%2Fimage.png?table=block&id=1b9d646c-d34f-4fcc-a30a-b3a78a2fedf7&t=1b9d646c-d34f-4fcc-a30a-b3a78a2fedf7&width=262&cache=v2" alt="notion image"></p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fdfe139f5-fdd6-4cc7-8243-8f4ffabb2a03%2Fimage.png?table=block&id=fff97404-ae3b-80a8-a44f-f855c29f0970&t=fff97404-ae3b-80a8-a44f-f855c29f0970&width=480&cache=v2" alt="notion image"></p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fd852cefd-4470-46e7-b0f3-ee6263f80fb4%2Fimage.png?table=block&id=3272a536-6209-4853-bcd5-8e8cad6b3441&t=3272a536-6209-4853-bcd5-8e8cad6b3441&width=480&cache=v2" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F88889fea-57fe-4f08-9236-7d82ecb741bd%2Fimage.png?table=block&id=1028ded5-6472-4736-816b-6025c708fcba&t=1028ded5-6472-4736-816b-6025c708fcba&width=1463&cache=v2"  alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fcbf07e4c-f7c5-4156-8ab2-a60ef8e78d6d%2Fimage.png?table=block&id=1b9d646c-d34f-4fcc-a30a-b3a78a2fedf7&t=1b9d646c-d34f-4fcc-a30a-b3a78a2fedf7&width=262&cache=v2"  alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fdfe139f5-fdd6-4cc7-8243-8f4ffabb2a03%2Fimage.png?table=block&id=fff97404-ae3b-80a8-a44f-f855c29f0970&t=fff97404-ae3b-80a8-a44f-f855c29f0970&width=480&cache=v2"  alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Fd852cefd-4470-46e7-b0f3-ee6263f80fb4%2Fimage.png?table=block&id=3272a536-6209-4853-bcd5-8e8cad6b3441&t=3272a536-6209-4853-bcd5-8e8cad6b3441&width=480&cache=v2"  alt="notion image"></p>
 <p>也可以参考 <code>/_example/source</code> 中的相关栗子。</p>
-<h4 id="归档页面"><a href="#归档页面" class="headerlink" title="归档页面"></a><strong>归档页面</strong></h4><p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置归档页面的导航，系统会按文章创建时间自动归档。</p>
+<h4 id="归档页面"><a href="#归档页面" class="headerlink" title="归档页面"></a><strong>归档页面</strong></h4><p>参考 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95" >导航菜单<i class="fas fa-external-link-alt"></i></a> 设置归档页面的导航，系统会按文章创建时间自动归档。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">archives:/archives||归档</span><br></pre></td></tr></table></figure>
 
 <p>Plain text</p>
@@ -465,7 +465,7 @@
 <p>Markdown</p>
 <p>Copy</p>
 <hr>
-<p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置标签页面的导航：</p>
+<p>参考 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95" >导航菜单<i class="fas fa-external-link-alt"></i></a> 设置标签页面的导航：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">tags:/tags||标签</span><br></pre></td></tr></table></figure>
 
 <p>Plain text</p>
@@ -490,7 +490,7 @@
 <p>Markdown</p>
 <p>Copy</p>
 <hr>
-<p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置分类页面的导航：</p>
+<p>参考 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95" >导航菜单<i class="fas fa-external-link-alt"></i></a> 设置分类页面的导航：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">categories:/categories||分类</span><br></pre></td></tr></table></figure>
 
 <p>Plain text</p>
@@ -514,7 +514,7 @@
 <p>Markdown</p>
 <p>Copy</p>
 <hr>
-<p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置关于页面的导航：</p>
+<p>参考 <a class="link"   href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95" >导航菜单<i class="fas fa-external-link-alt"></i></a> 设置关于页面的导航：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">about:/about||关于</span><br></pre></td></tr></table></figure>
 
 <p>Plain text</p>
@@ -536,8 +536,8 @@
 <li><p><code>button</code>: <em>显示</em> &#x2F; <em>隐藏</em> 评论按钮，隐藏按钮后将直接展示评论。</p>
 </li>
 </ul>
-<h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a><strong>Valine</strong></h4><p><code>Valine</code> 是基于 <a href="https://leancloud.cn/">LeanCloud</a> 实现的评论系统，小清新风格。</p>
-<p>首先在 <a href="https://leancloud.cn/">LeanCloud</a> 注册一个账号，并创建一个应用（开发版）。</p>
+<h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a><strong>Valine</strong></h4><p><code>Valine</code> 是基于 <a class="link"   href="https://leancloud.cn/" >LeanCloud<i class="fas fa-external-link-alt"></i></a> 实现的评论系统，小清新风格。</p>
+<p>首先在 <a class="link"   href="https://leancloud.cn/" >LeanCloud<i class="fas fa-external-link-alt"></i></a> 注册一个账号，并创建一个应用（开发版）。</p>
 <p>进入应用管理界面，点击【存储】-&gt;【创建Class】，名称为 <strong>Comment</strong>，访问权限为 <strong>所有用户</strong>，写入权限为 <strong>限制写入</strong>。</p>
 <p>在【设置】-&gt;【应用Keys】中复制 <code>appId</code> 和 <code>appKey</code>。</p>
 <p>配置项 <code>valine</code> 用于设置 <code>Valine</code> 评论系统。</p>
@@ -555,7 +555,7 @@
 </li>
 <li><p><code>placeholder</code>: 未输入评论时的占位文字。</p>
 </li>
-<li><p><code>mp</code>: 默认头像，参考 <a href="https://valine.js.org/avatar.html">Valine头像设置</a>。</p>
+<li><p><code>mp</code>: 默认头像，参考 <a class="link"   href="https://valine.js.org/avatar.html" >Valine头像设置<i class="fas fa-external-link-alt"></i></a>。</p>
 </li>
 <li><p><code>pageSize</code>: 每页评论数量。</p>
 </li>
@@ -595,7 +595,7 @@
 <li><p><code>style -&gt; dark</code>: <em>深色模式</em> 时的高亮样式。</p>
 </li>
 </ul>
-<p>可以到 <a href="https://highlightjs.org/static/demo/">官网</a> 预览高亮效果，填写样式名称即可。</p>
+<p>可以到 <a class="link"   href="https://highlightjs.org/static/demo/" >官网<i class="fas fa-external-link-alt"></i></a> 预览高亮效果，填写样式名称即可。</p>
 <h4 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a><strong>SEO</strong></h4><p>配置项 <code>seo</code> 用于设置 SEO（网站关键词优化）功能。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># SEO</span><br><span class="line">seo:</span><br><span class="line">baidu_auto_push:true</span><br></pre></td></tr></table></figure>
 
@@ -603,7 +603,7 @@
 <p>Copy</p>
 <hr>
 <ul>
-<li><code>baidu_auto_push</code>: 开启 <a href="https://ziyuan.baidu.com/linksubmit/index">百度站长平台</a> 链接自动推送功能。</li>
+<li><code>baidu_auto_push</code>: 开启 <a class="link"   href="https://ziyuan.baidu.com/linksubmit/index" >百度站长平台<i class="fas fa-external-link-alt"></i></a> 链接自动推送功能。</li>
 </ul>
 <h4 id="网页统计"><a href="#网页统计" class="headerlink" title="网页统计"></a><strong>网页统计</strong></h4><p>配置项 <code>analytics</code> 用于设置网站统计。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Analytics</span><br><span class="line">analytics:</span><br><span class="line">baidu:# id</span><br><span class="line">google:# id</span><br><span class="line">tencent:# id</span><br><span class="line">cnzz:# id</span><br></pre></td></tr></table></figure>
@@ -612,13 +612,13 @@
 <p>Copy</p>
 <hr>
 <ul>
-<li><p><code>baidu</code>: <a href="https://tongji.baidu.com/web/welcome/login">百度统计</a></p>
+<li><p><code>baidu</code>: <a class="link"   href="https://tongji.baidu.com/web/welcome/login" >百度统计<i class="fas fa-external-link-alt"></i></a></p>
 </li>
-<li><p><code>google</code>: <a href="https://analytics.google.com/analytics/web">谷歌统计</a></p>
+<li><p><code>google</code>: <a class="link"   href="https://analytics.google.com/analytics/web" >谷歌统计<i class="fas fa-external-link-alt"></i></a></p>
 </li>
-<li><p><code>tencent</code>: <a href="https://ta.qq.com/#/">腾讯分析</a></p>
+<li><p><code>tencent</code>: <a class="link"   href="https://ta.qq.com/#/" >腾讯分析<i class="fas fa-external-link-alt"></i></a></p>
 </li>
-<li><p><code>cnzz</code>: <a href="https://www.umeng.com/web">友盟统计</a></p>
+<li><p><code>cnzz</code>: <a class="link"   href="https://www.umeng.com/web" >友盟统计<i class="fas fa-external-link-alt"></i></a></p>
 </li>
 </ul>
 <p>在对应的数据统计官网注册网站应用，复制对应的 <code>id</code> 填写即可。</p>
@@ -734,35 +734,35 @@
   <entry>
     <title>💻Computer Software</title>
     <url>/2024/08/31/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="电脑系统"><a href="#电脑系统" class="headerlink" title="电脑系统"></a>电脑系统</h2><h4 id="黑鲨装机大师"><a href="#黑鲨装机大师" class="headerlink" title="黑鲨装机大师"></a>黑鲨装机大师</h4><p>一键重装系统，有广告，可在系统重装完成之后使用GEEK卸载掉</p>
-<p><strong>下载地址</strong>：<a href="https://www.heisha.net/">黑鲨装机大师</a></p>
+    <content><![CDATA[<h3 id="电脑系统"><a href="#电脑系统" class="headerlink" title="电脑系统"></a>电脑系统</h3><h4 id="黑鲨装机大师"><a href="#黑鲨装机大师" class="headerlink" title="黑鲨装机大师"></a>黑鲨装机大师</h4><p>一键重装系统，有广告，可在系统重装完成之后使用GEEK卸载掉</p>
+<p><strong>下载地址</strong>：<a class="link"   href="https://www.heisha.net/" >黑鲨装机大师<i class="fas fa-external-link-alt"></i></a></p>
 <hr>
 <h4 id="MSDN系统库"><a href="#MSDN系统库" class="headerlink" title="MSDN系统库"></a>MSDN系统库</h4><p>MSDN系统库－致力于原版windows生态服务</p>
-<p><strong>下载地址</strong>：<a href="https://www.xitongku.com/index.html">MSDN系统库</a></p>
+<p><strong>下载地址</strong>：<a class="link"   href="https://www.xitongku.com/index.html" >MSDN系统库<i class="fas fa-external-link-alt"></i></a></p>
 <hr>
 <h4 id="MSDN山己几子木"><a href="#MSDN山己几子木" class="headerlink" title="MSDN山己几子木"></a>MSDN山己几子木</h4><p>本站提供 Windows 11、Windows 10、Windows 8.1、Windows 8、Windows 7、Windows XP 的 <em>MSDN</em> 镜像资源展示 </p>
-<p><strong>下载地址</strong>：<a href="https://msdn.sjjzm.com/">MSDN山己几子木</a></p>
+<p><strong>下载地址</strong>：<a class="link"   href="https://msdn.sjjzm.com/" >MSDN山己几子木<i class="fas fa-external-link-alt"></i></a></p>
 <hr>
-<h2 id="电脑软件"><a href="#电脑软件" class="headerlink" title="电脑软件"></a>电脑软件</h2><h4 id="Geek-Uninstaller"><a href="#Geek-Uninstaller" class="headerlink" title="Geek Uninstaller"></a>Geek Uninstaller</h4><p>Geek Uninstaller 是一个简单但强大的实用卸载程序</p>
-<p><strong>下载地址：</strong><a href="https://geekuninstaller.com/">Geek Uninstaller</a></p>
+<h3 id="电脑软件"><a href="#电脑软件" class="headerlink" title="电脑软件"></a>电脑软件</h3><h4 id="Geek-Uninstaller"><a href="#Geek-Uninstaller" class="headerlink" title="Geek Uninstaller"></a>Geek Uninstaller</h4><p>Geek Uninstaller 是一个简单但强大的实用卸载程序</p>
+<p><strong>下载地址：</strong><a class="link"   href="https://geekuninstaller.com/" >Geek Uninstaller<i class="fas fa-external-link-alt"></i></a></p>
 <hr>
 <h4 id="科学工具"><a href="#科学工具" class="headerlink" title="科学工具"></a>科学工具</h4><p>这个就不多介绍了</p>
-<p><strong>下载地址：</strong><a href="https://wiki.1314047.xyz/article/example-7#df445a1aaedf4e258d23dfc4b464e8bf">科学工具</a></p>
+<p><strong>下载地址：</strong><a class="link"   href="https://blog.1314047.xyz/kexue" >科学工具<i class="fas fa-external-link-alt"></i></a></p>
 <hr>
 <h4 id="Listary"><a href="#Listary" class="headerlink" title="Listary"></a>Listary</h4><p>适用于 Windows 的革命性文件搜索工具。Listary 可让您查找文件并启动应用程序 速度极快，适合普通用户和高级用户</p>
-<p><strong>下载地址：</strong><a href="https://www.listary.com/">Listary</a></p>
+<p><strong>下载地址：</strong><a class="link"   href="https://www.listary.com/" >Listary<i class="fas fa-external-link-alt"></i></a></p>
 <hr>
 <h4 id="Bandizip"><a href="#Bandizip" class="headerlink" title="Bandizip"></a>Bandizip</h4><p>Bandizip 是一个强大的多功能压缩文件管理工具，可提供很快的解压缩速度和其他各种实用功能。</p>
-<p><strong>下载地址：</strong><a href="https://www.bandisoft.com/bandizip/">Bandizip</a></p>
+<p><strong>下载地址：</strong><a class="link"   href="https://www.bandisoft.com/bandizip/" >Bandizip<i class="fas fa-external-link-alt"></i></a></p>
 <hr>
 <h4 id="Gpedit-msc-2-0"><a href="#Gpedit-msc-2-0" class="headerlink" title="Gpedit-msc-2.0"></a>Gpedit-msc-2.0</h4><p>本机群组原则编辑器，支持Win7、Win8、Win8.1、Win10</p>
-<p><strong>下载地址：</strong><a href="https://github.com/GDaily/gpedit-msc">Gpedit-msc-2.0</a></p>
+<p><strong>下载地址：</strong><a class="link"   href="https://github.com/GDaily/gpedit-msc" >Gpedit-msc-2.0<i class="fas fa-external-link-alt"></i></a></p>
 <hr>
 <h4 id="ContextMenuManager"><a href="#ContextMenuManager" class="headerlink" title="ContextMenuManager"></a>ContextMenuManager</h4><p>纯粹的Windows右键菜单管理程序</p>
-<p><strong>下载地址：</strong><strong><a href="https://github.com/BluePointLilac/ContextMenuManager">ContextMenuManager</a></strong></p>
+<p><strong>下载地址：</strong><strong><a class="link"   href="https://github.com/BluePointLilac/ContextMenuManager" >ContextMenuManager<i class="fas fa-external-link-alt"></i></a></strong></p>
 <hr>
 <h4 id="Xtreme-Download-Manager"><a href="#Xtreme-Download-Manager" class="headerlink" title="Xtreme Download Manager"></a>Xtreme Download Manager</h4><p> XDM 是一款功能强大的工具，可将下载速度提高 500%，保存热门视频流网站的视频，恢复中断&#x2F;死机的下载，安排和转换下载。</p>
-<p><strong>下载地址：</strong><a href="https://github.com/subhra74/xdm?tab=readme-ov-file">Xtreme Download Manager</a></p>
+<p><strong>下载地址：</strong><a class="link"   href="https://github.com/subhra74/xdm?tab=readme-ov-file" >Xtreme Download Manager<i class="fas fa-external-link-alt"></i></a></p>
 ]]></content>
       <tags>
         <tag>应用软件</tag>
@@ -774,23 +774,23 @@
     <content><![CDATA[<h3 id="1-事前准备"><a href="#1-事前准备" class="headerlink" title="1.事前准备"></a>1.事前准备</h3><ul>
 <li><p>域名（非必须，你也可以使用免费域名，或者<code>GitHub.io</code>或<code>Pages.dev</code>分配的域名也可以）</p>
 </li>
-<li><p><a href="https://github.com/">GitHub</a>（必须，你需要注册一个GitHub帐号）</p>
+<li><p><a class="link"   href="https://github.com/" >GitHub<i class="fas fa-external-link-alt"></i></a>（必须，你需要注册一个GitHub帐号）</p>
 </li>
-<li><p><a href="https://dash.cloudflare.com/">Cloudflare</a>（非必须，你需要注册一个Cloudflare帐号，这样你就可以将博客部署在CF的CDN里加速，但是你也可以直接使用<code>GitHub.io</code>分配的域名）</p>
+<li><p><a class="link"   href="https://dash.cloudflare.com/" >Cloudflare<i class="fas fa-external-link-alt"></i></a>（非必须，你需要注册一个Cloudflare帐号，这样你就可以将博客部署在CF的CDN里加速，但是你也可以直接使用<code>GitHub.io</code>分配的域名）</p>
 </li>
-<li><p>[科学软件](<a href="https://blog.1314047.xyz/serial">https://blog.1314047.xyz/serial</a> number 006) （非必须，使用科学软件部署下载命令的时候更快）</p>
+<li><p><a class="link"   href="https://blog.1314047.xyz/kexue" >科学软件<i class="fas fa-external-link-alt"></i></a> （非必须，使用科学软件部署下载命令的时候更快）</p>
 </li>
 </ul>
 <h3 id="2-软件支持"><a href="#2-软件支持" class="headerlink" title="2.软件支持"></a>2.软件支持</h3><ul>
-<li><p><a href="https://blog.090227.xyz/p/HexoBlogNo1/#2-1-%E5%AE%89%E8%A3%85-Node">Node</a>（必须）</p>
+<li><p>Node（必须）</p>
 </li>
-<li><p><a href="https://blog.090227.xyz/p/HexoBlogNo1/#2-2-%E5%AE%89%E8%A3%85-Git">Git</a>（必须）</p>
+<li><p>Git（必须）</p>
 </li>
-<li><p><a href="https://code.visualstudio.com/">VSCode</a>（非必须，这是一款轻量型的代码编辑器，可以帮助你养成一个很好的编程习惯）</p>
+<li><p><a class="link"   href="https://code.visualstudio.com/" >VSCode<i class="fas fa-external-link-alt"></i></a>（非必须，这是一款轻量型的代码编辑器，可以帮助你养成一个很好的编程习惯）</p>
 </li>
 </ul>
 <h4 id="2-1-安装-Node"><a href="#2-1-安装-Node" class="headerlink" title="2.1.安装 Node"></a>2.1.安装 Node</h4><ul>
-<li><p>打开Node官网，下载和自己系统相配的Node的安装程序，否则会出现安装问题。下载地址：<a href="https://nodejs.org/en">https://nodejs.org/en</a></p>
+<li><p>打开Node官网，下载和自己系统相配的Node的安装程序，否则会出现安装问题。下载地址：<a class="link"   href="https://nodejs.org/en" >https://nodejs.org/en<i class="fas fa-external-link-alt"></i></a></p>
 </li>
 <li><p>下载后安装，安装的目录可以使用默认目录<code>C:/Program Files/nodejs/</code></p>
 </li>
@@ -798,9 +798,9 @@
 </li>
 </ul>
 <h4 id="2-2-安装-Git"><a href="#2-2-安装-Git" class="headerlink" title="2.2.安装 Git"></a>2.2.安装 Git</h4><ul>
-<li>进入官网下载适合你当前系统的 Git：<strong><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></strong></li>
+<li>进入官网下载适合你当前系统的 Git：<strong><a class="link"   href="https://git-scm.com/downloads" >https://git-scm.com/downloads<i class="fas fa-external-link-alt"></i></a></strong></li>
 </ul>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F0f1c3f9b-67fd-40a8-aed5-91d7aa2f4d34%2F14b9fdf14c49320e531fb.jpg?table=block&id=dae3f975-4304-4a9a-be52-371c5e3c72e4&t=dae3f975-4304-4a9a-be52-371c5e3c72e4&width=708&cache=v2" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F0f1c3f9b-67fd-40a8-aed5-91d7aa2f4d34%2F14b9fdf14c49320e531fb.jpg?table=block&id=dae3f975-4304-4a9a-be52-371c5e3c72e4&t=dae3f975-4304-4a9a-be52-371c5e3c72e4&width=708&cache=v2"  alt="notion image"></p>
 <ul>
 <li><p>下载后傻瓜式安装Git即可，安装的目录最好使用默认目录<code>C:/Program Files/Git</code></p>
 </li>
@@ -823,7 +823,7 @@
 <p>JavaScript</p>
 <p>Copy</p>
 <p>通过<code>git config -l</code> 检查是否配置成功。</p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F562fc767-920b-4a33-a266-7859938998e8%2F14b9fdf14c49320e531fb.jpg?table=block&id=00b1547e-de5a-4f0e-86c1-bbc400f40fb6&t=00b1547e-de5a-4f0e-86c1-bbc400f40fb6&width=776&cache=v2" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F562fc767-920b-4a33-a266-7859938998e8%2F14b9fdf14c49320e531fb.jpg?table=block&id=00b1547e-de5a-4f0e-86c1-bbc400f40fb6&t=00b1547e-de5a-4f0e-86c1-bbc400f40fb6&width=776&cache=v2"  alt="notion image"></p>
 <h4 id="3-2-配置公钥连接Github"><a href="#3-2-配置公钥连接Github" class="headerlink" title="3.2. 配置公钥连接Github"></a>3.2. 配置公钥连接Github</h4><ul>
 <li>执行以下命令生成ssh公钥，此公钥用于你的计算机连接Github</li>
 </ul>
@@ -832,7 +832,7 @@
 <p>JavaScript</p>
 <p>Copy</p>
 <p>提示<code>Enter file in which to save the key</code>直接<strong>一路回车</strong>即可，新手小白不推荐设置密钥</p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Ff04c3f64-4c62-4c18-be80-ec1455249c42%2F14b9fdf14c49320e531fb.jpg?table=block&id=b8cccbfc-3b73-42cc-9669-bc862df670b2&t=b8cccbfc-3b73-42cc-9669-bc862df670b2&width=774&cache=v2" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2Ff04c3f64-4c62-4c18-be80-ec1455249c42%2F14b9fdf14c49320e531fb.jpg?table=block&id=b8cccbfc-3b73-42cc-9669-bc862df670b2&t=b8cccbfc-3b73-42cc-9669-bc862df670b2&width=774&cache=v2"  alt="notion image"></p>
 <p>之后打开C盘下用户文件夹下的.ssh的文件夹，会看到以下文件</p>
 <ul>
 <li><p><code>id_rsa</code>私钥</p>
@@ -840,9 +840,9 @@
 <li><p><code>id_rsa.pub</code>公钥</p>
 </li>
 </ul>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F249ce0a6-ca2e-4b96-96d9-e696dd522eca%2F14b9fdf14c49320e531fb.jpg?table=block&id=e4496af4-e236-4844-9c99-42319e646d24&t=e4496af4-e236-4844-9c99-42319e646d24&width=708&cache=v2" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F249ce0a6-ca2e-4b96-96d9-e696dd522eca%2F14b9fdf14c49320e531fb.jpg?table=block&id=e4496af4-e236-4844-9c99-42319e646d24&t=e4496af4-e236-4844-9c99-42319e646d24&width=708&cache=v2"  alt="notion image"></p>
 <p>用记事本打开上述图片中的公钥<code>id_rsa.pub</code>，复制里面的内容，然后开始在github中配置ssh密钥。 将 SSH KEY 配置到 GitHub进入github，点击右上角头像 选择settings，进入设置页后选择SSH and GPG keys，名字随便起，公钥填到Key那一栏。</p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F584244e9-c6c6-4078-845a-5b302e73f739%2F872px-Android_robot.svg.png?table=block&id=ba59f558-7e0b-4c6a-b942-d15677cc0aad&t=ba59f558-7e0b-4c6a-b942-d15677cc0aad" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F584244e9-c6c6-4078-845a-5b302e73f739%2F872px-Android_robot.svg.png?table=block&id=ba59f558-7e0b-4c6a-b942-d15677cc0aad&t=ba59f558-7e0b-4c6a-b942-d15677cc0aad"  alt="notion image"></p>
 <ul>
 <li>测试连接，输入以下命令</li>
 </ul>
@@ -851,7 +851,7 @@
 <p>JavaScript</p>
 <p>Copy</p>
 <p>第一次连接会提示<code>Are you sure you want to continue connecting (yes/no/[fingerprint])?</code>，输入<code>yes</code>即可 出现连接到账户的信息，说明已经大功告成，至此完成了环境准备工作。</p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F53cb14fd-6d7f-479e-8738-972b2277b7cd%2F872px-Android_robot.svg.png?table=block&id=215e50e0-7461-499b-b1c5-225af714f788&t=215e50e0-7461-499b-b1c5-225af714f788" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F53cb14fd-6d7f-479e-8738-972b2277b7cd%2F872px-Android_robot.svg.png?table=block&id=215e50e0-7461-499b-b1c5-225af714f788&t=215e50e0-7461-499b-b1c5-225af714f788"  alt="notion image"></p>
 <h4 id="3-3-创建GitHub-io仓库"><a href="#3-3-创建GitHub-io仓库" class="headerlink" title="3.3. 创建GitHub.io仓库"></a>3.3. 创建GitHub.io仓库</h4><ul>
 <li><p>点击右上角的<code>+</code>按钮，选择<strong>New repository</strong>，创建一个<code>&lt;用户名&gt;.github.io</code>的仓库。</p>
 </li>
@@ -878,11 +878,11 @@
 <li><p>初始化项目后，<code>blog-demo</code>有如下结构：</p>
 </li>
 </ul>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F07d552ae-18eb-4521-a9ab-2d42d6398982%2F872px-Android_robot.svg.png?table=block&id=30bb4bdf-0e93-4872-b953-08d3c59900fc&t=30bb4bdf-0e93-4872-b953-08d3c59900fc" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F07d552ae-18eb-4521-a9ab-2d42d6398982%2F872px-Android_robot.svg.png?table=block&id=30bb4bdf-0e93-4872-b953-08d3c59900fc&t=30bb4bdf-0e93-4872-b953-08d3c59900fc"  alt="notion image"></p>
 <ul>
 <li><p>输入<code>hexo cl &amp;&amp; hexo s</code>启动项目</p>
 </li>
-<li><p>打开浏览器，输入地址：<strong><a href="http://localhost:4000/">http://localhost:4000/</a></strong> ，看到下面的效果，说明你的博客已经构建成功了。</p>
+<li><p>打开浏览器，输入地址：<strong><a class="link"   href="http://localhost:4000/" >http://localhost:4000/<i class="fas fa-external-link-alt"></i></a></strong> ，看到下面的效果，说明你的博客已经构建成功了。</p>
 </li>
 </ul>
 <h3 id="5-将静态博客挂载到-GitHub-Pages"><a href="#5-将静态博客挂载到-GitHub-Pages" class="headerlink" title="5.将静态博客挂载到 GitHub Pages"></a>5.将静态博客挂载到 GitHub Pages</h3><ul>
@@ -895,7 +895,7 @@
 <ul>
 <li>修改 _config.yml 文件</li>
 </ul>
-<p>在blog-demo目录下的_config.yml，就是整个Hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考官方的**<a href="https://hexo.io/zh-cn/docs/configuration">配置描述</a>**。 </p>
+<p>在blog-demo目录下的_config.yml，就是整个Hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考官方的**<a class="link"   href="https://hexo.io/zh-cn/docs/configuration" >配置描述<i class="fas fa-external-link-alt"></i></a>**。 </p>
 <p>修改最后一行的配置，将repository修改为你自己的github项目地址即可，还有分支要改为main代表主分支（注意缩进）。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy</span>:</span><br><span class="line">  <span class="attr">type</span>: git</span><br><span class="line">  <span class="attr">repository</span>: git@github.<span class="property">com</span>:cmliussss2024/cmliussss2024.<span class="property">github</span>.<span class="property">io</span>.<span class="property">git</span></span><br><span class="line">  <span class="attr">branch</span>: main</span><br></pre></td></tr></table></figure>
 
@@ -918,12 +918,12 @@
 </li>
 </ul>
 <p>如果出现<strong>Deploy done</strong>，则说明部署成功了。</p>
-<p>稍等两分钟，打开浏览器访问：**<a href="https://cmliussss2024.github.io/">https:&#x2F;&#x2F;你的github名.github.io</a>**，这时候我们就可以看到博客内容了。</p>
+<p>稍等两分钟，打开浏览器访问：**<a class="link"   href="https://cmliussss2024.github.io/" >https:&#x2F;&#x2F;你的github名.github.io<i class="fas fa-external-link-alt"></i></a>**，这时候我们就可以看到博客内容了。</p>
 <h3 id="6-将静态博客挂载到-Cloudflare-Pages"><a href="#6-将静态博客挂载到-Cloudflare-Pages" class="headerlink" title="6.将静态博客挂载到 Cloudflare Pages"></a>6.将静态博客挂载到 Cloudflare Pages</h3><ul>
 <li>在Workers 和 Pages中选择Pages的连接到 Git</li>
 </ul>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F458ed03a-a311-4c28-88ba-75e2a8236679%2F14b9fdf14c49320e531fb.jpg?table=block&id=3981980b-2f11-4915-b3bf-10bed4c9b27e&t=3981980b-2f11-4915-b3bf-10bed4c9b27e&width=1898&cache=v2" alt="notion image"></p>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F0ea21ed5-5678-4627-8e77-36c2940eaaa4%2F14b9fdf14c49320e531fb.jpg?table=block&id=394f0091-0ddc-432c-adba-06aba46d587f&t=394f0091-0ddc-432c-adba-06aba46d587f&width=708&cache=v2" alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F458ed03a-a311-4c28-88ba-75e2a8236679%2F14b9fdf14c49320e531fb.jpg?table=block&id=3981980b-2f11-4915-b3bf-10bed4c9b27e&t=3981980b-2f11-4915-b3bf-10bed4c9b27e&width=1898&cache=v2"  alt="notion image"></p>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F0ea21ed5-5678-4627-8e77-36c2940eaaa4%2F14b9fdf14c49320e531fb.jpg?table=block&id=394f0091-0ddc-432c-adba-06aba46d587f&t=394f0091-0ddc-432c-adba-06aba46d587f&width=708&cache=v2"  alt="notion image"></p>
 <ul>
 <li><p>然后登录你Blog仓库对应的GitHub帐号选择对应的github项目</p>
 </li>
@@ -936,8 +936,8 @@
 <li><p>如果你有自己的域名，你可以在这里绑定你自己的自定义域，即可</p>
 </li>
 </ul>
-<p><img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F66b11f70-31d0-4a49-b218-77b8d74e1d68%2F14b9fdf14c49320e531fb.jpg?table=block&id=fff97404-ae3b-8035-982c-fe57361af08a&t=fff97404-ae3b-8035-982c-fe57361af08a&width=1537&cache=v2" alt="notion image"></p>
-<h2 id="7-如何使用"><a href="#7-如何使用" class="headerlink" title="7.如何使用"></a>7.如何使用</h2><ul>
+<p><img   src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7017e85-e5e3-4b15-989b-caaf9be8dbe4%2F66b11f70-31d0-4a49-b218-77b8d74e1d68%2F14b9fdf14c49320e531fb.jpg?table=block&id=fff97404-ae3b-8035-982c-fe57361af08a&t=fff97404-ae3b-8035-982c-fe57361af08a&width=1537&cache=v2"  alt="notion image"></p>
+<h3 id="7-如何使用"><a href="#7-如何使用" class="headerlink" title="7.如何使用"></a>7.如何使用</h3><ul>
 <li>新建一篇博文</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> 这是一篇新的博文</span><br></pre></td></tr></table></figure>
@@ -947,9 +947,9 @@
 <ul>
 <li><p>然后用文本编辑器去编辑<code>_posts/这是一篇新的博文.md</code>里的内容即可，注意要使用Markdown格式书写。</p>
 </li>
-<li><p>详细使用方法可以查阅 <strong><a href="https://hexo.io/zh-cn/docs/writing">https://hexo.io/zh-cn/docs/writing</a></strong></p>
+<li><p>详细使用方法可以查阅 <strong><a class="link"   href="https://hexo.io/zh-cn/docs/writing" >https://hexo.io/zh-cn/docs/writing<i class="fas fa-external-link-alt"></i></a></strong></p>
 </li>
-<li><p>编辑完文章保存后可以使用如下命令，生成本地页面 <a href="http://localhost:4000/">http://localhost:4000/</a> ，进行预览</p>
+<li><p>编辑完文章保存后可以使用如下命令，生成本地页面 <a class="link"   href="http://localhost:4000/" >http://localhost:4000/<i class="fas fa-external-link-alt"></i></a> ，进行预览</p>
 </li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
@@ -1292,5 +1292,13 @@
       <tags>
         <tag>访谈</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2024/09/21/notion%E8%AE%B0%E8%B4%A6/</url>
+    <content><![CDATA[<iframe src="https://1drv.ms/v/s!Al3T_zsZUirsgtUgVCt6W_rfkjEH9A?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+<p>测试</p>
+]]></content>
   </entry>
 </search>
