@@ -1,0 +1,15 @@
+theme = "Amigo"
+
+[params]
+  username = "您的昵称"
+  avatar = "/images/avatar.jpg"
+  description = "一句话简介"
+  cover = "/images/header.png"
+
+  # 评论模式: "artalk"、"twikoo"、"giscus"、"none"
+  commentMode = "artalk"
+
+  # Artalk 配置
+  artalkServer = "https://your-artalk-server.com"
+  artalkSite = "您的站点名称"
+  enableDanmaku = true  # 首页弹幕
