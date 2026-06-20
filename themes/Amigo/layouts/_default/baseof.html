@@ -14,7 +14,7 @@
     {{- if and (eq .Site.Params.commentMode "twikoo") .Site.Params.twikooEnvId -}}
         {{- $twikooCss := resources.Get "lib/twikoo/twikoo.min.css" | fingerprint -}}
         {{- if $twikooCss -}}
-            <link rel="stylesheet" href="{{ $twikooCss.RelPermalink }}" integrity="{{ $twikooCss.Data.Integrity }}">
+            <link rel="stylesheet" href="{{ $twikooCss.RelPermalink }}">
         {{- end -}}
     {{- end -}}
 
@@ -26,7 +26,7 @@
     {{- end -}}
 
     {{- $bundleCss := $styles | resources.Concat "css/bundle.css" | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $bundleCss.RelPermalink }}" integrity="{{ $bundleCss.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $bundleCss.RelPermalink }}">
 
     {{- /* 把所有 JS 打包到一起 */ -}}
     {{- $scripts := slice (resources.Get "js/message.min.js") (resources.Get "js/main.js") -}}
@@ -88,11 +88,11 @@
     {{- if and (eq .Site.Params.commentMode "twikoo") .Site.Params.twikooEnvId -}}
         {{- $twikooJs := resources.Get "lib/twikoo/twikoo.min.js" | fingerprint -}}
         {{- if $twikooJs -}}
-            <script defer src="{{ $twikooJs.RelPermalink }}" integrity="{{ $twikooJs.Data.Integrity }}"></script>
+            <script defer src="{{ $twikooJs.RelPermalink }}"></script>
         {{- end -}}
     {{- end -}}
 
-    <script defer src="{{ $bundleJs.RelPermalink }}" integrity="{{ $bundleJs.Data.Integrity }}"></script>
+    <script defer src="{{ $bundleJs.RelPermalink }}"></script>
 </head>
 <body>
     <!-- 整个页面的主包裹层 -->
