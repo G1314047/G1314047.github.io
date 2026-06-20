@@ -1,4 +1,4 @@
-baseURL = 'https://example.com'
+baseURL = 'https://g1314047.github.io'
 languageCode = 'zh-cn'
 title = '我的朋友圈'
 theme = 'Amigo'
@@ -53,14 +53,14 @@ theme = 'Amigo'
   commentMode = "artalk"
 
   # 1. Artalk 评论（官方文档：https://artalk.js.org/）
-  artalkServer = "https://your-artalk-server.com"
-  artalkSite = "您的站点名称"
+  artalkServer = ""
+  artalkSite = "我的朋友圈"
   # 是否开启底部评论弹幕（true 开启，false 关闭）
   enableDanmaku = true
 
   # 首页顶部封面：可以是图片或视频
-  # headerMedia = "/images/header.png"
-  headerMedia = "/videos/2792755201.mp4"
+     headerMedia = "/images/header.png"
+  # headerMedia = "/videos/2792755201.mp4"
   
   # 2. Giscus 评论（官方文档：https://giscus.app/）
   # 如果上面填了 Artalk，会优先用 Artalk。两个都空着就不显示评论。
@@ -77,7 +77,7 @@ theme = 'Amigo'
   giscusLoading = "lazy"
 
   # 3. Twikoo 评论（后端 envId：腾讯云环境填 envId；Vercel/自建填地址）
-  twikooEnvId = ""
+  twikooEnvId = "https://mypinglun.vercel.app/"
   twikooLang = "zh-CN"
   
   # ---------------------------------------------------------------------------------------
@@ -102,6 +102,7 @@ theme = 'Amigo'
   #   name = "GitHub"
   #   icon = "ri-github-line" # 这里填 RemixIcon 的类名
   #   url = "https://github.com/"
+showLocation = true
 
 [markup]
   [markup.highlight]
