@@ -1,15 +1,19 @@
+baseURL = "https://g1314047.github.io/"
+languageCode = "zh-cn"
+title = "我的朋友圈"
 theme = "Amigo"
 
 [params]
-  username = "您的昵称"
+  username = "G.Ark"
   avatar = "/images/avatar.jpg"
   description = "一句话简介"
   cover = "/images/header.png"
 
-  # 评论模式: "artalk"、"twikoo"、"giscus"、"none"
-  commentMode = "artalk"
+  # 评论模式
+  commentMode = "none"
 
   # Artalk 配置
-  artalkServer = "https://your-artalk-server.com"
-  artalkSite = "您的站点名称"
-  enableDanmaku = true  # 首页弹幕
+  artalkServer = ""
+  artalkSite = ""
+
+  enableDanmaku = true
