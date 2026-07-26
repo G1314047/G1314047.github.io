@@ -5,9 +5,7 @@ location = "泰国·曼谷"
 
 +++
 
-周一关门，其余时间除了周末中午营业都是下午三点营业
-没有空调
-地址：912 Song Wat Rd, Chakkrawat, Samphanthawong, Bangkok 10100
+
 ![图片描述](/images/TH1.jpg)
 ![图片描述](/images/TH2.jpg)
 ![图片描述](/images/TH3.jpg)
