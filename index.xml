@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>我的朋友圈</title>
-    <link>https://g1314047.github.io/</link>
-    <description>Recent content on 我的朋友圈</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 26 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://g1314047.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>天神的后花园</title>
-      <link>https://g1314047.github.io/posts/test-copy/</link>
-      <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://g1314047.github.io/posts/test-copy/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://g1314047.github.io/images/SC1.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/SC2.jpg&#34; alt=&#34;图片描述&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>在曼谷也不一定非要去景点躺着就挺好</title>
-      <link>https://g1314047.github.io/posts/test/</link>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://g1314047.github.io/posts/test/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://g1314047.github.io/images/TH1.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH2.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH3.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH4.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH5.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH6.jpg&#34; alt=&#34;图片描述&#34;&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>我的朋友圈</title>
+		<link>https://g1314047.github.io/</link>
+		<description>Recent content on 我的朋友圈</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://g1314047.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>一直偏爱自然简约的松弛质感</title>
+				<link>https://g1314047.github.io/posts/2026-11-10/</link>
+				<pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://g1314047.github.io/posts/2026-11-10/</guid>
+				<description>&lt;p&gt;一直偏爱自然简约的松弛质感，装修这套房子时也始终围绕自然与空间的共生感。特意将原先的落地窗改为折叠玻璃门打通室内与庭院，消弭空间边界，让自然光与庭院绿意肆意漫入室内，让家始终和自然共生。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://g1314047.github.io/images/ZX1.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/ZX2.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/ZX3.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/ZX4.jpg&#34; alt=&#34;图片描述&#34;&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>天神的后花园</title>
+				<link>https://g1314047.github.io/posts/test-copy/</link>
+				<pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://g1314047.github.io/posts/test-copy/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://g1314047.github.io/images/SC1.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/SC2.jpg&#34; alt=&#34;图片描述&#34;&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>在曼谷也不一定非要去景点躺着就挺好</title>
+				<link>https://g1314047.github.io/posts/test/</link>
+				<pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://g1314047.github.io/posts/test/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://g1314047.github.io/images/TH1.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH2.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH3.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH4.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH5.jpg&#34; alt=&#34;图片描述&#34;&gt;&#xA;&lt;img src=&#34;https://g1314047.github.io/images/TH6.jpg&#34; alt=&#34;图片描述&#34;&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
